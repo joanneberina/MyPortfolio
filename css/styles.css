@@ -1,0 +1,24 @@
+body {
+  font-size: 18px;
+  padding: 0 2rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav #logo {
+  color: #55A3FA;
+}
+nav #logo h2 {
+  font-size: 2rem;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: #566A81;
+}
+nav ul li {
+  padding-left: 2rem;
+  text-align: right;
+}

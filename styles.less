@@ -1,0 +1,38 @@
+// Variables
+@background-color: #FFFFFF;
+@primary-color: #55A3FA;
+@text-color: #566A81;
+@black: #22262A;
+@font-heading: 'Montserrat', sans-serif;
+@font-body: 'Red Hat Text', sans-serif;
+@shadow: 0 4px 6px 0 rgba(34, 38, 42, .2);
+
+body {
+    font-size: 18px;
+    padding: 0 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    #logo {
+        color: @primary-color;
+
+        h2 {    
+            font-size: 2rem; 
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        color: @text-color;
+
+        li {
+            padding-left: 2rem;
+            text-align: right;
+        }
+    }
+}
