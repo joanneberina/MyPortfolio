@@ -7,14 +7,13 @@ body {
   border-top: 5px solid #3C3C7D;
 }
 body a {
-  color: #41424A;
+  color: #787584;
 }
 body a:link {
   text-decoration: none;
-  color: #787584;
 }
 body a:hover {
-  color: #4246C8;
+  color: #4d4d9f;
   font-weight: 500;
 }
 body ul {
@@ -42,7 +41,7 @@ header nav ul {
   font-family: 'Montserrat', sans-serif;
   padding: 0 1rem;
 }
-header nav li:first-child {
+header nav #nav_inactive {
   color: #8b8d99;
   font-weight: 500;
 }

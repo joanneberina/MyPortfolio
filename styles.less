@@ -21,16 +21,15 @@ body {
     border-top: 5px solid @primary-color;
 
     a {
-        color: @text-body;
+        color: @text-gray;
     }
 
     a:link {
         text-decoration: none;
-        color: @text-gray;
     }
 
     a:hover {
-        color: @link-color;
+        color: lighten(@primary-color, 10%);
         font-weight: 500;
     }
    
@@ -62,7 +61,7 @@ header {
             padding: 0 1rem;
         }
 
-        li:first-child {
+        #nav_inactive {
             color: lighten(@text-body, 30%);
             font-weight: 500;
         }
