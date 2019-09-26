@@ -101,8 +101,28 @@ header .uvp p span {
     margin: 0;
   }
 }
-.case-study {
+main .about-title {
+  margin: 2rem;
+  padding-top: 4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  letter-spacing: -0.9px;
+  line-height: 2.5rem;
+  color: #3C3C7D;
+}
+main .about-text {
+  margin: 2rem;
+}
+main .joanne-drawing {
+  display: flex;
+}
+main .joanne-drawing img {
+  width: 40%;
   padding: 0 2rem;
+  margin: 0;
+}
+.case-study {
+  padding: 5rem 2rem;
 }
 @media (min-width: 700px) {
   .case-study {
@@ -146,7 +166,6 @@ header .uvp p span {
 #qb-image {
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
 }
 #qb-image img {
   width: 40%;
@@ -155,14 +174,12 @@ header .uvp p span {
 #sd-image {
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
 }
 #sd-image img {
   width: 80%;
   max-width: 500px;
 }
 .connect {
-  margin-top: 5rem;
   padding: 5rem 2rem;
   border-top: solid 3px #efeef0;
   text-align: center;

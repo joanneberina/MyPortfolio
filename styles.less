@@ -11,6 +11,7 @@
 @font-body: 'Red Hat Text', sans-serif;
 @shadow: 0 4px 6px 0 rgba(34, 38, 42, .2);
 
+// General styles
 body {
     margin: 0;
     font-family: @font-body;
@@ -45,6 +46,7 @@ body {
     }
 }
 
+// Header for all pages
 header {
     background: @gradient;
     padding: 0 1rem;
@@ -76,6 +78,7 @@ header {
         }
     }    
     
+    // Homepage
     #avatar {
         padding-top: 10rem;
 
@@ -107,6 +110,7 @@ header {
         }
     }
 
+    // Hero section media query
     @media (min-width: 600px) {
         .hero {
             display: flex;
@@ -136,9 +140,38 @@ header {
     }
 }
 
-.case-study {
-    padding: 0 2rem;
+// About page styling
+main {
+    .about-title {
+        margin: 2rem;
+        padding-top: 4rem;
+        font-family: @font-heading;
+        font-size: 2rem;
+        letter-spacing: -.9px;
+        line-height: 2.5rem;
+        color: @primary-color;
+    }
 
+    .about-text {
+        margin: 2rem;
+    }
+
+    .joanne-drawing {
+        display: flex;
+        
+        img {
+            width: 40%;
+            padding: 0 2rem;
+            margin: 0;
+        }
+    }
+}
+
+// Home page case study
+.case-study {
+    padding: 5rem 2rem;
+
+    // Media query for case study
     @media (min-width: 700px) {
         width: 70%;
         max-width: 700px;
@@ -155,6 +188,7 @@ header {
         }
     }
 
+    // Read case button
     .link {
         padding: 1rem 0;
         a:link {
@@ -185,11 +219,10 @@ header {
     }
 }
 
-
+// Case study images
 #qb-image {
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
 
     img {
         width: 40%;
@@ -200,7 +233,6 @@ header {
 #sd-image {
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
 
     img {
         width: 80%;
@@ -208,8 +240,8 @@ header {
     }
 }
 
+// Connect styles for all pages
 .connect {
-    margin-top: 5rem;
     padding: 5rem 2rem;
     border-top: solid 3px lighten(@text-gray, 45%);
     text-align: center;
@@ -243,6 +275,7 @@ header {
     }
 }
 
+// Footer styling for all pages
 footer {
     background-color: @footer-back;
     padding: 0 2rem;
@@ -262,6 +295,7 @@ footer {
         }
     }
 
+    // Footer media query
     @media (min-width: 550px) {
         ul {
             justify-content: center;
