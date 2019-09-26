@@ -21,7 +21,6 @@ body {
 
     a {
         color: @text-body;
-        transition: .3s all ease-in-out;
     }
 
     a:link {
@@ -30,7 +29,7 @@ body {
     }
 
     a:hover {
-        color: @accent-color;
+        color: @link-color;
         font-weight: 500;
     }
    
@@ -164,13 +163,20 @@ header {
         font-family: @font-body;
         font-weight: 500;
         padding: 1rem 2rem;
-        color: @link-color;
         border-color: @accent-color;
         border-radius: 25px;
 
-        button:hover {
-            background: linear-gradient(130deg, @accent-color 0%, @link-color 100%);
+        a {
+            color: @link-color;
         }
+    }
+
+    button:hover {
+        background-color: @link-color;
+    }
+
+    a:hover {
+        color: white;
     }
 }
 

@@ -8,14 +8,13 @@ body {
 }
 body a {
   color: #41424A;
-  transition: 0.3s all ease-in-out;
 }
 body a:link {
   text-decoration: none;
   color: #787584;
 }
 body a:hover {
-  color: #5659E0;
+  color: #4246C8;
   font-weight: 500;
 }
 body ul {
@@ -126,12 +125,17 @@ header .uvp p span {
   font-family: 'Red Hat Text', sans-serif;
   font-weight: 500;
   padding: 1rem 2rem;
-  color: #4246C8;
   border-color: #5659E0;
   border-radius: 25px;
 }
-.case-study button button:hover {
-  background: linear-gradient(130deg, #5659E0 0%, #4246C8 100%);
+.case-study button a {
+  color: #4246C8;
+}
+.case-study button:hover {
+  background-color: #4246C8;
+}
+.case-study a:hover {
+  color: white;
 }
 #qb-image {
   display: flex;
