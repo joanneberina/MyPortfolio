@@ -38,7 +38,8 @@ header nav ul {
   padding: 0 1rem;
 }
 header nav li:first-child {
-  font-weight: 600;
+  color: #8b8d99;
+  font-weight: 500;
 }
 @media (min-width: 450px) {
   header nav ul {
