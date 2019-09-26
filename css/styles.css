@@ -98,9 +98,13 @@ header .uvp p span {
   }
   header .hero .uvp h1 {
     margin: 0;
+    font-size: 2.75rem;
+  }
+  header .hero .uvp p {
+    width: 75%;
   }
 }
-main .about-title h1 {
+main .section-heading {
   margin: 2rem;
   padding-top: 4rem;
   font-family: 'Montserrat', sans-serif;
@@ -135,13 +139,15 @@ main .joanne-drawing img {
   }
   main .about-content .about-text {
     padding-top: 3rem;
+    padding-right: 2rem;
   }
   main .bottom {
     display: flex;
   }
   main .bottom .joanne-drawing img {
     width: 100%;
-    padding: 0 5rem;
+    max-width: 200px;
+    padding-left: 2rem;
   }
   main .bottom .connect {
     border-top: 0;
