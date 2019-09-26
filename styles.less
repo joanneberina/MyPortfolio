@@ -63,7 +63,7 @@ header {
 
         #nav_inactive {
             color: lighten(@text-body, 30%);
-            font-weight: 500;
+            font-weight: 600;
         }
 
         @media (min-width: 450px) {
@@ -142,13 +142,15 @@ header {
 // About page styling
 main {
     .about-title {
-        margin: 2rem;
-        padding-top: 4rem;
-        font-family: @font-heading;
-        font-size: 2rem;
-        letter-spacing: -.9px;
-        line-height: 2.5rem;
-        color: @primary-color;
+        h1 {
+            margin: 2rem;
+            padding-top: 4rem;
+            font-family: @font-heading;
+            font-size: 2rem;
+            letter-spacing: -.9px;
+            line-height: 2.5rem;
+            color: @primary-color;
+        }
     }
 
     .about-text {
@@ -160,8 +162,43 @@ main {
         
         img {
             width: 40%;
+            max-width: 150px;
             padding: 0 2rem;
             margin: 0;
+        }
+    }
+
+    // Media Query
+    @media (min-width: 860px) {
+        .about-content {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+
+            .about-title {
+                width: 80%;
+                h1 {
+                    letter-spacing: .5px;
+                }
+            }
+            .about-text {
+                padding-top: 3rem;
+            }
+        }
+
+        .bottom {
+            display: flex;
+
+            .joanne-drawing {
+                img {
+                    width: 100%;
+                    padding: 0 5rem;
+                }
+            }
+            .connect {
+                border-top: 0;
+                width: 100%;
+            }
         }
     }
 }
@@ -177,7 +214,7 @@ main {
         margin: 0 auto;
     }
 
-    .title {
+    .case-title {
         font-family: @font-heading;
         font-size: 1.7rem;
         line-height: 2rem;
@@ -276,6 +313,7 @@ main {
 
 // Footer styling for all pages
 footer {
+    display: flex;
     background-color: @footer-back;
     padding: 0 2rem;
     ul {
