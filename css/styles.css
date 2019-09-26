@@ -1,24 +1,181 @@
 body {
-  font-size: 18px;
-  padding: 0 2rem;
+  margin: 0;
+  font-family: 'Red Hat Text', sans-serif;
+  font-size: 14px;
+  color: #41424A;
+  line-height: 1.7rem;
+  border-top: 5px solid #3C3C7D;
 }
-nav {
+body a:link {
+  text-decoration: none;
+  color: #787584;
+}
+body ul {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-}
-nav #logo {
-  color: #55A3FA;
-}
-nav #logo h2 {
-  font-size: 2rem;
-}
-nav ul {
-  display: flex;
-  align-items: center;
   list-style: none;
-  color: #566A81;
 }
-nav ul li {
-  padding-left: 2rem;
-  text-align: right;
+header {
+  background: linear-gradient(to bottom, #ffffff, #eef3ff);
+  padding: 0 1rem;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+header nav ul {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 1rem;
+}
+header nav li:first-child {
+  font-weight: 600;
+}
+@media (min-width: 550px) {
+  header nav ul {
+    justify-content: flex-end;
+  }
+  header nav li {
+    padding-left: 4rem;
+  }
+}
+header #avatar {
+  padding-top: 10rem;
+}
+header #avatar img {
+  height: 250px;
+}
+header .uvp {
+  margin: 0 auto;
+  padding: 0 1rem 10rem 1rem;
+}
+header .uvp h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.25rem;
+  letter-spacing: -1px;
+  line-height: 2.5rem;
+  padding: 0;
+  color: #3C3C7D;
+}
+header .uvp p {
+  color: #595a65;
+}
+header .uvp p span {
+  font-weight: 500;
+}
+@media (min-width: 700px) {
+  header .hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10rem 0;
+  }
+  header .hero #avatar {
+    padding: 0 2rem;
+  }
+  header .hero .uvp {
+    width: 80%;
+    max-width: 500px;
+    margin: 0;
+  }
+}
+.case-study {
+  padding: 0 2rem;
+}
+.case-study .title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+.case-study .title span {
+  font-weight: 600;
+}
+.case-study .link {
+  padding: 1rem 0;
+}
+.case-study .link a:link {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+.case-study button {
+  font-size: 1rem;
+  font-family: 'Red Hat Text', sans-serif;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  color: #4246C8;
+  border-color: #5659E0;
+  border-radius: 25px;
+}
+#qb-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+#qb-image img {
+  width: 40%;
+  max-width: 200px;
+}
+#sd-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+#sd-image img {
+  width: 80%;
+  max-width: 500px;
+}
+.connect {
+  margin-top: 5rem;
+  padding: 5rem 2rem;
+  border-top: solid 3px #efeef0;
+  text-align: center;
+}
+.connect .blurb {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: -0.5px;
+  text-align: center;
+  line-height: 2rem;
+}
+.connect h1 {
+  margin: 3rem 0 1rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #3C3C7D;
+}
+.connect #email {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0 0 .5rem 0;
+}
+.connect .social {
+  display: inline;
+  font-size: 1.25rem;
+  padding: 1.5rem;
+}
+footer {
+  background-color: #EEF3FF;
+}
+footer ul {
+  padding: 2rem 0;
+  text-align: center;
+}
+footer ul li {
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+footer ul li img {
+  width: 20%;
+  max-height: 25px;
+  vertical-align: middle;
+}
+@media (min-width: 550px) {
+  footer ul {
+    justify-content: center;
+  }
+  footer li {
+    padding-left: 2rem;
+  }
 }

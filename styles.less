@@ -1,38 +1,232 @@
 // Variables
 @background-color: #FFFFFF;
-@primary-color: #55A3FA;
-@text-color: #566A81;
-@black: #22262A;
+@primary-color: #3C3C7D;
+@text-body: #41424A;
+@text-gray: #787584;
+@gradient: linear-gradient(to bottom, rgba(255,255,255,100), rgba(238,243,255,100));
+@footer-back: #EEF3FF;
 @font-heading: 'Montserrat', sans-serif;
 @font-body: 'Red Hat Text', sans-serif;
 @shadow: 0 4px 6px 0 rgba(34, 38, 42, .2);
 
 body {
-    font-size: 18px;
-    padding: 0 2rem;
-}
+    margin: 0;
+    font-family: @font-body;
+    font-size: 14px;
+    color: @text-body;
+    line-height: 1.7rem;
+    border-top: 5px solid @primary-color;
 
-nav {
-    display: flex;
-    justify-content: space-between;
-
-    #logo {
-        color: @primary-color;
-
-        h2 {    
-            font-size: 2rem; 
-        }
+    a:link {
+        text-decoration: none;
+        color: @text-gray;
     }
 
     ul {
+        width: 100%;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
         list-style: none;
-        color: @text-color;
+    }
+}
+
+header {
+    background: @gradient;
+    padding: 0 1rem;
+
+    nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        ul {
+            font-family: @font-heading;
+            padding: 0 1rem;
+        }
+
+        li:first-child {
+            font-weight: 600;
+        }
+
+        @media (min-width: 550px) {
+            ul {
+                justify-content: flex-end;
+            }
+
+            li {
+                padding-left: 4rem;
+            }
+        }
+    }    
+    
+    #avatar {
+        padding-top: 10rem;
+
+        img {
+            height: 250px;
+       
+        }
+    }
+
+    .uvp {
+        margin: 0 auto;
+        padding: 0 1rem 10rem 1rem;
+
+        h1 {
+            font-family: @font-heading;
+            font-size: 2.25rem;
+            letter-spacing: -1px;
+            line-height: 2.5rem;
+            padding: 0;
+            color: @primary-color;
+        }
+
+        p { 
+            color: lighten(@text-body, 10%);
+
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+
+    @media (min-width: 700px) {
+        .hero {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 10rem 0;
+
+            #avatar {
+                padding: 0 2rem;
+            }
+
+            .uvp {
+                width: 80%;
+                max-width: 500px;
+                margin: 0;
+            }
+        }
+
+    }
+}
+
+.case-study {
+    padding: 0 2rem;
+
+    .title {
+        font-family: @font-heading;
+        font-size: 1.7rem;
+        line-height: 2rem;
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .link {
+        padding: 1rem 0;
+        a:link {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+    }
+
+    button {
+        font-size: 1rem;
+        font-family: @font-body;
+        font-weight: 500;
+        padding: 1rem 2rem;
+        color: #4246C8;
+        border-color: #5659E0;
+        border-radius: 25px;
+    }
+}
+
+
+#qb-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+
+    img {
+        width: 40%;
+        max-width: 200px;
+    }
+}
+
+#sd-image {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+
+    img {
+        width: 80%;
+        max-width: 500px;
+    }
+}
+
+.connect {
+    margin-top: 5rem;
+    padding: 5rem 2rem;
+    border-top: solid 3px lighten(@text-gray, 45%);
+    text-align: center;
+
+    .blurb {
+        font-family: @font-heading;
+        font-size: 1.25rem;
+        letter-spacing: -.5px;
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    h1 {
+        margin: 3rem 0 1rem 0;
+        font-family: @font-heading;
+        font-size: 2.5rem;
+        text-align: center;
+        color: @primary-color;
+    }
+
+    #email {
+        font-size: 1.25rem;
+        text-align: center;
+        margin: 0 0 .5rem 0;
+    }
+
+    .social {
+        display: inline;
+        font-size: 1.25rem;
+        padding: 1.5rem;
+    }
+}
+
+footer {
+    background-color: @footer-back;
+
+    ul {
+        padding: 2rem 0;
+        text-align: center;
+
+        li {
+            font-size: 0.9rem;
+            vertical-align: middle;
+
+            img {
+                width: 20%;
+                max-height: 25px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    @media (min-width: 550px) {
+        ul {
+            justify-content: center;
+        }
 
         li {
             padding-left: 2rem;
-            text-align: right;
         }
     }
 }
