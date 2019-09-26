@@ -3,6 +3,8 @@
 @primary-color: #3C3C7D;
 @text-body: #41424A;
 @text-gray: #787584;
+@link-color: #4246C8;
+@accent-color: #5659E0;
 @gradient: linear-gradient(to bottom, rgba(255,255,255,100), rgba(238,243,255,100));
 @footer-back: #EEF3FF;
 @font-heading: 'Montserrat', sans-serif;
@@ -17,11 +19,21 @@ body {
     line-height: 1.7rem;
     border-top: 5px solid @primary-color;
 
+    a {
+        color: @text-body;
+        transition: .3s all ease-in-out;
+    }
+
     a:link {
         text-decoration: none;
         color: @text-gray;
     }
 
+    a:hover {
+        color: @accent-color;
+        font-weight: 500;
+    }
+   
     ul {
         width: 100%;
         display: flex;
@@ -152,9 +164,13 @@ header {
         font-family: @font-body;
         font-weight: 500;
         padding: 1rem 2rem;
-        color: #4246C8;
-        border-color: #5659E0;
+        color: @link-color;
+        border-color: @accent-color;
         border-radius: 25px;
+
+        button:hover {
+            background: linear-gradient(130deg, @accent-color 0%, @link-color 100%);
+        }
     }
 }
 

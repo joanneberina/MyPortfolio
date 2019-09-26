@@ -6,9 +6,17 @@ body {
   line-height: 1.7rem;
   border-top: 5px solid #3C3C7D;
 }
+body a {
+  color: #41424A;
+  transition: 0.3s all ease-in-out;
+}
 body a:link {
   text-decoration: none;
   color: #787584;
+}
+body a:hover {
+  color: #5659E0;
+  font-weight: 500;
 }
 body ul {
   width: 100%;
@@ -121,6 +129,9 @@ header .uvp p span {
   color: #4246C8;
   border-color: #5659E0;
   border-radius: 25px;
+}
+.case-study button button:hover {
+  background: linear-gradient(130deg, #5659E0 0%, #4246C8 100%);
 }
 #qb-image {
   display: flex;
