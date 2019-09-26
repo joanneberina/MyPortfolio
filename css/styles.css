@@ -23,6 +23,11 @@ body ul {
   justify-content: space-between;
   list-style: none;
 }
+@media (min-width: 450px) {
+  body {
+    border-top: 0;
+  }
+}
 header {
   background: linear-gradient(to bottom, #ffffff, #eef3ff);
   padding: 0 1rem;
