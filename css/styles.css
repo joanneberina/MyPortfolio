@@ -164,14 +164,6 @@ main .joanne-drawing img {
     margin: 0 auto;
   }
 }
-.case-study .case-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.7rem;
-  line-height: 2rem;
-}
-.case-study .case-title span {
-  font-weight: 600;
-}
 .case-study .link {
   padding: 1rem 0;
 }
@@ -196,6 +188,14 @@ main .joanne-drawing img {
 .case-study a:hover {
   color: white;
 }
+.case-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.7rem;
+  line-height: 2rem;
+}
+.case-title span {
+  font-weight: 600;
+}
 #qb-image {
   display: flex;
   justify-content: center;
@@ -211,6 +211,9 @@ main .joanne-drawing img {
 #sd-image img {
   width: 80%;
   max-width: 500px;
+}
+.center {
+  text-align: center;
 }
 .connect {
   padding: 5rem 2rem;
