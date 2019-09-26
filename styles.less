@@ -38,6 +38,7 @@ header {
         display: flex;
         justify-content: center;
         width: 100%;
+        padding-top: 2rem;
 
         ul {
             font-family: @font-heading;
@@ -48,7 +49,7 @@ header {
             font-weight: 600;
         }
 
-        @media (min-width: 550px) {
+        @media (min-width: 450px) {
             ul {
                 justify-content: flex-end;
             }
@@ -90,7 +91,7 @@ header {
         }
     }
 
-    @media (min-width: 700px) {
+    @media (min-width: 600px) {
         .hero {
             display: flex;
             flex-direction: row;
@@ -102,9 +103,17 @@ header {
             }
 
             .uvp {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
                 width: 80%;
                 max-width: 500px;
                 margin: 0;
+                padding: 0;
+
+                h1 {
+                    margin: 0;
+                }
             }
         }
 
@@ -113,6 +122,12 @@ header {
 
 .case-study {
     padding: 0 2rem;
+
+    @media (min-width: 700px) {
+        width: 70%;
+        max-width: 700px;
+        margin: 0 auto;
+    }
 
     .title {
         font-family: @font-heading;
@@ -175,7 +190,7 @@ header {
     .blurb {
         font-family: @font-heading;
         font-size: 1.25rem;
-        letter-spacing: -.5px;
+        letter-spacing: -.1px;
         text-align: center;
         line-height: 2rem;
     }
@@ -203,7 +218,7 @@ header {
 
 footer {
     background-color: @footer-back;
-
+    padding: 0 2rem;
     ul {
         padding: 2rem 0;
         text-align: center;
@@ -213,8 +228,8 @@ footer {
             vertical-align: middle;
 
             img {
-                width: 20%;
-                max-height: 25px;
+                width: auto;
+                height: 25px;
                 vertical-align: middle;
             }
         }
