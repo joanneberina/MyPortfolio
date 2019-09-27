@@ -31,7 +31,7 @@ body ul {
 main {
   max-width: 1000px;
   margin: 0rem auto;
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 header {
   background: linear-gradient(to bottom, #ffffff, #eef3ff);
@@ -47,7 +47,7 @@ header nav {
 }
 header nav ul {
   font-family: "Montserrat", sans-serif;
-  padding: 0 1rem;
+  padding-right: 2rem;
   margin-right: 2rem;
 }
 header nav #nav_inactive {
@@ -64,6 +64,9 @@ header nav .sticky {
   header nav li {
     padding-left: 4rem;
   }
+}
+header .hero {
+  padding-top: 5rem;
 }
 header #avatar {
   padding-top: 5rem;
@@ -237,7 +240,7 @@ main .joanne-drawing img {
   margin: 0 auto;
 }
 .case {
-  padding: 2rem;
+  padding-top: 10rem;
 }
 .case img {
   width: 100%;
