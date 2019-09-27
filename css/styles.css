@@ -125,26 +125,15 @@ header .uvp p span {
   justify-content: center;
 }
 .case-study #sd-image img {
-  width: 80%;
-  max-width: 500px;
+  height: 250px;
+  width: auto;
 }
 @media (min-width: 800px) {
   .case-study {
     display: flex;
   }
-  .case-study #qb-image {
-    width: 100%;
-  }
-  .case-study #qb-image img {
-    width: 50%;
-    min-width: 120px;
-  }
   .case-study #sd-image {
     padding: 0 2rem;
-  }
-  .case-study #sd-image img {
-    width: 100%;
-    min-width: 400px;
   }
 }
 @media (min-width: 700px) {
