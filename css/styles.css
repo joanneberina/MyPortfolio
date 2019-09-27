@@ -33,6 +33,13 @@ main {
   margin: 0rem auto;
   padding-top: 10rem;
 }
+#backgrnd {
+  background: linear-gradient(to top, #ffffff, #eef3ff);
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
 header {
   background: linear-gradient(to bottom, #ffffff, #eef3ff);
   padding: 0 1rem;
