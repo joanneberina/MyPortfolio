@@ -115,6 +115,9 @@ header .uvp p span {
 .case-study {
   padding: 5rem 2rem 5rem 2rem;
 }
+.case-study .link {
+  padding: 0;
+}
 .case-study #qb-image {
   display: flex;
   justify-content: center;
