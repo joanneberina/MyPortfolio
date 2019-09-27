@@ -3,7 +3,7 @@ body {
   font-family: "Red Hat Text", sans-serif;
   font-size: 16px;
   color: #41424a;
-  line-height: 2rem;
+  line-height: 1.8rem;
   border-top: 5px solid #3c3c7d;
 }
 body a {
@@ -25,6 +25,7 @@ body ul {
 @media (min-width: 450px) {
   body {
     border-top: 0;
+    line-height: 2rem;
   }
 }
 main {
