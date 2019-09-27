@@ -312,10 +312,10 @@ main .joanne-drawing img {
   text-align: center;
 }
 .connect .blurb {
+  width: 90%;
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   letter-spacing: -0.1px;
-  text-align: center;
   line-height: 2rem;
 }
 .connect h1 {
@@ -326,6 +326,7 @@ main .joanne-drawing img {
   color: #3c3c7d;
 }
 .connect #email {
+  color: #787584;
   font-size: 1.25rem;
   text-align: center;
   margin: 0 0 0.5rem 0;
@@ -345,6 +346,7 @@ footer ul {
   text-align: center;
 }
 footer ul li {
+  color: #787584;
   font-size: 0.9rem;
   vertical-align: middle;
 }
