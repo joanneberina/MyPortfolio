@@ -244,6 +244,18 @@ main .joanne-drawing img {
   font-weight: 600;
   color: #4d4d9f;
 }
+.case .text-indent {
+  margin: 4rem 0 4rem 10rem;
+  border-left: 3px solid #3C3C7D;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.case .sketch {
+  display: flex;
+}
+.case .sketch img {
+  width: 30%;
+}
 @media (min-width: 800px) {
   .case .case-about {
     width: 80%;
