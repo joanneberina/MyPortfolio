@@ -259,9 +259,10 @@ main .joanne-drawing img {
 }
 .case .sketch {
   display: flex;
+  overflow: hidden;
 }
 .case .sketch img {
-  width: 35%;
+  height: 300px;
 }
 .case .white-space {
   padding: 2rem;
