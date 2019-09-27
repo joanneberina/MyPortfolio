@@ -1,9 +1,9 @@
 body {
   margin: 0 auto;
   font-family: "Red Hat Text", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: #41424a;
-  line-height: 1.7rem;
+  line-height: 2rem;
   border-top: 5px solid #3c3c7d;
 }
 body a {
@@ -268,7 +268,7 @@ main .joanne-drawing img {
     width: 60%;
   }
   .case .sidebar-title {
-    padding-left: 4rem;
+    padding-right: 4rem;
   }
   .case .sidebar-title p {
     text-align: center;
