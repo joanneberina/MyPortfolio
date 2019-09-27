@@ -177,8 +177,7 @@ main .joanne-drawing {
   display: flex;
 }
 main .joanne-drawing img {
-  width: 40%;
-  max-width: 150px;
+  height: 300px;
   padding: 0 2rem;
   margin: 0;
 }
@@ -202,8 +201,6 @@ main .joanne-drawing img {
     display: flex;
   }
   main .bottom .joanne-drawing img {
-    width: 100%;
-    max-width: 200px;
     padding-left: 2rem;
   }
   main .bottom .connect {
