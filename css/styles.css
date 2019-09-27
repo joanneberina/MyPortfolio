@@ -132,7 +132,11 @@ header .uvp p span {
   .case-study {
     display: flex;
   }
+  .case-study #qb-image {
+    align-self: center;
+  }
   .case-study #sd-image {
+    align-self: center;
     padding: 0 2rem;
   }
 }
