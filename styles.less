@@ -233,17 +233,11 @@ main {
         padding: 1rem 2rem;
         border-color: @accent-color;
         border-radius: 25px;
-
-        a {
-            color: @link-color;
-        }
+        color: @link-color;
     }
 
     button:hover {
         background-color: @link-color;
-    }
-
-    a:hover {
         color: white;
     }
 }
@@ -302,7 +296,7 @@ main {
     }
     
     .white-space {
-        padding: 4rem 2rem;
+        padding: 2rem;
     }
     
     .highlight {
@@ -317,17 +311,15 @@ main {
         font-size: 1.25rem;
         font-weight: 600;
     }
-    
-    .text-right {
-        
-    }
 
     .sidebar-title {
         font-family: @font-heading;
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         font-weight: 600;
         color: lighten(@primary-color, 10%);
     }
+
+
 
     // Media Query
     @media (min-width: 800px) {
@@ -338,6 +330,18 @@ main {
 
         img {
             width: 60%;
+        }
+
+        .sidebar-title {
+            padding-left: 4rem;
+            p {
+                text-align: center;
+            }
+        }
+
+        .text-right {
+            display: flex;
+            flex-direction: row-reverse;
         }
     }
 }

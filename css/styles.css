@@ -178,14 +178,10 @@ main .joanne-drawing img {
   padding: 1rem 2rem;
   border-color: #5659E0;
   border-radius: 25px;
-}
-.case-study button a {
   color: #4246C8;
 }
 .case-study button:hover {
   background-color: #4246C8;
-}
-.case-study a:hover {
   color: white;
 }
 .case-title {
@@ -229,7 +225,7 @@ main .joanne-drawing img {
   margin: 0;
 }
 .case .white-space {
-  padding: 4rem 2rem;
+  padding: 2rem;
 }
 .case .highlight {
   width: 80%;
@@ -244,7 +240,7 @@ main .joanne-drawing img {
 }
 .case .sidebar-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #4d4d9f;
 }
@@ -255,6 +251,16 @@ main .joanne-drawing img {
   }
   .case img {
     width: 60%;
+  }
+  .case .sidebar-title {
+    padding-left: 4rem;
+  }
+  .case .sidebar-title p {
+    text-align: center;
+  }
+  .case .text-right {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 .connect {
