@@ -369,16 +369,39 @@ main {
       }
     }
 
-		.text-indent {
+		.text-right {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .text-indent {
 			margin: 4rem 0 4rem 10rem;
 			border-left: 3px solid @primary-color;
 			padding-top: 0;
 			padding-bottom: 0;
-		}
-
-    .text-right {
+    }
+    
+    .text-left {
       display: flex;
-      flex-direction: row-reverse;
+      justify-content: center;
+      padding-top: 5rem;
+    }
+
+    .sidebar-title {
+      padding-right: 2rem;
+      padding-left: 0;
+    }
+
+    .image-overflow {
+      img {
+        width: 100%;
+      }
+    }
+    .sketch {
+      width: 100%;
+      img {
+        width: 35%;
+      }
     }
   }
 }

@@ -287,15 +287,33 @@ main .joanne-drawing img {
   .case .sidebar-title p {
     text-align: center;
   }
+  .case .text-right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
   .case .text-indent {
     margin: 4rem 0 4rem 10rem;
     border-left: 3px solid #3c3c7d;
     padding-top: 0;
     padding-bottom: 0;
   }
-  .case .text-right {
+  .case .text-left {
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
+    padding-top: 5rem;
+  }
+  .case .sidebar-title {
+    padding-right: 2rem;
+    padding-left: 0;
+  }
+  .case .image-overflow img {
+    width: 100%;
+  }
+  .case .sketch {
+    width: 100%;
+  }
+  .case .sketch img {
+    width: 35%;
   }
 }
 .connect {
