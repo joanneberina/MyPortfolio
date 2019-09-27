@@ -49,7 +49,7 @@ header nav #nav_inactive {
   color: #8b8d99;
   font-weight: 600;
 }
-@media (min-width: 450px) {
+@media (min-width: 600px) {
   header nav ul {
     justify-content: flex-end;
   }
@@ -230,14 +230,18 @@ main .joanne-drawing img {
 .case-title span {
   font-weight: 600;
 }
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
 .case {
   padding: 2rem;
 }
+.case img {
+  width: 100%;
+}
 .case .case-about {
   padding-bottom: 2rem;
-}
-.case img {
-  width: 70%;
 }
 .case .case-title {
   padding-top: 2rem;
@@ -260,20 +264,11 @@ main .joanne-drawing img {
   font-weight: 600;
   color: #4d4d9f;
 }
-.case .text-indent {
-  margin: 4rem 0 4rem 10rem;
-  border-left: 3px solid #3c3c7d;
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .case .sketch {
   display: flex;
 }
 .case .sketch img {
-  width: 30%;
-}
-.case .center {
-  text-align: center;
+  width: 35%;
 }
 .case .white-space {
   padding: 2rem;
@@ -291,6 +286,12 @@ main .joanne-drawing img {
   }
   .case .sidebar-title p {
     text-align: center;
+  }
+  .case .text-indent {
+    margin: 4rem 0 4rem 10rem;
+    border-left: 3px solid #3c3c7d;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .case .text-right {
     display: flex;
