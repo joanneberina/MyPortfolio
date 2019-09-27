@@ -58,14 +58,14 @@ header nav #nav_inactive {
   }
 }
 header #avatar {
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 header #avatar img {
   height: 250px;
 }
 header .uvp {
   margin: 0 auto;
-  padding: 0 1rem 10rem 1rem;
+  padding: 0 1rem 5rem 1rem;
 }
 header .uvp h1 {
   font-family: "Montserrat", sans-serif;
@@ -109,12 +109,12 @@ header .uvp p span {
   }
 }
 .case-study {
-  padding: 10rem 2rem 5rem 2rem;
+  padding: 5rem 2rem 5rem 2rem;
 }
 .case-study #qb-image {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 100%;
 }
 .case-study #qb-image img {
   width: 40%;
