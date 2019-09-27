@@ -242,12 +242,12 @@ main .joanne-drawing img {
 }
 .case .highlight {
   width: 80%;
-  background-color: #F8F9FF;
+  background-color: #F8F9FB;
   margin: 0 auto;
 }
 .case .subtitle {
   font-family: "Montserrat", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .case .subtitle-colored {
