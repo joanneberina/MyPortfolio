@@ -282,10 +282,65 @@ main {
 
 
 //Quest for the best page
-.center {
-    text-align: center;
-}
+.case {
+    padding: 2rem;
 
+    .center {
+        text-align: center;
+    }
+
+    .case-about {
+        padding-bottom: 2rem;
+    }
+    img {
+        width: 70%;
+    }
+
+    .case-title {
+        padding-top: 2rem;
+        margin: 0;
+    }
+    
+    .white-space {
+        padding: 4rem 2rem;
+    }
+    
+    .highlight {
+        width: 80%;
+        border-top: solid 2px lighten(@text-body, 45%);
+        border-bottom: solid 2px lighten(@text-body, 45%);
+        margin: 2rem auto;
+    }
+
+    .subtitle {
+        font-family: @font-heading;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    
+    .text-right {
+        
+    }
+
+    .sidebar-title {
+        font-family: @font-heading;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: lighten(@primary-color, 10%);
+    }
+
+    // Media Query
+    @media (min-width: 800px) {
+        .case-about {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 60%;
+        }
+    }
+}
 
 
 // Connect styles for all pages
@@ -329,9 +384,9 @@ footer {
     background-color: @footer-back;
     padding: 0 2rem;
     ul {
-        padding: 2rem 0;
+        padding: 2rem 0;    
         text-align: center;
-
+     
         li {
             font-size: 0.9rem;
             vertical-align: middle;

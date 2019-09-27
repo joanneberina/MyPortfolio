@@ -212,8 +212,50 @@ main .joanne-drawing img {
   width: 80%;
   max-width: 500px;
 }
-.center {
+.case {
+  padding: 2rem;
+}
+.case .center {
   text-align: center;
+}
+.case .case-about {
+  padding-bottom: 2rem;
+}
+.case img {
+  width: 70%;
+}
+.case .case-title {
+  padding-top: 2rem;
+  margin: 0;
+}
+.case .white-space {
+  padding: 4rem 2rem;
+}
+.case .highlight {
+  width: 80%;
+  border-top: solid 2px #b4b5bd;
+  border-bottom: solid 2px #b4b5bd;
+  margin: 2rem auto;
+}
+.case .subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.case .sidebar-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #4d4d9f;
+}
+@media (min-width: 800px) {
+  .case .case-about {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .case img {
+    width: 60%;
+  }
 }
 .connect {
   padding: 5rem 2rem;
