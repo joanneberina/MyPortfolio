@@ -117,8 +117,8 @@ header .uvp p span {
   width: 100%;
 }
 .case-study #qb-image img {
-  width: 40%;
-  max-width: 200px;
+  height: 250px;
+  width: auto;
 }
 .case-study #sd-image {
   display: flex;
