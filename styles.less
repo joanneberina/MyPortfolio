@@ -48,7 +48,8 @@ body {
 
 main {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0rem auto;
+  padding-top: 5rem;
 }
 
 // Header for all pages
@@ -60,11 +61,14 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
+    position: fixed;
     padding-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
 
     ul {
       font-family: @font-heading;
       padding: 0 1rem;
+      margin-right: 2rem;
     }
 
     #nav_inactive {
@@ -272,13 +276,15 @@ main {
       display: flex;
 
       .joanne-drawing {
+
         img {
           padding-left: 2rem;
         }
       }
       .connect {
-        border-top: 0;
         width: 100%;
+        border-top: 0;
+        padding-bottom: 4rem;
       }
     }
   }

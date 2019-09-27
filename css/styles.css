@@ -30,7 +30,8 @@ body ul {
 }
 main {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 0rem auto;
+  padding-top: 5rem;
 }
 header {
   background: linear-gradient(to bottom, #ffffff, #eef3ff);
@@ -40,11 +41,14 @@ header nav {
   display: flex;
   justify-content: center;
   width: 100%;
+  position: fixed;
   padding-top: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 header nav ul {
   font-family: "Montserrat", sans-serif;
   padding: 0 1rem;
+  margin-right: 2rem;
 }
 header nav #nav_inactive {
   color: #8b8d99;
@@ -215,8 +219,9 @@ main .joanne-drawing img {
     padding-left: 2rem;
   }
   main .bottom .connect {
-    border-top: 0;
     width: 100%;
+    border-top: 0;
+    padding-bottom: 4rem;
   }
 }
 .case-title {
