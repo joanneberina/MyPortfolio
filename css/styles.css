@@ -242,14 +242,19 @@ main .joanne-drawing img {
 }
 .case .highlight {
   width: 80%;
-  border-top: solid 3px #efeef0;
-  border-bottom: solid 3px #efeef0;
-  margin: 2rem auto;
+  background-color: #F8F9FF;
+  margin: 0 auto;
 }
 .case .subtitle {
   font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
+}
+.case .subtitle-colored {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4d4d9f;
 }
 .case .sidebar-title {
   font-family: "Montserrat", sans-serif;
@@ -275,12 +280,6 @@ main .joanne-drawing img {
   .case img {
     width: 60%;
   }
-  .case .sidebar-title {
-    padding-right: 4rem;
-  }
-  .case .sidebar-title p {
-    text-align: center;
-  }
   .case .text-right {
     display: flex;
     flex-direction: row-reverse;
@@ -294,11 +293,20 @@ main .joanne-drawing img {
   .case .text-left {
     display: flex;
     justify-content: center;
-    padding-top: 5rem;
+    margin: 5rem auto;
+    padding: 2rem 2rem;
+    border-top: solid 3px #efeef0;
+    border-bottom: solid 3px #efeef0;
+  }
+  .case .subtitle-colored {
+    padding-right: 5rem;
   }
   .case .sidebar-title {
-    padding-right: 2rem;
-    padding-left: 0;
+    padding-right: 0;
+    padding-left: 5rem;
+  }
+  .case .sidebar-title p {
+    text-align: center;
   }
   .case .image-overflow img {
     width: 100%;

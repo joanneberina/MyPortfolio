@@ -312,15 +312,21 @@ main {
 
   .highlight {
     width: 80%;
-   	border-top: solid 3px lighten(@text-gray, 45%);
-    border-bottom: solid 3px lighten(@text-gray, 45%);
-    margin: 2rem auto;
+    background-color: #F8F9FF;
+    margin: 0 auto;
   }
 
   .subtitle {
     font-family: @font-heading;
     font-size: 1.25rem;
     font-weight: 600;
+  }
+
+  .subtitle-colored {
+    font-family: @font-heading;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: lighten(@primary-color, 10%);
   }
 
   .sidebar-title {
@@ -333,7 +339,7 @@ main {
   .sketch {
     display: flex;
     overflow: hidden;
-
+   
     img {
       height: 300px;
     }
@@ -354,13 +360,6 @@ main {
       width: 60%;
 		}
 
-    .sidebar-title {
-      padding-right: 4rem;
-      p {
-        text-align: center;
-      }
-    }
-
 		.text-right {
       display: flex;
       flex-direction: row-reverse;
@@ -376,12 +375,24 @@ main {
     .text-left {
       display: flex;
       justify-content: center;
-      padding-top: 5rem;
+      margin: 5rem auto;
+      padding: 2rem 2rem;
+      border-top: solid 3px lighten(@text-gray, 45%);
+      border-bottom: solid 3px lighten(@text-gray, 45%);
     }
 
+    .subtitle-colored {
+      padding-right: 5rem;
+    }
+
+
     .sidebar-title {
-      padding-right: 2rem;
-      padding-left: 0;
+      padding-right: 0;
+      padding-left: 5rem;
+
+      p {
+        text-align: center;
+      }
     }
 
     .image-overflow {
