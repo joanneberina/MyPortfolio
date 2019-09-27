@@ -1,10 +1,10 @@
 body {
-  margin: 0;
-  font-family: 'Red Hat Text', sans-serif;
+  margin: 0 auto;
+  font-family: "Red Hat Text", sans-serif;
   font-size: 14px;
-  color: #41424A;
+  color: #41424a;
   line-height: 1.7rem;
-  border-top: 5px solid #3C3C7D;
+  border-top: 5px solid #3c3c7d;
 }
 body a {
   color: #787584;
@@ -27,6 +27,10 @@ body ul {
     border-top: 0;
   }
 }
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 header {
   background: linear-gradient(to bottom, #ffffff, #eef3ff);
   padding: 0 1rem;
@@ -38,7 +42,7 @@ header nav {
   padding-top: 2rem;
 }
 header nav ul {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0 1rem;
 }
 header nav #nav_inactive {
@@ -64,12 +68,12 @@ header .uvp {
   padding: 0 1rem 10rem 1rem;
 }
 header .uvp h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.25rem;
   letter-spacing: -1px;
   line-height: 2.5rem;
   padding: 0;
-  color: #3C3C7D;
+  color: #3c3c7d;
 }
 header .uvp p {
   color: #595a65;
@@ -85,7 +89,7 @@ header .uvp p span {
     padding: 10rem 0;
   }
   header .hero #avatar {
-    padding: 0 2rem;
+    padding: 5rem 2rem;
   }
   header .hero .uvp {
     display: flex;
@@ -104,14 +108,78 @@ header .uvp p span {
     width: 75%;
   }
 }
+.case-study {
+  padding: 10rem 2rem 5rem 2rem;
+}
+.case-study #qb-image {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.case-study #qb-image img {
+  width: 40%;
+  max-width: 200px;
+}
+.case-study #sd-image {
+  display: flex;
+  justify-content: center;
+}
+.case-study #sd-image img {
+  width: 80%;
+  max-width: 500px;
+}
+@media (min-width: 800px) {
+  .case-study {
+    display: flex;
+  }
+  .case-study #qb-image {
+    width: 100%;
+  }
+  .case-study #qb-image img {
+    width: 50%;
+    min-width: 120px;
+  }
+  .case-study #sd-image {
+    padding: 0 2rem;
+  }
+  .case-study #sd-image img {
+    width: 100%;
+    min-width: 400px;
+  }
+}
+@media (min-width: 700px) {
+  .reverse {
+    flex-direction: row-reverse;
+  }
+}
+.link {
+  padding: 1rem 0;
+}
+.link a:link {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+button {
+  font-size: 1rem;
+  font-family: "Red Hat Text", sans-serif;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  border-color: #5659e0;
+  border-radius: 25px;
+  color: #4246c8;
+}
+button:hover {
+  background-color: #4246c8;
+  color: white;
+}
 main .section-heading {
   margin: 2rem;
   padding-top: 4rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   letter-spacing: -0.9px;
   line-height: 2.5rem;
-  color: #3C3C7D;
+  color: #3c3c7d;
 }
 main .about-text {
   margin: 2rem;
@@ -135,7 +203,7 @@ main .joanne-drawing img {
     width: 80%;
   }
   main .about-content .about-title h1 {
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
   main .about-content .about-text {
     padding-top: 3rem;
@@ -154,65 +222,16 @@ main .joanne-drawing img {
     width: 100%;
   }
 }
-.case-study {
-  padding: 5rem 2rem;
-}
-@media (min-width: 700px) {
-  .case-study {
-    width: 70%;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-}
-.case-study .link {
-  padding: 1rem 0;
-}
-.case-study .link a:link {
-  font-size: 1.25rem;
-  font-weight: 500;
-}
-.case-study button {
-  font-size: 1rem;
-  font-family: 'Red Hat Text', sans-serif;
-  font-weight: 500;
-  padding: 1rem 2rem;
-  border-color: #5659E0;
-  border-radius: 25px;
-  color: #4246C8;
-}
-.case-study button:hover {
-  background-color: #4246C8;
-  color: white;
-}
 .case-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.7rem;
   line-height: 2rem;
 }
 .case-title span {
   font-weight: 600;
 }
-#qb-image {
-  display: flex;
-  justify-content: center;
-}
-#qb-image img {
-  width: 40%;
-  max-width: 200px;
-}
-#sd-image {
-  display: flex;
-  justify-content: center;
-}
-#sd-image img {
-  width: 80%;
-  max-width: 500px;
-}
 .case {
   padding: 2rem;
-}
-.case .center {
-  text-align: center;
 }
 .case .case-about {
   padding-bottom: 2rem;
@@ -224,29 +243,26 @@ main .joanne-drawing img {
   padding-top: 2rem;
   margin: 0;
 }
-.case .white-space {
-  padding: 2rem;
-}
 .case .highlight {
   width: 80%;
-  border-top: solid 2px #b4b5bd;
-  border-bottom: solid 2px #b4b5bd;
+  border-top: solid 3px #efeef0;
+  border-bottom: solid 3px #efeef0;
   margin: 2rem auto;
 }
 .case .subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   font-weight: 600;
 }
 .case .sidebar-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
   color: #4d4d9f;
 }
 .case .text-indent {
   margin: 4rem 0 4rem 10rem;
-  border-left: 3px solid #3C3C7D;
+  border-left: 3px solid #3c3c7d;
   padding-top: 0;
   padding-bottom: 0;
 }
@@ -255,6 +271,12 @@ main .joanne-drawing img {
 }
 .case .sketch img {
   width: 30%;
+}
+.case .center {
+  text-align: center;
+}
+.case .white-space {
+  padding: 2rem;
 }
 @media (min-width: 800px) {
   .case .case-about {
@@ -281,7 +303,7 @@ main .joanne-drawing img {
   text-align: center;
 }
 .connect .blurb {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   letter-spacing: -0.1px;
   text-align: center;
@@ -289,15 +311,15 @@ main .joanne-drawing img {
 }
 .connect h1 {
   margin: 3rem 0 1rem 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   text-align: center;
-  color: #3C3C7D;
+  color: #3c3c7d;
 }
 .connect #email {
   font-size: 1.25rem;
   text-align: center;
-  margin: 0 0 .5rem 0;
+  margin: 0 0 0.5rem 0;
 }
 .connect .social {
   display: inline;
@@ -306,7 +328,7 @@ main .joanne-drawing img {
 }
 footer {
   display: flex;
-  background-color: #EEF3FF;
+  background-color: #eef3ff;
   padding: 0 2rem;
 }
 footer ul {
