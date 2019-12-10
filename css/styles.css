@@ -1,10 +1,10 @@
 body {
   margin: 0 auto;
   font-family: "Red Hat Text", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: #585B67;
-  line-height: 1.8rem;
   border-top: 5px solid #3c3c7d;
+  line-height: 2.5rem;
 }
 body a {
   color: #4246c8;
@@ -24,7 +24,6 @@ body ul {
 @media (min-width: 450px) {
   body {
     border-top: 0;
-    line-height: 2rem;
   }
 }
 main {
@@ -74,6 +73,7 @@ header .hero {
 }
 header #avatar {
   padding-top: 5rem;
+  padding-left: 4rem;
 }
 header #avatar img {
   height: 250px;
@@ -90,7 +90,7 @@ header .uvp h1 {
   color: #3c3c7d;
 }
 header .uvp p {
-  width: 80%;
+  width: 90%;
   color: #6f7383;
   font-size: 1.5rem;
   line-height: 2.2rem;
@@ -119,13 +119,13 @@ header .uvp p span {
   }
   header .hero .uvp h1 {
     margin: 0;
-    font-size: 4rem;
-    padding-bottom: 2rem;
+    font-size: 3rem;
+    padding-bottom: 1rem;
   }
   header .hero .uvp p {
-    width: 75%;
+    width: 60%;
     font-size: 1.75rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
   }
 }
 .case-study {
@@ -152,8 +152,10 @@ header .uvp p span {
   width: auto;
 }
 .case-study .case-title {
-  color: #6f7383;
+  color: #7c808f;
+  font-size: 2.5rem;
   font-weight: 700;
+  line-height: 3rem;
 }
 @media (min-width: 800px) {
   .case-study {
@@ -168,10 +170,7 @@ header .uvp p span {
     padding: 0 2rem;
   }
   .case-study .case-title {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    color: #6f7383;
-    font-weight: 700;
+    margin-bottom: 1rem;
   }
 }
 .case-study .link {
