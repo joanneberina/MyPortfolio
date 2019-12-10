@@ -53,13 +53,12 @@ header nav {
   background-color: rgba(255, 255, 255, 0.9);
 }
 header nav ul {
-  font-family: "Montserrat", sans-serif;
   padding-right: 3rem;
   margin-right: 2rem;
 }
 header nav #nav_inactive {
   color: #939fb7;
-  font-weight: 600;
+  font-weight: 500;
 }
 header nav .sticky {
   position: fixed;
@@ -157,6 +156,7 @@ header .uvp p span {
 @media (min-width: 800px) {
   .case-study {
     display: flex;
+    padding-bottom: 10rem;
   }
   .case-study #qb-image {
     align-self: center;
@@ -166,19 +166,14 @@ header .uvp p span {
     padding: 0 2rem;
   }
 }
-@media (min-width: 700px) {
-  .reverse {
-    flex-direction: row-reverse;
-  }
-}
-.link {
+.case-study .link {
   padding: 1rem 0;
 }
-.link a:link {
+.case-study .link a:link {
   font-size: 1.25rem;
   font-weight: 500;
 }
-button {
+.case-study button {
   font-size: 1rem;
   font-family: "Red Hat Text", sans-serif;
   font-weight: 500;
@@ -187,9 +182,14 @@ button {
   border-radius: 25px;
   color: #4246c8;
 }
-button:hover {
+.case-study button:hover {
   background-color: #4246c8;
   color: white;
+}
+@media (min-width: 700px) {
+  .reverse {
+    flex-direction: row-reverse;
+  }
 }
 main .section-heading {
   margin: 2rem;

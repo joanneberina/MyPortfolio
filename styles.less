@@ -74,14 +74,13 @@ header {
     background-color: rgba(255, 255, 255, 0.9);
 
     ul {
-      font-family: @font-heading;
       padding-right: 3rem;
       margin-right: 2rem;
     }
 
     #nav_inactive {
       color: lighten(@text-body, 30%);
-      font-weight: 600;
+      font-weight: 500;
     }
 
     .sticky {
@@ -203,6 +202,7 @@ header {
   // Media query for homepage case study
   @media (min-width: 800px) {
     display: flex;
+    padding-bottom: 10rem;
 
     #qb-image {
     align-self: center;
@@ -212,36 +212,36 @@ header {
       padding: 0 2rem;
     }
   }
+  
+  // Read case button
+  .link {
+    padding: 1rem 0;
+    a:link {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+  }
+  
+  button {
+    font-size: 1rem;
+    font-family: @font-body;
+    font-weight: 500;
+    padding: 1rem 2rem;
+    border-color: @accent-color;
+    border-radius: 25px;
+    color: @link-color;
+  }
+  
+  button:hover {
+    background-color: @link-color;
+    color: white;
+  }
 }
 
 @media (min-width: 700px) {
   .reverse {
     flex-direction: row-reverse;
   }
-}
-
-// Read case button
-.link {
-  padding: 1rem 0;
-  a:link {
-    font-size: 1.25rem;
-    font-weight: 500;
-  }
-}
-
-button {
-  font-size: 1rem;
-  font-family: @font-body;
-  font-weight: 500;
-  padding: 1rem 2rem;
-  border-color: @accent-color;
-  border-radius: 25px;
-  color: @link-color;
-}
-
-button:hover {
-  background-color: @link-color;
-  color: white;
 }
 
 // About page styling
