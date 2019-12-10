@@ -4,7 +4,7 @@ body {
   font-size: 16px;
   color: #41424a;
   line-height: 1.8rem;
-  border-top: 5px solid #3c3c7d;
+  border-top: 5px solid #383DA9;
 }
 body a {
   color: #787584;
@@ -13,7 +13,7 @@ body a:link {
   text-decoration: none;
 }
 body a:hover {
-  color: #4d4d9f;
+  color: #4f54c5;
   font-weight: 500;
 }
 body ul {
@@ -91,7 +91,7 @@ header .uvp h1 {
   letter-spacing: -1px;
   line-height: 2.5rem;
   padding: 0;
-  color: #3c3c7d;
+  color: #383DA9;
 }
 header .uvp p {
   color: #595a65;
@@ -193,7 +193,7 @@ main .section-heading {
   font-size: 2rem;
   letter-spacing: -0.9px;
   line-height: 2.5rem;
-  color: #3c3c7d;
+  color: #383DA9;
 }
 main .about-text {
   margin: 2rem;
@@ -273,13 +273,13 @@ main .joanne-drawing img {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #4d4d9f;
+  color: #4f54c5;
 }
 .case .sidebar-title {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #4d4d9f;
+  color: #4f54c5;
 }
 .case .sketch {
   display: flex;
@@ -305,7 +305,7 @@ main .joanne-drawing img {
   }
   .case .text-indent {
     margin: 4rem 0 4rem 10rem;
-    border-left: 3px solid #3c3c7d;
+    border-left: 3px solid #383DA9;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -354,7 +354,7 @@ main .joanne-drawing img {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   text-align: center;
-  color: #3c3c7d;
+  color: #383DA9;
 }
 .connect #email {
   color: #787584;
