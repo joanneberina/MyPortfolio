@@ -2,9 +2,9 @@ body {
   margin: 0 auto;
   font-family: "Red Hat Text", sans-serif;
   font-size: 16px;
-  color: #41424a;
+  color: #47536A;
   line-height: 1.8rem;
-  border-top: 5px solid #383DA9;
+  border-top: 5px solid #3c3c7d;
 }
 body a {
   color: #787584;
@@ -13,7 +13,7 @@ body a:link {
   text-decoration: none;
 }
 body a:hover {
-  color: #4f54c5;
+  color: #4d4d9f;
   font-weight: 500;
 }
 body ul {
@@ -31,7 +31,7 @@ body ul {
 main {
   max-width: 1000px;
   margin: 0rem auto;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 #backgrnd {
   background: linear-gradient(to top, #ffffff, #eef3ff);
@@ -54,11 +54,11 @@ header nav {
 }
 header nav ul {
   font-family: "Montserrat", sans-serif;
-  padding-right: 2rem;
+  padding-right: 3rem;
   margin-right: 2rem;
 }
 header nav #nav_inactive {
-  color: #8b8d99;
+  color: #939fb7;
   font-weight: 600;
 }
 header nav .sticky {
@@ -87,19 +87,21 @@ header .uvp {
 }
 header .uvp h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   letter-spacing: -1px;
-  line-height: 2.5rem;
   padding: 0;
-  color: #383DA9;
+  color: #3c3c7d;
 }
 header .uvp p {
-  color: #595a65;
+  width: 80%;
+  color: #667798;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
 }
 header .uvp p span {
   font-weight: 500;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   header .hero {
     display: flex;
     flex-direction: row;
@@ -113,17 +115,20 @@ header .uvp p span {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 800px;
     margin: 0;
     padding: 0;
   }
   header .hero .uvp h1 {
     margin: 0;
-    font-size: 2.75rem;
+    font-size: 4rem;
+    padding-bottom: 2rem;
   }
   header .hero .uvp p {
     width: 75%;
+    font-size: 1.75rem;
+    line-height: 2.5rem;
   }
 }
 .case-study {
@@ -141,11 +146,11 @@ header .uvp p span {
   height: 250px;
   width: auto;
 }
-.case-study #sd-image {
+.case-study #rvway-image {
   display: flex;
   justify-content: center;
 }
-.case-study #sd-image img {
+.case-study #rvway-image img {
   height: 250px;
   width: auto;
 }
@@ -156,7 +161,7 @@ header .uvp p span {
   .case-study #qb-image {
     align-self: center;
   }
-  .case-study #sd-image {
+  .case-study #rvway-image {
     align-self: center;
     padding: 0 2rem;
   }
@@ -193,7 +198,7 @@ main .section-heading {
   font-size: 2rem;
   letter-spacing: -0.9px;
   line-height: 2.5rem;
-  color: #383DA9;
+  color: #3c3c7d;
 }
 main .about-text {
   margin: 2rem;
@@ -273,13 +278,13 @@ main .joanne-drawing img {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #4f54c5;
+  color: #4d4d9f;
 }
 .case .sidebar-title {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #4f54c5;
+  color: #4d4d9f;
 }
 .case .sketch {
   display: flex;
@@ -305,7 +310,7 @@ main .joanne-drawing img {
   }
   .case .text-indent {
     margin: 4rem 0 4rem 10rem;
-    border-left: 3px solid #383DA9;
+    border-left: 3px solid #3c3c7d;
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -354,7 +359,7 @@ main .joanne-drawing img {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   text-align: center;
-  color: #383DA9;
+  color: #3c3c7d;
 }
 .connect #email {
   color: #787584;

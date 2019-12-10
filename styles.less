@@ -1,7 +1,7 @@
 // Variables
 @background-color: #ffffff;
-@primary-color: #383DA9;
-@text-body: #41424a;
+@primary-color: #3c3c7d;
+@text-body: #47536A;
 @text-gray: #787584;
 @link-color: #4246c8;
 @accent-color: #5659e0;
@@ -49,7 +49,7 @@ body {
 main {
   max-width: 1000px;
   margin: 0rem auto;
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 #backgrnd {
@@ -75,7 +75,7 @@ header {
 
     ul {
       font-family: @font-heading;
-      padding-right: 2rem;
+      padding-right: 3rem;
       margin-right: 2rem;
     }
 
@@ -118,15 +118,17 @@ header {
 
     h1 {
       font-family: @font-heading;
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       letter-spacing: -1px;
-      line-height: 2.5rem;
       padding: 0;
       color: @primary-color;
     }
 
     p {
-      color: lighten(@text-body, 10%);
+      width: 80%;
+      color: lighten(@text-body, 15%);
+      font-size: 1.5rem;
+      line-height: 2.2rem;
 
       span {
         font-weight: 500;
@@ -134,7 +136,7 @@ header {
     }
   }
   // Media query - hero section
-  @media (min-width: 600px) {
+  @media (min-width: 700px) {
     .hero {
       display: flex;
       flex-direction: row;
@@ -149,17 +151,20 @@ header {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 80%;
-        max-width: 500px;
+        width: 100%;
+        max-width: 800px;
         margin: 0;
         padding: 0;
 
         h1 {
           margin: 0;
-          font-size: 2.75rem;
+          font-size: 4rem;
+          padding-bottom: 2rem;
         }
         p {
           width: 75%;
+          font-size: 1.75rem;
+          line-height: 2.5rem;
         }
       }
     }
@@ -186,7 +191,7 @@ header {
     }
   }
 
-  #sd-image {
+  #rvway-image {
     display: flex;
     justify-content: center;
 
@@ -202,7 +207,7 @@ header {
     #qb-image {
     align-self: center;
     }
-    #sd-image {
+    #rvway-image {
       align-self: center;
       padding: 0 2rem;
     }
