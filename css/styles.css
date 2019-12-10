@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
   font-family: "Red Hat Text", sans-serif;
   font-size: 16px;
-  color: #474E6A;
+  color: #585B67;
   line-height: 1.8rem;
   border-top: 5px solid #3c3c7d;
 }
@@ -91,7 +91,7 @@ header .uvp h1 {
 }
 header .uvp p {
   width: 80%;
-  color: #667098;
+  color: #6f7383;
   font-size: 1.5rem;
   line-height: 2.2rem;
 }
@@ -151,6 +151,10 @@ header .uvp p span {
   height: 250px;
   width: auto;
 }
+.case-study .case-title {
+  color: #6f7383;
+  font-weight: 700;
+}
 @media (min-width: 800px) {
   .case-study {
     display: flex;
@@ -166,6 +170,8 @@ header .uvp p span {
   .case-study .case-title {
     font-size: 2.5rem;
     line-height: 3rem;
+    color: #6f7383;
+    font-weight: 700;
   }
 }
 .case-study .link {

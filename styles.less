@@ -1,8 +1,8 @@
 // Variables
 @background-color: #F7F3F6;
 @primary-color: #3c3c7d;
-@text-body: #474E6A;
-@text-gray: #787584;
+@text-body: #585B67;
+@gray: #787584;
 @link-color: #4246c8;
 @accent-color: #5659e0;
 @gradient: linear-gradient(to bottom, rgba(255, 255, 255, 100), rgba(240, 238, 255, 100));
@@ -44,6 +44,7 @@ body {
     line-height: 2rem;
   }
 }
+// End of general styles
 
 main {
   max-width: 1000px;
@@ -123,15 +124,15 @@ header {
 
     p {
       width: 80%;
-      color: lighten(@text-body, 15%);
+      color: lighten(@text-body, 10%);
       font-size: 1.5rem;
       line-height: 2.2rem;
 
       span {
         font-weight: 500;
-      }
     }
   }
+}
   // Media query - hero section
   @media (min-width: 700px) {
     .hero {
@@ -166,7 +167,8 @@ header {
       }
     }
   }
-}
+} 
+// End of header all pages
 
 // Home page case study
 .case-study {
@@ -197,6 +199,12 @@ header {
       width: auto;
     }
   }
+
+  .case-title {
+    color: lighten(@text-body, 15%);
+    font-weight: 700;
+  }
+
   // Media query for homepage case study
   @media (min-width: 800px) {
     display: flex;
@@ -214,8 +222,9 @@ header {
     .case-title {
       font-size: 2.5rem;
       line-height: 3rem;
+      color: lighten(@text-body 15%);
+      font-weight: 700;
     }
-
   }
   
   // Read case button
@@ -242,6 +251,7 @@ header {
     color: white;
   }
 }
+// End of Home page case study
 
 @media (min-width: 700px) {
   .reverse {
@@ -311,6 +321,7 @@ main {
     }
   }
 }
+// End of About page styling
 
 .case-title {
   font-family: @font-heading;
@@ -410,14 +421,13 @@ main {
       justify-content: center;
       margin: 5rem auto;
       padding: 2rem 2rem;
-      border-top: solid 3px lighten(@text-gray, 45%);
-      border-bottom: solid 3px lighten(@text-gray, 45%);
+      border-top: solid 3px lighten(@gray, 45%);
+      border-bottom: solid 3px lighten(@gray, 45%);
     }
 
     .subtitle-colored {
       padding-right: 5rem;
     }
-
 
     .sidebar-title {
       padding-right: 0;
@@ -440,12 +450,14 @@ main {
       }
     }
   }
+  // End of Media Query
 }
+// End of Quest for the best page
 
 // Connect styles for all pages
 .connect {
   padding: 5rem 2rem;
-  border-top: solid 3px lighten(@text-gray, 45%);
+  border-top: solid 3px lighten(@gray, 45%);
   text-align: center;
 
   .blurb {
@@ -465,7 +477,7 @@ main {
   }
 
   #email {
-    color: @text-gray;
+    color: @gray;
     font-size: 1.5rem;
     text-align: center;
     margin: 0 0 0.5rem 0;
@@ -477,6 +489,7 @@ main {
     padding: 1.5rem;
   }
 }
+// End of Connect styles for all pages
 
 // Footer styling for all pages
 footer {
@@ -488,7 +501,7 @@ footer {
     text-align: center;
 
     li {
-      color: @text-gray;
+      color: @gray;
       font-size: 0.9rem;
       vertical-align: middle;
 
