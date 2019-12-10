@@ -21,7 +21,7 @@ body {
   border-top: 5px solid @primary-color;
 
   a {
-    color: @text-gray;
+    color: @link-color;
   }
 
   a:link {
@@ -29,8 +29,7 @@ body {
   }
 
   a:hover {
-    color: lighten(@primary-color, 10%);
-    font-weight: 500;
+    color: lighten(@link-color, 20%);
   }
 
   ul {
@@ -79,8 +78,7 @@ header {
     }
 
     #nav_inactive {
-      color: lighten(@text-body, 30%);
-      font-weight: 500;
+      color: lighten(@link-color, 20%);
     }
 
     .sticky {
@@ -207,10 +205,17 @@ header {
     #qb-image {
     align-self: center;
     }
+    
     #rvway-image {
       align-self: center;
       padding: 0 2rem;
     }
+    
+    .case-title {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+
   }
   
   // Read case button

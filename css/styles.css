@@ -7,14 +7,13 @@ body {
   border-top: 5px solid #3c3c7d;
 }
 body a {
-  color: #787584;
+  color: #4246c8;
 }
 body a:link {
   text-decoration: none;
 }
 body a:hover {
-  color: #4d4d9f;
-  font-weight: 500;
+  color: #9193df;
 }
 body ul {
   width: 100%;
@@ -57,8 +56,7 @@ header nav ul {
   margin-right: 2rem;
 }
 header nav #nav_inactive {
-  color: #939fb7;
-  font-weight: 500;
+  color: #9193df;
 }
 header nav .sticky {
   position: fixed;
@@ -164,6 +162,10 @@ header .uvp p span {
   .case-study #rvway-image {
     align-self: center;
     padding: 0 2rem;
+  }
+  .case-study .case-title {
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
 .case-study .link {
