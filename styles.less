@@ -32,7 +32,6 @@ body {
     border-top: 0;
   }
 }
-// End of general styles
 
 main {
   width: 100%;
@@ -46,6 +45,7 @@ main {
   margin-left: 0;
   margin-right: 0;
 }
+// End of general styles
 
 // Header for all pages
 header {
@@ -172,7 +172,6 @@ header {
   #qb-image {
     display: flex;
     justify-content: center;
-		width: 100%;
 		
     img {
       height: 300px;
@@ -203,8 +202,7 @@ header {
     padding-bottom: 10rem;
 
     #qb-image {
-    align-self: center;
-
+      margin-right: 5rem;
       img {
         height: 500px;
       }
@@ -221,6 +219,10 @@ header {
     
     .case-title {
       margin-bottom: 1rem;
+    }
+
+    .case-desc {
+      max-width: 600px;
     }
   }
 
@@ -260,7 +262,7 @@ header {
     background-color: @link-color;
     color: white;
   }
-}
+}  
 // End of Home page case study
 
 @media (min-width: 900px) {
