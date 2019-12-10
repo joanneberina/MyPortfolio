@@ -27,7 +27,6 @@ body ul {
   }
 }
 main {
-  max-width: 1100px;
   margin: 0rem auto;
   padding-top: 5rem;
 }
@@ -129,6 +128,8 @@ header .uvp p span {
   }
 }
 .case-study {
+  margin: 0rem auto;
+  max-width: 1100px;
   padding: 5rem 2rem 5rem 2rem;
 }
 .case-study .link {
@@ -212,6 +213,10 @@ header .uvp p span {
     flex-direction: row-reverse;
   }
 }
+main {
+  margin: 0rem auto;
+  max-width: 1100px;
+}
 main .section-heading {
   margin: 2rem;
   padding-top: 4rem;
@@ -242,7 +247,9 @@ main .joanne-drawing img {
     width: 80%;
   }
   main .about-content .about-title h1 {
+    font-size: 3rem;
     letter-spacing: 0.5px;
+    line-height: 4rem;
   }
   main .about-content .about-text {
     padding-top: 3rem;
