@@ -2,7 +2,7 @@ body {
   margin: 0 auto;
   font-family: "Red Hat Text", sans-serif;
   font-size: 16px;
-  color: #47536A;
+  color: #474E6A;
   line-height: 1.8rem;
   border-top: 5px solid #3c3c7d;
 }
@@ -40,7 +40,7 @@ main {
   margin-right: 0;
 }
 header {
-  background: linear-gradient(to bottom, #ffffff, #eef3ff);
+  background: linear-gradient(to bottom, #ffffff, #f0eeff);
   padding: 0 1rem;
 }
 header nav {
@@ -91,7 +91,7 @@ header .uvp h1 {
 }
 header .uvp p {
   width: 80%;
-  color: #667798;
+  color: #667098;
   font-size: 1.5rem;
   line-height: 2.2rem;
 }
@@ -376,7 +376,7 @@ main .joanne-drawing img {
 }
 footer {
   display: flex;
-  background-color: #eef3ff;
+  background-color: #F0EEFF;
   padding: 0 2rem;
 }
 footer ul {
