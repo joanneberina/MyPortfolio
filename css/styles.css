@@ -351,8 +351,8 @@ main .joanne-drawing img {
 }
 .connect .blurb {
   width: 90%;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.25rem;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 1.5rem;
   letter-spacing: -0.1px;
   line-height: 2rem;
 }
@@ -365,7 +365,7 @@ main .joanne-drawing img {
 }
 .connect #email {
   color: #787584;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
   margin: 0 0 0.5rem 0;
 }
