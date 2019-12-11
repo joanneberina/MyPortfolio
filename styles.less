@@ -54,15 +54,17 @@ header {
 
   nav {
     display: flex;
-    justify-content: center;
     width: 100%;
     position: fixed;
-    padding-top: 2rem;
+    top: 0;
+    left: 0;
     background-color: rgba(255, 255, 255, 0.9);
 
     ul {
-      padding-right: 3rem;
-      margin-right: 2rem;
+      margin-right: 3rem;
+      li {
+        padding-left: 1.5rem;
+      }
     }
 
     #nav_inactive {
@@ -76,10 +78,10 @@ header {
     @media (min-width: 900px) {
       ul {
         justify-content: flex-end;
-      }
-
-      li {
-        padding-left: 4rem;
+        li {
+          padding-left: 4rem;
+          padding-bottom: 3rem;
+        }
       }
 		}
   }

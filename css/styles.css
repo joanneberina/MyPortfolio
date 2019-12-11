@@ -43,15 +43,17 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: center;
   width: 100%;
   position: fixed;
-  padding-top: 2rem;
+  top: 0;
+  left: 0;
   background-color: rgba(255, 255, 255, 0.9);
 }
 header nav ul {
-  padding-right: 3rem;
-  margin-right: 2rem;
+  margin-right: 3rem;
+}
+header nav ul li {
+  padding-left: 1.5rem;
 }
 header nav #nav_inactive {
   color: #9193df;
@@ -63,8 +65,9 @@ header nav .sticky {
   header nav ul {
     justify-content: flex-end;
   }
-  header nav li {
+  header nav ul li {
     padding-left: 4rem;
+    padding-bottom: 3rem;
   }
 }
 header .hero {

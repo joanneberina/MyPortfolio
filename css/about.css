@@ -43,15 +43,17 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: center;
   width: 100%;
   position: fixed;
-  padding-top: 2rem;
+  top: 0;
+  left: 0;
   background-color: rgba(255, 255, 255, 0.9);
 }
 header nav ul {
-  padding-right: 3rem;
-  margin-right: 2rem;
+  margin-right: 3rem;
+}
+header nav ul li {
+  padding-left: 1.5rem;
 }
 header nav #nav_inactive {
   color: #9193df;
@@ -63,8 +65,9 @@ header nav .sticky {
   header nav ul {
     justify-content: flex-end;
   }
-  header nav li {
+  header nav ul li {
     padding-left: 4rem;
+    padding-bottom: 3rem;
   }
 }
 header .hero {
@@ -119,6 +122,7 @@ header .uvp p span {
   header .hero .uvp h1 {
     margin: 0;
     font-size: 3rem;
+    line-height: 3.5rem;
     padding-bottom: 1rem;
   }
   header .hero .uvp p {
@@ -138,7 +142,6 @@ header .uvp p span {
 .case-study #qb-image {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 .case-study #qb-image img {
   height: 300px;
@@ -164,7 +167,7 @@ header .uvp p span {
     padding-bottom: 10rem;
   }
   .case-study #qb-image {
-    align-self: center;
+    margin-right: 5rem;
   }
   .case-study #qb-image img {
     height: 500px;
@@ -178,6 +181,9 @@ header .uvp p span {
   }
   .case-study .case-title {
     margin-bottom: 1rem;
+  }
+  .case-study .case-desc {
+    max-width: 600px;
   }
 }
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -199,7 +205,7 @@ header .uvp p span {
   font-size: 1rem;
   font-family: "Red Hat Text", sans-serif;
   font-weight: 500;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   border-color: #5659e0;
   border-radius: 25px;
   color: #4246c8;
@@ -221,101 +227,6 @@ header .uvp p span {
 .case-title span {
   font-weight: 600;
 }
-.center {
-  text-align: center;
-  margin: 0 auto;
-}
-.case {
-  padding-top: 10rem;
-}
-.case img {
-  width: 100%;
-}
-.case .case-about {
-  padding-bottom: 2rem;
-}
-.case .case-title {
-  padding-top: 2rem;
-  margin: 0;
-}
-.case .highlight {
-  width: 80%;
-  background-color: #F8F9FB;
-  margin: 0 auto;
-}
-.case .subtitle {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-.case .subtitle-colored {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #4d4d9f;
-}
-.case .sidebar-title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #4d4d9f;
-}
-.case .sketch {
-  display: flex;
-  overflow: hidden;
-}
-.case .sketch img {
-  height: 300px;
-}
-.case .white-space {
-  padding: 2rem;
-}
-@media (min-width: 800px) {
-  .case .case-about {
-    width: 80%;
-    margin: 0 auto;
-  }
-  .case img {
-    width: 60%;
-  }
-  .case .text-right {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .case .text-indent {
-    margin: 4rem 0 4rem 10rem;
-    border-left: 3px solid #3c3c7d;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-  .case .text-left {
-    display: flex;
-    justify-content: center;
-    margin: 5rem auto;
-    padding: 2rem 2rem;
-    border-top: solid 3px #efeef0;
-    border-bottom: solid 3px #efeef0;
-  }
-  .case .subtitle-colored {
-    padding-right: 5rem;
-  }
-  .case .sidebar-title {
-    padding-right: 0;
-    padding-left: 5rem;
-  }
-  .case .sidebar-title p {
-    text-align: center;
-  }
-  .case .image-overflow img {
-    width: 100%;
-  }
-  .case .sketch {
-    width: 100%;
-  }
-  .case .sketch img {
-    width: 35%;
-  }
-}
 .connect {
   width: 100%;
   padding: 5rem 2rem;
@@ -324,6 +235,7 @@ header .uvp p span {
 }
 .connect .blurb {
   width: 90%;
+  margin: 0 auto;
   font-family: "Red Hat Text", sans-serif;
   font-size: 1.5rem;
   letter-spacing: -0.1px;
