@@ -3,7 +3,7 @@ body {
   font-family: "Red Hat Text", sans-serif;
   font-size: 18px;
   color: #585B67;
-  border-top: 5px solid #3c3c7d;
+  border-top: 5px solid #384AA9;
   line-height: 2.5rem;
 }
 body a {
@@ -43,15 +43,17 @@ header {
 }
 header nav {
   display: flex;
-  justify-content: center;
   width: 100%;
   position: fixed;
-  padding-top: 2rem;
+  top: 0;
+  left: 0;
   background-color: rgba(255, 255, 255, 0.9);
 }
 header nav ul {
-  padding-right: 3rem;
-  margin-right: 2rem;
+  margin-right: 3rem;
+}
+header nav ul li {
+  padding-left: 1.5rem;
 }
 header nav #nav_inactive {
   color: #9193df;
@@ -63,8 +65,9 @@ header nav .sticky {
   header nav ul {
     justify-content: flex-end;
   }
-  header nav li {
+  header nav ul li {
     padding-left: 4rem;
+    padding-bottom: 3rem;
   }
 }
 header .hero {
@@ -86,7 +89,7 @@ header .uvp h1 {
   font-size: 2.5rem;
   letter-spacing: -1px;
   padding: 0;
-  color: #3c3c7d;
+  color: #384AA9;
 }
 header .uvp p {
   width: 90%;
@@ -119,6 +122,7 @@ header .uvp p span {
   header .hero .uvp h1 {
     margin: 0;
     font-size: 3rem;
+    line-height: 3.5rem;
     padding-bottom: 1rem;
   }
   header .hero .uvp p {
@@ -138,7 +142,6 @@ header .uvp p span {
 .case-study #qb-image {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 .case-study #qb-image img {
   height: 300px;
@@ -164,7 +167,7 @@ header .uvp p span {
     padding-bottom: 10rem;
   }
   .case-study #qb-image {
-    align-self: center;
+    margin-right: 5rem;
   }
   .case-study #qb-image img {
     height: 500px;
@@ -178,6 +181,9 @@ header .uvp p span {
   }
   .case-study .case-title {
     margin-bottom: 1rem;
+  }
+  .case-study .case-desc {
+    max-width: 600px;
   }
 }
 @media (min-width: 600px) and (max-width: 1000px) {
@@ -199,7 +205,7 @@ header .uvp p span {
   font-size: 1rem;
   font-family: "Red Hat Text", sans-serif;
   font-weight: 500;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
   border-color: #5659e0;
   border-radius: 25px;
   color: #4246c8;
@@ -224,11 +230,13 @@ header .uvp p span {
 .connect {
   width: 100%;
   padding: 5rem 2rem;
-  border-top: solid 3px #efeef0;
+  background-color: #FCFCFF;
+  border-top: solid 2px #efeef0;
   text-align: center;
 }
 .connect .blurb {
   width: 90%;
+  margin: 0 auto;
   font-family: "Red Hat Text", sans-serif;
   font-size: 1.5rem;
   letter-spacing: -0.1px;
@@ -239,7 +247,7 @@ header .uvp p span {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   text-align: center;
-  color: #3c3c7d;
+  color: #384AA9;
 }
 .connect #email {
   color: #787584;
@@ -285,6 +293,8 @@ footer ul li img {
 }
 .case {
   padding-top: 10rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .case img {
   width: 100%;
@@ -310,13 +320,13 @@ footer ul li img {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #4d4d9f;
+  color: #4f62c5;
 }
 .case .sidebar-title {
   font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: 600;
-  color: #4d4d9f;
+  color: #4f62c5;
 }
 .case .sketch {
   display: flex;
@@ -342,7 +352,7 @@ footer ul li img {
   }
   .case .text-indent {
     margin: 4rem 0 4rem 10rem;
-    border-left: 3px solid #3c3c7d;
+    border-left: 3px solid #384AA9;
     padding-top: 0;
     padding-bottom: 0;
   }

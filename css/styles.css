@@ -3,7 +3,7 @@ body {
   font-family: "Red Hat Text", sans-serif;
   font-size: 18px;
   color: #585B67;
-  border-top: 5px solid #3D53B4;
+  border-top: 5px solid #384AA9;
   line-height: 2.5rem;
 }
 body a {
@@ -89,7 +89,7 @@ header .uvp h1 {
   font-size: 2.5rem;
   letter-spacing: -1px;
   padding: 0;
-  color: #3D53B4;
+  color: #384AA9;
 }
 header .uvp p {
   width: 90%;
@@ -247,7 +247,7 @@ header .uvp p span {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   text-align: center;
-  color: #3D53B4;
+  color: #384AA9;
 }
 .connect #email {
   color: #787584;
