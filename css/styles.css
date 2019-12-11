@@ -8,6 +8,7 @@ body {
 }
 body a {
   color: #4246c8;
+  transition: all 0.5s ease;
 }
 body a:link {
   text-decoration: none;
@@ -145,6 +146,7 @@ header .uvp p {
 .case-study #qb-image img {
   height: 300px;
   width: auto;
+  transition: all 1s ease;
 }
 .case-study #rvway-image {
   display: flex;
@@ -153,6 +155,7 @@ header .uvp p {
 .case-study #rvway-image img {
   height: 250px;
   width: auto;
+  transition: all 1s ease;
 }
 .case-study .case-title {
   color: #3e52bc;
@@ -208,6 +211,7 @@ header .uvp p {
   border-color: #5659e0;
   border-radius: 25px;
   color: #4246c8;
+  transition: all 0.5s ease;
 }
 .case-study button:hover {
   background-color: #4246c8;
