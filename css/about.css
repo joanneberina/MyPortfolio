@@ -3,7 +3,7 @@ body {
   font-family: "Red Hat Text", sans-serif;
   font-size: 18px;
   color: #585B67;
-  border-top: 5px solid #3c3c7d;
+  border-top: 5px solid #384AA9;
   line-height: 2.5rem;
 }
 body a {
@@ -38,7 +38,7 @@ main {
   margin-right: 0;
 }
 header {
-  background: linear-gradient(to bottom, #ffffff, #f0eeff);
+  background: linear-gradient(to bottom, #ffffff, #eef3ff);
   padding: 0 1rem;
 }
 header nav {
@@ -89,16 +89,15 @@ header .uvp h1 {
   font-size: 2.5rem;
   letter-spacing: -1px;
   padding: 0;
-  color: #3c3c7d;
+  color: #384AA9;
 }
 header .uvp p {
   width: 90%;
-  color: #6f7383;
-  font-size: 1.5rem;
+  color: #646775;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 400;
   line-height: 2.2rem;
-}
-header .uvp p span {
-  font-weight: 500;
 }
 @media (min-width: 600px) {
   header .hero {
@@ -123,11 +122,11 @@ header .uvp p span {
     margin: 0;
     font-size: 3rem;
     line-height: 3.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
   }
   header .hero .uvp p {
     width: 60%;
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     line-height: 3rem;
   }
 }
@@ -230,7 +229,8 @@ header .uvp p span {
 .connect {
   width: 100%;
   padding: 5rem 2rem;
-  border-top: solid 3px #efeef0;
+  background-color: #FCFCFF;
+  border-top: solid 2px #efeef0;
   text-align: center;
 }
 .connect .blurb {
@@ -246,7 +246,7 @@ header .uvp p span {
   font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   text-align: center;
-  color: #3c3c7d;
+  color: #384AA9;
 }
 .connect #email {
   color: #787584;
@@ -261,7 +261,7 @@ header .uvp p span {
 }
 footer {
   display: flex;
-  background-color: #F0EEFF;
+  background-color: #eef3ff;
   padding: 0 2rem;
 }
 footer ul {
@@ -297,7 +297,7 @@ footer ul li img {
   font-size: 2rem;
   letter-spacing: -0.9px;
   line-height: 2.5rem;
-  color: #3c3c7d;
+  color: #384AA9;
 }
 .about .about-text {
   margin: 2rem;

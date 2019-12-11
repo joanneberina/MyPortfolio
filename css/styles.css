@@ -38,7 +38,7 @@ main {
   margin-right: 0;
 }
 header {
-  background: linear-gradient(to bottom, #ffffff, #f0eeff);
+  background: linear-gradient(to bottom, #ffffff, #eef3ff);
   padding: 0 1rem;
 }
 header nav {
@@ -261,7 +261,7 @@ header .uvp p {
 }
 footer {
   display: flex;
-  background-color: #F0EEFF;
+  background-color: #eef3ff;
   padding: 0 2rem;
 }
 footer ul {
