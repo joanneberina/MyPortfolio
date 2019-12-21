@@ -360,13 +360,12 @@ header {
     font-size: 1rem;
   }
 }
-
-
 // End of Connect styles for all pages
 
 // Footer styling for all pages
 footer {
   display: flex;
+  justify-content: space-around;
   background-color: @footer-back;
   padding: 0 2rem;
   ul {
@@ -375,25 +374,25 @@ footer {
 
     li {
       color: @gray;
-      font-size: 0.9rem;
+      font-size: 0.75rem;
       vertical-align: middle;
 
       img {
         width: auto;
-        height: 25px;
+        height: 15px;
         vertical-align: middle;
       }
     }
   }
 
   // Footer media query
-  @media (min-width: 550px) {
+  @media (min-width: 400px) {
     ul {
       justify-content: center;
-    }
-
-    li {
-      padding-left: 2rem;
+      li {
+        font-size: .9rem;
+        padding-right: 2rem; 
+      }
     }
   }
 }

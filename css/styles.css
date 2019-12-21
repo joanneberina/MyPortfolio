@@ -309,6 +309,7 @@ header .uvp p {
 }
 footer {
   display: flex;
+  justify-content: space-around;
   background-color: #eef3ff;
   padding: 0 2rem;
 }
@@ -318,19 +319,20 @@ footer ul {
 }
 footer ul li {
   color: #787584;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
   vertical-align: middle;
 }
 footer ul li img {
   width: auto;
-  height: 25px;
+  height: 15px;
   vertical-align: middle;
 }
-@media (min-width: 550px) {
+@media (min-width: 400px) {
   footer ul {
     justify-content: center;
   }
-  footer li {
-    padding-left: 2rem;
+  footer ul li {
+    font-size: 0.9rem;
+    padding-right: 2rem;
   }
 }
