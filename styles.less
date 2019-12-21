@@ -51,7 +51,6 @@ main {
 // Header for all pages
 header {
   background: @gradient;
-  padding: 0 1rem;
 
   nav {
     display: flex;
@@ -92,53 +91,69 @@ header {
         }
       }
     }
-
-    @media (min-width: 900px) {
-      ul {
-        li {
-          font-size: 1.5rem;
-        }
-      }
-		}
   }
 
   // Hero section
   .hero {
+    width: 100%;
     padding-top: 5rem;
+    transition: all .5s ease;
   }
 
   #avatar {
-    padding-top: 5rem;
-    padding-left: 4rem;
-
+    text-align: center;
+    transition: all .5s ease;
     img {
-      height: 250px;
+      height: 200px;
+      padding-top: 3rem;
+      transition: all .5s ease;
     }
   }
 
   .uvp {
     margin: 0 auto;
     padding: 0 1rem 5rem 1rem;
+    text-align: center;
+    transition: all .5s ease;
 
     h1 {
       font-family: @font-heading;
-      font-size: 2.5rem;
+      font-size: 2rem;
       letter-spacing: -1px;
       padding: 0;
       color: @primary-color;
+      transition: all .5s ease;
     }
 
     p {
-      width: 90%;
+      padding: 0 2rem;
       color: lighten(@text-body, 5%);
       font-family: @font-heading;
-      font-size: 1.25rem;
+      font-size: 1rem;
       font-weight: 400;
-      line-height: 2.2rem;
+      line-height: 1.5rem;
+      transition: all .5s ease;
   }
 }
-  // Media query - hero section
-  @media (min-width: 600px) {
+  // Media query 500px - hero section
+  @media (min-width: 500px) {
+    .hero {
+      #avatar {
+        padding-top: 5rem;
+        padding-left: 4rem;
+      }
+      .uvp {
+        margin: 0 auto;
+        max-width: 400px;
+        p {
+          font-size: 1.2rem;
+          line-height: 1.75rem;
+        }
+      }
+    }
+  }
+  // Media query 700px - hero section
+  @media (min-width: 700px) {
     .hero {
       display: flex;
       flex-direction: row;
@@ -159,17 +174,27 @@ header {
         padding: 0;
 
         h1 {
+          width: 100%;
           margin: 0;
-          font-size: 3rem;
+          text-align: left;
+          font-size: 2.75rem;
           line-height: 3.5rem;
           padding-bottom: .5rem;
         }
         p {
-          width: 60%;
-          font-size: 1.6rem;
-          line-height: 3rem;
+          max-width: 500px;
+          text-align: left;
+          font-size: 1.25rem;
+          line-height: 2rem;
+          padding-left: 0;
         }
       }
+    }
+  }
+  // Media query 900px - hero section
+  @media (min-width: 900px) {
+    .hero {
+      padding-left: 2rem;
     }
   }
 } 

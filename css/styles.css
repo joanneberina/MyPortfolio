@@ -40,7 +40,6 @@ main {
 }
 header {
   background: linear-gradient(to bottom, #ffffff, #eef3ff);
-  padding: 0 1rem;
 }
 header nav {
   display: flex;
@@ -79,41 +78,58 @@ header nav .sticky {
     font-size: 1.25rem;
   }
 }
-@media (min-width: 900px) {
-  header nav ul li {
-    font-size: 1.5rem;
-  }
-}
 header .hero {
+  width: 100%;
   padding-top: 5rem;
+  transition: all 0.5s ease;
 }
 header #avatar {
-  padding-top: 5rem;
-  padding-left: 4rem;
+  text-align: center;
+  transition: all 0.5s ease;
 }
 header #avatar img {
-  height: 250px;
+  height: 200px;
+  padding-top: 3rem;
+  transition: all 0.5s ease;
 }
 header .uvp {
   margin: 0 auto;
   padding: 0 1rem 5rem 1rem;
+  text-align: center;
+  transition: all 0.5s ease;
 }
 header .uvp h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: -1px;
   padding: 0;
   color: #384AA9;
+  transition: all 0.5s ease;
 }
 header .uvp p {
-  width: 90%;
+  padding: 0 2rem;
   color: #646775;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 2.2rem;
+  line-height: 1.5rem;
+  transition: all 0.5s ease;
 }
-@media (min-width: 600px) {
+@media (min-width: 500px) {
+  header .hero #avatar {
+    padding-top: 5rem;
+    padding-left: 4rem;
+  }
+  header .hero .uvp {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+  header .hero .uvp p {
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+  }
+}
+@media (min-width: 700px) {
   header .hero {
     display: flex;
     flex-direction: row;
@@ -133,15 +149,24 @@ header .uvp p {
     padding: 0;
   }
   header .hero .uvp h1 {
+    width: 100%;
     margin: 0;
-    font-size: 3rem;
+    text-align: left;
+    font-size: 2.75rem;
     line-height: 3.5rem;
     padding-bottom: 0.5rem;
   }
   header .hero .uvp p {
-    width: 60%;
-    font-size: 1.6rem;
-    line-height: 3rem;
+    max-width: 500px;
+    text-align: left;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    padding-left: 0;
+  }
+}
+@media (min-width: 900px) {
+  header .hero {
+    padding-left: 2rem;
   }
 }
 .case-study {
