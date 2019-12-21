@@ -207,7 +207,7 @@ header {
 
 // Home page case study
 .case-study {
-  margin: 0rem auto;
+  margin: 0 auto;
   max-width: 1100px;
   padding: 0rem 2rem 5rem 2rem;
   
@@ -324,41 +324,44 @@ header {
 // Connect styles for all pages
 .connect {
   width: 100%;
-  padding: 5rem 2rem;
+  padding: 5rem 0;
   background-color: #FCFCFF;
   border-top: solid 2px lighten(@gray, 45%);
   text-align: center;
 
   .blurb {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     font-family: @font-body;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     letter-spacing: -0.1px;
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 
   h1 {
     margin: 3rem 0 1rem 0;
     font-family: @font-heading;
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     color: @primary-color;
   }
 
   #email {
     color: @gray;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
     margin: 0 0 0.5rem 0;
   } 
 
   .social {
-    display: inline;
-    font-size: 1.25rem;
-    padding: 1.5rem;
+    display: inline-flex;
+    justify-content: space-around;
+    padding-right: 1rem;
+    font-size: 1rem;
   }
 }
+
+
 // End of Connect styles for all pages
 
 // Footer styling for all pages
