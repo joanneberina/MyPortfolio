@@ -78,6 +78,11 @@ header nav .sticky {
     font-size: 1.25rem;
   }
 }
+@media (min-width: 900px) {
+  header nav ul {
+    margin-right: 6rem;
+  }
+}
 header .hero {
   width: 100%;
   padding-top: 7rem;
@@ -166,7 +171,7 @@ header .uvp p {
 }
 @media (min-width: 900px) {
   header .hero {
-    padding-left: 2rem;
+    padding-left: 4rem;
   }
 }
 .case-study {
@@ -183,7 +188,6 @@ header .uvp p {
 }
 .case-study #qb-image img {
   height: 300px;
-  width: auto;
   transition: all 1s ease;
 }
 .case-study #rvway-image {
@@ -192,7 +196,6 @@ header .uvp p {
 }
 .case-study #rvway-image img {
   height: 200px;
-  width: auto;
   transition: all 1s ease;
 }
 .case-study .case-title {
@@ -205,37 +208,34 @@ header .uvp p {
   font-size: 1.1rem;
   line-height: 2rem;
 }
+@media (min-width: 600px) {
+  .case-study .case-text {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 900px) {
   .case-study {
     display: flex;
+    width: 80%;
     padding-bottom: 10rem;
-  }
-  .case-study #qb-image {
-    margin-right: 5rem;
   }
   .case-study #qb-image img {
     height: 400px;
+    padding: 0;
   }
   .case-study #rvway-image {
     align-self: center;
     padding: 0;
   }
   .case-study #rvway-image img {
-    height: 400px;
+    height: 300px;
   }
   .case-study .case-title {
     margin-bottom: 1rem;
   }
   .case-study .case-desc {
-    max-width: 600px;
-  }
-}
-@media (min-width: 600px) and (max-width: 1000px) {
-  .case-study #rvway-image img {
-    height: 300px;
-  }
-  .case-study #qb-image img {
-    height: 400px;
+    max-width: 500px;
   }
 }
 .case-study .link {

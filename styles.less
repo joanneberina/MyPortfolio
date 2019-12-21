@@ -91,6 +91,11 @@ header {
         }
       }
     }
+    @media (min-width: 900px) {
+      ul {
+        margin-right: 6rem;
+      }
+    }
   }
 
   // Hero section
@@ -194,7 +199,7 @@ header {
   // Media query 900px - hero section
   @media (min-width: 900px) {
     .hero {
-      padding-left: 2rem;
+      padding-left: 4rem;
     }
   }
 } 
@@ -214,10 +219,8 @@ header {
   #qb-image {
     display: flex;
     justify-content: center;
-		
     img {
       height: 300px;
-      width: auto;
       transition: all 1s ease;
     }
   }
@@ -226,63 +229,51 @@ header {
     justify-content: center;
     img {
       height: 200px;
-      width: auto;
       transition: all 1s ease;
     }
   }
-
   .case-title {
     color: lighten(@primary-color, 5%);
     font-size: 1.75rem;
     font-weight: 700;
     line-height: 2rem;
   }
-
   .case-desc {
     font-size: 1.1rem;
     line-height: 2rem;
   }
 
-  // Media query for homepage case study
+  // Media query 600px for homepage case study
+  @media (min-width: 600px) {
+    .case-text {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+  // Media query 900px for homepage case study
   @media (min-width: 900px) {
     display: flex;
+    width: 80%;
     padding-bottom: 10rem;
 
     #qb-image {
-      margin-right: 5rem;
       img {
         height: 400px;
+        padding: 0;
       }
-    }
-    
+    } 
     #rvway-image {
       align-self: center;
       padding: 0;
-
-      img {
-        height: 400px;
-      }
-    }
-    
-    .case-title {
-      margin-bottom: 1rem;
-    }
-
-    .case-desc {
-      max-width: 600px;
-    }
-  }
-
-  @media (min-width: 600px) and (max-width:1000px) {
-    #rvway-image {
       img {
         height: 300px;
       }
+    } 
+    .case-title {
+      margin-bottom: 1rem;
     }
-    #qb-image {
-      img {
-        height: 400px;
-      }
+    .case-desc {
+      max-width: 500px;
     }
   }
   
