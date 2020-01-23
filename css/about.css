@@ -383,8 +383,8 @@ footer ul li img {
   .about .bottom {
     display: flex;
   }
-  .about .bottom .joanne-drawing img {
-    padding-left: 2rem;
+  .about .bottom .joanne-drawing {
+    align-items: flex-end;
   }
   .about .bottom .connect {
     width: 100%;
