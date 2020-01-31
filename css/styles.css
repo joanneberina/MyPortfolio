@@ -288,14 +288,14 @@ header .uvp span {
   font-weight: 300;
 }
 .connect h1 {
-  margin: 3rem 0 1rem 0;
+  margin: 3rem 0 0.5rem 0;
   font-family: "Soleil", sans-serif;
-  font-size: 2rem;
+  font-size: 2.25rem;
   text-align: center;
 }
 .connect #email {
   color: #EFF0F0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   text-align: center;
   font-weight: 300;
   margin: 0 0 0.5rem 0;
@@ -321,6 +321,17 @@ header .uvp span {
   -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
   -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
   filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+}
+@media (min-width: 500px) {
+  .connect h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    transition: all 0.5s ease;
+  }
+  .connect #email {
+    font-size: 1.5rem;
+    transition: all 0.5s ease;
+  }
 }
 footer {
   display: flex;
