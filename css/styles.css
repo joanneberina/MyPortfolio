@@ -7,7 +7,7 @@ body {
   line-height: 2.5rem;
 }
 body a {
-  color: #567DE1;
+  color: #767A85;
   transition: all 0.2s ease;
 }
 body a:link {
@@ -24,6 +24,9 @@ body ul {
 }
 body h1 {
   font-weight: 600;
+}
+body .hide {
+  visibility: hidden !important;
 }
 @media (min-width: 450px) {
   body {
