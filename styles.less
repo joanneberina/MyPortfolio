@@ -1,4 +1,4 @@
-@import "variables.less";
+@import "variables2.less";
 
 // General styles
 body {
@@ -11,7 +11,7 @@ body {
 
   a {
     color: @link-color;
-    transition: all .5s ease;
+    transition: all .2s ease;
   }
 
   a:link {
@@ -29,6 +29,10 @@ body {
     list-style: none;
   }
 
+  h1 {
+    font-weight: 600;
+  }
+
   @media (min-width: 450px) {
     border-top: 0;
   }
@@ -39,36 +43,47 @@ main {
   padding-top: 5rem;
 }
 
-#backgrnd {
-  background: linear-gradient(to top, rgba(255, 255, 255, 100), rgba(238, 243, 255, 100));
-  padding-left: 0;
-  padding-right: 0;
-  margin-left: 0;
-  margin-right: 0;
-}
 // End of general styles
 
 // Header for all pages
 header {
   background: @gradient;
-
+  height: 400px;
   nav {
     display: flex;
+    align-items: center;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(253, 253, 253, 0.5);
     transition: all .5s ease;
+
+    #avatar {
+      width: 70;
+      margin: 1.5rem;
+      img {
+        height: 75px;
+        padding: 0;
+        transition: all .5s ease;
+      }
+    }
+   
     ul {
       justify-content: space-around;
       max-width: 400px;
-      margin: 2rem auto;
+      margin: 1.5rem auto;
       padding: 0;
       transition: all .5s ease;
       li {
         font-size: 1rem;
         transition: all .5s ease;
+      }
+      li:hover {
+        border-color: @border-color;
+        border-radius: 25px;
+        color: @link-color;
+        transition: all 0.5s ease;
       }
     }
 
@@ -81,12 +96,20 @@ header {
     }
 
     @media (min-width: 600px) {
+      #avatar {
+        width: 100%;
+        margin: 1.5rem 5rem;
+        img {
+          height: 100px;
+          padding: 0;
+        }
+      }
       Ul {
         justify-content: flex-end;
         margin-right: 3rem;
         li {
           padding-left: 4rem;
-          padding-bottom: 3rem;
+          padding-bottom: 1rem;
           font-size: 1.25rem;
         }
       }
@@ -105,54 +128,37 @@ header {
     transition: all .5s ease;
   }
 
-  #avatar {
-    text-align: center;
-    transition: all .5s ease;
-    img {
-      height: 200px;
-      padding-top: 3rem;
-      transition: all .5s ease;
-    }
-  }
-
   .uvp {
     margin: 0 auto;
-    padding: 0 1rem 5rem 1rem;
+    padding: 5rem 2rem;
     text-align: center;
     transition: all .5s ease;
 
     h1 {
       font-family: @font-heading;
-      font-size: 2rem;
-      letter-spacing: -1px;
+      font-size: 1.25rem;
+      letter-spacing: -0.5px;
+      line-height: 2rem;
       padding: 0;
-      color: @primary-color;
+      color: lighten(@text-body, 20%);
       transition: all .5s ease;
     }
-
-    p {
-      padding: 0 2rem;
-      color: lighten(@text-body, 5%);
-      font-family: @font-heading;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1.7rem;
-      transition: all .5s ease;
+    span {
+      color: @primary-color;
+    }
   }
 }
+
   // Media query 500px - hero section
   @media (min-width: 500px) {
     .hero {
-      #avatar {
-        padding-top: 5rem;
-        padding-left: 4rem;
-      }
       .uvp {
         margin: 0 auto;
-        max-width: 400px;
-        p {
-          font-size: 1.2rem;
-          line-height: 1.75rem;
+        max-width: 500px;
+        h1 {
+          font-size: 1.75rem;
+          line-height: 2.5rem;
+          transition: all .5s ease;
         }
       }
     }
@@ -160,56 +166,46 @@ header {
   // Media query 700px - hero section
   @media (min-width: 700px) {
     .hero {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      padding: 10rem 0;
-
-      #avatar {
-        padding: 5rem 2rem;
-      }
-
       .uvp {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         width: 100%;
-        max-width: 800px;
+        max-width: 700px;
         margin: 0;
-        padding: 0;
+        padding: 5rem;
 
         h1 {
-          width: 100%;
+          width: 80%;
           margin: 0;
+          padding-left: 5rem;
           text-align: left;
-          font-size: 2.75rem;
-          line-height: 3.5rem;
-          padding-bottom: .5rem;
-        }
-        p {
-          max-width: 500px;
-          text-align: left;
-          font-size: 1.25rem;
-          line-height: 2rem;
-          padding-left: 0;
+          font-size: 2rem;
+          line-height: 3rem;
+          transition: all .5s ease;
         }
       }
     }
   }
-  // Media query 900px - hero section
-  @media (min-width: 900px) {
+  // Media query 1000px - hero section
+  @media (min-width: 1000px) {
     .hero {
-      padding-left: 4rem;
+      .uvp {
+        h1 {
+          padding-left: 15rem;
+          transition: all .5s ease;
+        }
+      }
     }
   }
-} 
 // End of header all pages
 
 // Home page case study
+.reverse {
+  padding-top: 5rem;
+}
+
 .case-study {
   margin: 0 auto;
-  max-width: 1100px;
-  padding: 0rem 2rem 5rem 2rem;
+  max-width: 900px;
+  padding: 3rem 3rem 5rem 3rem;
   
   .link {
     padding: 0;
@@ -233,10 +229,14 @@ header {
     }
   }
   .case-title {
+    font-family: @font-heading;
     color: lighten(@primary-color, 5%);
-    font-size: 1.75rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 600;
     line-height: 2rem;
+    span {
+          font-weight: 600;
+        }
   }
   .case-desc {
     font-size: 1.1rem;
@@ -246,34 +246,43 @@ header {
   // Media query 600px for homepage case study
   @media (min-width: 600px) {
     .case-text {
-      max-width: 500px;
+      width: 500px;
       margin: 0 auto;
     }
+    #rvway-image {
+      padding: 0;
+      img {
+        height: 250px;
+      }
+    } 
   }
   // Media query 900px for homepage case study
   @media (min-width: 900px) {
     display: flex;
-    width: 80%;
+    justify-content: center;
+    width: 85%;
     padding-bottom: 10rem;
 
     #qb-image {
-      img {
-        height: 400px;
-        padding: 0;
-      }
-    } 
-    #rvway-image {
-      align-self: center;
       padding: 0;
       img {
         height: 300px;
+        padding-left: 2rem;
       }
     } 
-    .case-title {
-      margin-bottom: 1rem;
-    }
-    .case-desc {
-      max-width: 500px;
+    #rvway-image {
+      padding: 0;
+      img {
+        height: 250px;
+        padding-right: 1rem;
+      }
+    } 
+    .case-text {
+      margin: 0;
+      width: 50%;
+      .case-title {
+        margin-bottom: 1rem;
+      }
     }
   }
   
@@ -290,7 +299,7 @@ header {
     font-size: 1rem;
     font-family: @font-body;
     font-weight: 500;
-    padding: 1rem 4rem;
+    padding: .75rem 2rem;
     background-color:#FFFFFF;
     border-color: @border-color;
     border-radius: 25px;
@@ -303,61 +312,68 @@ header {
     color: white;
   }
 }  
-// End of Home page case study
 
 @media (min-width: 900px) {
   .reverse {
     flex-direction: row-reverse;
+    align-items: center;
   }
 }
-
-.case-title {
-  font-family: @font-heading;
-  font-size: 1.7rem;
-  line-height: 2rem;
-
-  span {
-    font-weight: 600;
-  }
-}
+// End of Home page case study
 
 // Connect styles for all pages
 .connect {
   width: 100%;
   padding: 5rem 0;
-  background-color: #FCFCFF;
+  color: @gray;
+  background-color: #475A8D;
+  font-family: @font-heading;
   border-top: solid 2px lighten(@gray, 45%);
   text-align: center;
 
   .blurb {
     width: 80%;
     margin: 0 auto;
-    font-family: @font-body;
-    font-size: 1.25rem;
     letter-spacing: -0.1px;
     line-height: 1.5rem;
+    font-weight: 300;
   }
 
   h1 {
     margin: 3rem 0 1rem 0;
     font-family: @font-heading;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: center;
-    color: @primary-color;
   }
 
   #email {
     color: @gray;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     text-align: center;
+    font-weight: 300;
     margin: 0 0 0.5rem 0;
   } 
-
   .social {
-    display: inline-flex;
-    justify-content: space-around;
-    padding-right: 1rem;
-    font-size: 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    text-align:center;
+    .fab {  
+      padding: 0 2rem;
+      font-size: 2.5rem;
+      color: @gray;
+    }
+    .fab:hover {
+      color: #5881F0;
+      transition: 0.5s;
+      -moz-transition: 0.5s;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      -webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      -moz-filter: drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      -ms-filter: drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      -o-filter: drop-shadow(0 1px 10px rgba(0,0,0,.8));
+      filter: drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
+    }
   }
 }
 // End of Connect styles for all pages
@@ -371,9 +387,8 @@ footer {
   ul {
     padding: 2rem 0;
     text-align: center;
-
     li {
-      color: @gray;
+      color: @text-body;
       font-size: 0.75rem;
       vertical-align: middle;
 
@@ -386,12 +401,11 @@ footer {
   }
 
   // Footer media query
-  @media (min-width: 400px) {
+  @media (min-width: 500px) {
     ul {
-      justify-content: center;
+      max-width: 400px;
       li {
         font-size: .9rem;
-        padding-right: 2rem; 
       }
     }
   }

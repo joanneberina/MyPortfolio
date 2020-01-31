@@ -1,70 +1,52 @@
-@import "variables.less";
+@import "variables2.less";
 @import "styles.less";
 
 // About page styling
+#backgrnd {
+  background: #FDFDFD;
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .about {
-    margin: 0rem auto;
-    max-width: 1100px;
-    
-    .section-heading {
+  margin: 0rem auto;
+  max-width: 1100px;
+  
+  .about-title {
+      #aboutme {
       margin: 2rem;
       padding-top: 4rem;
       font-family: @font-heading;
-      font-size: 2rem;
-      letter-spacing: -0.9px;
-      line-height: 2.5rem;
+      font-size: 2.5rem;
       color: @primary-color;
     }
-  
-    .about-text {
-      margin: 2rem;
-      font-size: 1.25rem;
-      line-height: 2.2rem;
-    }
-  
-    .joanne-drawing {
-      display: flex;
-  
-      img {
+    #joanne-drawing {
+        img {
         height: 300px;
         padding: 0 2rem;
         margin: 0;
       }
     }
-  
-    // Media Query - about page
-    @media (min-width: 860px) {
-      .about-content {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-  
-        .about-title {
-          width: 80%;
-          h1 {
-            font-size: 3rem;
-            letter-spacing: 0.5px;
-            line-height: 4rem;
-          }
-        }
-        .about-text {
-          padding-top: 3rem;
-          padding-right: 2rem;
-        }
-      }
-  
-      .bottom {
-        display: flex;
-  
-        .joanne-drawing {
-          align-items: flex-end;
-        }
-        .connect {
-          width: 100%;
-          border-top: 0;
-          padding-bottom: 4rem;
-        }
+  }
+  .about-text {
+    margin: 2rem;
+    font-size: 1.25rem;
+    line-height: 2.2rem;
+  }
+
+  // Media Query - about page
+  @media (min-width: 860px) {
+     .about-content {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      .about-text {
+      padding-top: 3rem;
+      padding-right: 2rem;
       }
     }
   }
+}
   // End of About page styling
