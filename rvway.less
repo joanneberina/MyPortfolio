@@ -1,0 +1,87 @@
+@import "variables2.less";
+@import "styles.less";
+
+// Hero section
+.rvway {
+    background-color: #E2FAFF;
+    padding: 5rem 0;
+    #rvway-title {
+        max-width: 70%;
+        margin: 0 auto;
+        padding-top: 4rem;
+        h1 {
+            font-family: @font-heading;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 700; 
+            text-align: center;
+            transition: all 0.5s ease;
+        }
+    }
+    #rvway-img {
+        display: flex;
+        justify-content: center;
+        img {
+            height: 150px;
+            transition: all 0.5s ease;
+        }
+    }
+     //Media query 300px
+     @media (min-width: 300px) {
+        #rvway-title {
+            h1 {
+                font-size: 2rem;
+                line-height: 3rem;
+                transition: all 0.5s ease;
+            }
+        }
+        #rvway-img {
+            img {
+                height: 200px;
+                transition: all 0.5s ease;
+            }
+        }   
+    }
+    //Media query 600px
+    @media (min-width: 600px) {
+        #rvway-title {
+            h1 {
+                font-size: 2.5rem;
+                line-height: 4rem;
+                text-align: center;
+                transition: all 0.5s ease;
+            }
+        }
+        #rvway-img {
+            img {
+                height: 350px;
+                transition: all 0.5s ease;
+            }
+        }   
+    }
+    // Media query 900px 
+    @media (min-width: 900px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        #rvway-title {
+            display: flex;
+            align-items: center;
+            max-width: 30%;
+            margin: 5rem 0;
+            h1 {
+                font-family: @font-heading;
+                text-align: left;
+                margin: 0 2rem;
+                transition: all 0.5s ease;
+            }
+        }
+        #rvway-img {
+            padding-top: 5rem;
+            img {
+                height: 400px;
+                transition: all 0.5s ease;
+            }
+        }   
+    }
+}
