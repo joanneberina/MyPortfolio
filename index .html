@@ -5,7 +5,7 @@
     <script src="https://kit.fontawesome.com/1e3f8182fc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset">
     <link rel="stylesheet" href="https://use.typekit.net/zvp4xvv.css">
-    <link rel="stylesheet" href="css/rvway.css">
+    <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -14,47 +14,44 @@
 <body>
     <header>
         <nav>
-            <div id="avatar" class="hide">
+            <div id="avatar">
                 <img src="images/avatar.png" alt="An ink drawing of Joanne Berina">
             </div>
             <ul>
-                <li><a href="index.html">Home</li>
+                <li id="nav_inactive">Home</li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="images/joanneberina_resume.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
-        <div class="hero rvway">
-            <div id="rvway-title">
-                <h1>How might we help RV drivers safely get to their destination?</h1>
-            </div>
-            <div id="rvway-img">
-                <img src="images/rvway-browser.png" alt="RV Way Map page">
+        <div class="hero">
+            <div class="uvp">
+                <h1>Hello. I'm <span>Joanne Berina, </span>a UX Designer.</h1>
+                <h1>I solve problems using a design thinking and user-centric approach. I enjoy collaborating with my team, validating and iterating ideas.<h1>
             </div>
         </div>
     </header>
     <main>
-        <section class="overview">
-            <div class="section-title">
-                <h2>Project background</h2>
+        <section class="case-study">
+            <div id="rvway-image">
+                <img src="images/desktop.png" alt="RV Way Desktop web app">
             </div>
-            <div class="three-column">
-                <div class="column">
-                    <i></i>
-                    <p>8 Weeks</p>
-                </div>
-                <div class="column">
-                    <i></i>
-                    <p>2 UX designers</p>
-                    <p>5 Full-stack web developers</p>
-                    <p>3 Data scientists</p>
-                </div>
-                <div class="column">
-                    <i></i>
-                    <p>Build-on project</p>
-                </div>
+            <div class="case-text">
+                <p class="case-title">How might we help RV drivers safely get to their destination?</p>
+                <p class="case-desc">This web mapping service allows users to input their vehicle’s specific height and weight to generate a safe route that will avoid low bridges and overpasses.
+                </p>
+                <a href="rvway.html"><button>READ CASE STUDY</button></a>
             </div>
         </section>
-        
+        <section class="reverse case-study">
+            <div id="qb-image">
+                <img src="images/mobile-3.png" alt="A mobile screen of Quest for the Best's dashboard">
+            </div>
+            <div class="case-text">
+                <p class="case-title">Mobile App Design</p>
+                <p class="case-desc">Quest for the Best is a social challenge platform that encourages members of a community to seek out the best available experiences in their area. The underlying objective is to get community members to go outside and seek new experiences through “Quests”.</p>
+                <a href=""><button>READ CASE STUDY</button></a>
+            </div>
+        </section>
         <section class="connect">
             <p class="blurb center">I am open to talking about UX or anything under the sun.</p>
             <h1>Let's Connect!</h1>
