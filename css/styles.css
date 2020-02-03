@@ -166,8 +166,7 @@ header .uvp span {
 }
 @media (min-width: 1400px) {
   .hero .uvp h1 {
-    width: 95%;
-    font-size: 2.25rem;
+    font-size: 2rem;
     line-height: 3.5rem;
     padding-left: 15rem;
     transition: all 0.5s ease;
