@@ -31,6 +31,10 @@ body h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+body p {
+  padding-bottom: 2rem;
+  line-height: 1.8rem;
+}
 body .hide {
   visibility: hidden !important;
 }

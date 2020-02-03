@@ -31,6 +31,10 @@ body h2 {
   font-size: 1.5rem;
   font-weight: 600;
 }
+body p {
+  padding-bottom: 2rem;
+  line-height: 1.8rem;
+}
 body .hide {
   visibility: hidden !important;
 }
@@ -417,8 +421,8 @@ footer ul li img {
 }
 @media (min-width: 600px) {
   .rvway #rvway-title h1 {
-    font-size: 2.5rem;
-    line-height: 4rem;
+    font-size: 2.25rem;
+    line-height: 3rem;
     text-align: center;
     transition: all 0.5s ease;
   }
@@ -457,12 +461,9 @@ footer ul li img {
 main .p-container {
   width: 60%;
   margin: 0 auto;
-  padding-bottom: 2rem;
 }
 main .p-container .section-title h2 {
   color: #1FB1D1;
-}
-main .p-container .section-content p {
   padding-bottom: 1rem;
 }
 main .p-container .section-content .figure img {
