@@ -9,14 +9,11 @@ body {
   line-height: 2.5rem;
 }
 body a {
-  color: #767A85;
+  color: #567DE1;
   transition: all 0.2s ease;
 }
 body a:link {
   text-decoration: none;
-}
-body a:hover {
-  color: #adc0f0;
 }
 body ul {
   width: 100%;
@@ -76,13 +73,14 @@ header nav ul {
   transition: all 0.5s ease;
 }
 header nav ul li {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   letter-spacing: 0.5px;
   transition: all 0.5s ease;
 }
-header nav ul li:hover {
-  text-decoration: underline;
-  transition: all 0.5s ease-in-out;
+header nav ul li a:hover {
+  color: #5275CF;
+  transition: all 0.5s ease;
 }
 header nav #nav_inactive {
   color: #97afed;

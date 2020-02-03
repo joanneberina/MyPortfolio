@@ -13,16 +13,13 @@ body {
   line-height: 2.5rem;
 
   a {
-    color: #767A85;
+    color: lighten(@link-color, 15%);
     transition: all .2s ease;
+    font-family: @font-heading;
   }
 
   a:link {
     text-decoration: none;
-  }
-
-  a:hover {
-    color: lighten(@link-color, 20%);
   }
 
   ul {
@@ -91,17 +88,21 @@ header {
       padding: 0;
       transition: all .5s ease;
       li {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        font-weight: 600;
         letter-spacing: .5px;
         transition: all .5s ease;
-      }
-      li:hover {
-        text-decoration: underline;
-        transition: all .5s ease-in-out;
+        a:hover {
+        color: @primary-color;
+        transition: all .2s ease-in-out;
+        }
       }
     }
 
     #nav_inactive {
+      font-family: @font-heading;
+      font-size: 1.1rem;
+      font-weight: 600;
       color: lighten(@link-color, 15%);
     }
 
@@ -153,11 +154,19 @@ header {
       letter-spacing: -0.5px;
       line-height: 2.1rem;
       padding: 0;
-      color: lighten(@text-body, 20%);
+      color: @text-body;
       transition: all .5s ease;
     }
-    span {
-      color: @primary-color;
+    
+    .underline {
+      background-image: linear-gradient(130deg, #C3D4FF 0%, #DAE8FC 100%);
+      background-repeat: no-repeat;
+      background-size: 100% 0.2em;
+      background-position: 0 88%;
+      transition: background-size 0.25s ease-in;z
+      .underline:hover {
+        background-size: 100% 88%;
+      }
     }
   }
 }
@@ -258,7 +267,8 @@ header {
   .case-title {
     font-family: @font-heading;
     color: lighten(@primary-color, 5%);
-    line-height: 2.5rem;
+    line-height: 2rem;
+    padding-top: 2rem;
   }
   .case-desc {
     line-height: 2rem;
