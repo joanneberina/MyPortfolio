@@ -25,6 +25,10 @@ body ul {
 body h1 {
   font-weight: 600;
 }
+body h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
 body .hide {
   visibility: hidden !important;
 }
@@ -201,12 +205,7 @@ header .uvp span {
 .case-study .case-title {
   font-family: "Soleil", sans-serif;
   color: #6685d5;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 2rem;
-}
-.case-study .case-title span {
-  font-weight: 600;
+  line-height: 2.5rem;
 }
 .case-study .case-desc {
   font-size: 1.1rem;
@@ -216,6 +215,12 @@ header .uvp span {
   .case-study .case-text {
     width: 500px;
     margin: 0 auto;
+  }
+  .case-study .case-text .case-title {
+    padding: 1rem 0;
+  }
+  .case-study .case-text .case-desc {
+    padding-bottom: 2rem;
   }
   .case-study #rvway-image {
     padding: 0;
@@ -251,6 +256,7 @@ header .uvp span {
   }
   .case-study .case-text .case-title {
     margin-bottom: 1rem;
+    padding: 0;
   }
 }
 .case-study .link {
@@ -285,9 +291,8 @@ header .uvp span {
   width: 100%;
   padding: 5rem 0;
   color: #EFF0F0;
-  background-color: #475A8D;
+  background-color: #5275CF;
   font-family: "Soleil", sans-serif;
-  border-top: solid 2px #ffffff;
   text-align: center;
 }
 .connect .blurb {
@@ -321,16 +326,16 @@ header .uvp span {
   color: #EFF0F0;
 }
 .connect .social .fab:hover {
-  color: #5881F0;
+  color: #FFFF F;
   transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
-  -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
-  -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
-  -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
-  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+  -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
+  -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
+  -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
+  -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
 }
 @media (min-width: 500px) {
   .connect h1 {
