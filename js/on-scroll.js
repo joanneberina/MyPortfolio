@@ -7,8 +7,13 @@ window.addEventListener("resize", scrollFunction())
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("avatar-img").style.height = "40px"
-    document.querySelector("nav").style.backgroundColor = "#5275CF"
-    document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style.color = "white"))
+    if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
+      document.querySelector("nav").style.backgroundColor = "#5275CF"
+      document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style.color = "white"))
+    } else {
+      document.querySelector("nav").style.backgroundColor = "#F3F4F6"
+      document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style.color = "#767A85"))
+    }
     if (window.innerWidth > 900) {
       document.getElementById("avatar").style.marginTop = "1.5rem"
       document.getElementById("avatar").style.marginBottom = "0"
@@ -39,3 +44,5 @@ function scrollFunction() {
     }
   }
 }
+
+console.log(window.location.pathname)
