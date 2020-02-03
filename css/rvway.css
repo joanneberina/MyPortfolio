@@ -384,6 +384,26 @@ footer ul li img {
     font-size: 0.9rem;
   }
 }
+.painpoints ul,
+.wants ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 160px;
+}
+.painpoints ul li,
+.wants ul li {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  padding: 0 1rem;
+  margin: 4px;
+  border-radius: 1.2rem;
+}
+.painpoints li {
+  background-color: #f8e9dd;
+}
+.wants li {
+  background-color: #D4F0F6;
+}
 .rvway {
   background-color: #E2FAFF;
   padding: 5rem 0;
