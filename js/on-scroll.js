@@ -7,13 +7,8 @@ window.addEventListener("resize", scrollFunction())
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("avatar-img").style.height = "40px"
-    if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
-      document.querySelector("nav").style.backgroundColor = "#567DE1"
-      document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style.color = "white"))
-    } else {
-      document.querySelector("nav").style.backgroundColor = "rgba(240, 243, 248, 0.90)"
-      document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style. color = "#767A85"))
-    }
+    document.querySelector("nav").style.backgroundColor = "rgba(240, 243, 248, 0.90)"
+    document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style.color = "#767A85"))
     if (window.innerWidth > 900) {
       document.getElementById("avatar").style.marginTop = "1.5rem"
       document.getElementById("avatar").style.marginBottom = "0"
