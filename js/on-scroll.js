@@ -28,7 +28,7 @@ function scrollFunction() {
       document.getElementById("nav-ul").style.margin = "0 auto"
     }
   } else {
-    document.querySelector("nav").style.backgroundColor = "rgba(253, 253, 253, 0.5)"
+    document.querySelector("nav").style.backgroundColor = "rgba(253, 253, 253, 0)"
     document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style.color = "#767A85"))
     if (window.innerWidth > 600) {
       document.querySelector("#avatar").style.margin = "1.5rem 5rem"
