@@ -8,7 +8,7 @@ function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("avatar-img").style.height = "40px"
     if (window.location.pathname === "/index.html" || window.location.pathname === "/") {
-      document.querySelector("nav").style.backgroundColor = "#5275CF"
+      document.querySelector("nav").style.backgroundColor = "#567DE1"
       document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style.color = "white"))
     } else {
       document.querySelector("nav").style.backgroundColor = "#F3F4F6"
