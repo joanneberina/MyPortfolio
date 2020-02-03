@@ -31,31 +31,35 @@
   @media (min-width: 300px) {
     #rvway-title {
       h1 {
-        font-size: 2rem;
-        line-height: 3rem;
+        width: 95%;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        padding-bottom: 2rem;
         transition: all 0.5s ease;
       }
     }
     #rvway-img {
       img {
-        height: 175px;
+        height: 240px;
         transition: all 0.5s ease;
       }
     }
   }
   //Media query 600px
   @media (min-width: 600px) {
+    padding-bottom: 10rem;
     #rvway-title {
       h1 {
-        font-size: 2.25rem;
-        line-height: 3rem;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 2.75rem;
         text-align: center;
         transition: all 0.5s ease;
       }
     }
-    #rvway-img {
+    #rvway-img {  
       img {
-        height: 350px;
+        height: 320px;
         transition: all 0.5s ease;
       }
     }
@@ -66,13 +70,15 @@
     flex-direction: row;
     justify-content: center;
     height: 400px !important;
+    padding-bottom: 5rem;
     #rvway-title {
       display: flex;
       align-items: center;
       max-width: 30%;
       margin: 5rem 0;
       h1 {
-        font-family: @font-heading;
+        font-size: 2.25rem;
+        line-height: 3.25rem;
         text-align: left;
         margin: 0 2rem;
         transition: all 0.5s ease;
@@ -107,6 +113,10 @@ main {
                 }
             }
         }
+        .three-column {
+
+        }
+
         // Media query - section 600px
         @media (min-width: 600px) {
             width: 80%;
