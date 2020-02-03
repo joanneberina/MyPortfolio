@@ -48,7 +48,7 @@ main {
   padding-top: 5rem;
 }
 header {
-  background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+  background: linear-gradient(to bottom, #ffffff, #f4f8ff);
 }
 header nav {
   display: flex;
@@ -357,7 +357,7 @@ header .uvp span {
 footer {
   display: flex;
   justify-content: space-around;
-  background-color: #E9ECF0;
+  background-color: #F4F8FF;
   padding: 0 2rem;
 }
 footer ul {

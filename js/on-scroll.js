@@ -11,8 +11,8 @@ function scrollFunction() {
       document.querySelector("nav").style.backgroundColor = "#567DE1"
       document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style.color = "white"))
     } else {
-      document.querySelector("nav").style.backgroundColor = "#F3F4F6"
-      document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style.color = "#767A85"))
+      document.querySelector("nav").style.backgroundColor = "rgba(240, 243, 248, 0.90)"
+      document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style. color = "#767A85"))
     }
     if (window.innerWidth > 900) {
       document.getElementById("avatar").style.marginTop = "1.5rem"
