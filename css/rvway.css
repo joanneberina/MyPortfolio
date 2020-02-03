@@ -25,6 +25,10 @@ body ul {
 body h1 {
   font-weight: 600;
 }
+body h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
 body .hide {
   visibility: hidden !important;
 }
@@ -135,7 +139,7 @@ header .uvp span {
   }
   .hero .uvp h1 {
     font-size: 1.75rem;
-    line-height: 2.5rem;
+    line-height: 2.75rem;
     transition: all 0.5s ease;
   }
 }
@@ -166,7 +170,7 @@ header .uvp span {
 @media (min-width: 1400px) {
   .hero .uvp h1 {
     font-size: 2rem;
-    line-height: 3.5rem;
+    line-height: 3.25rem;
     padding-left: 15rem;
     transition: all 0.5s ease;
   }
@@ -201,12 +205,7 @@ header .uvp span {
 .case-study .case-title {
   font-family: "Soleil", sans-serif;
   color: #6685d5;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 2rem;
-}
-.case-study .case-title span {
-  font-weight: 600;
+  line-height: 2.5rem;
 }
 .case-study .case-desc {
   font-size: 1.1rem;
