@@ -1,10 +1,13 @@
 @import "variables2.less";
 
 // General styles
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0 auto;
   font-family: @font-body;
-  font-size: 18px;
   color: @text-body;
   border-top: 5px solid @primary-color;
   line-height: 2.5rem;
@@ -34,7 +37,7 @@ body {
   }
   
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: 600;
   }
 
@@ -84,6 +87,7 @@ header {
       transition: all .5s ease;
       li {
         font-size: 1rem;
+        letter-spacing: .5px;
         transition: all .5s ease;
       }
       li:hover {
@@ -116,8 +120,6 @@ header {
         margin-right: 3rem;
         li {
           padding-left: 4rem;
-          //padding-bottom: 1rem;
-          font-size: 1.25rem;
         }
       }
     }
@@ -144,9 +146,9 @@ header {
 
     h1 {
       font-family: @font-heading;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       letter-spacing: -0.5px;
-      line-height: 2rem;
+      line-height: 2.1rem;
       padding: 0;
       color: lighten(@text-body, 20%);
       transition: all .5s ease;
@@ -157,15 +159,15 @@ header {
   }
 }
 
-  // Media query 500px - hero section
-  @media (min-width: 500px) {
+  // Media query 400px - hero section
+  @media (min-width: 400px) {
     .hero {
       .uvp {
         margin: 0 auto;
-        max-width: 500px;
+        max-width: 400px;
         h1 {
-          font-size: 1.75rem;
-          line-height: 2.75rem;
+          font-size: 1.3rem;
+          line-height: 2.25rem;
           transition: all .5s ease;
         }
       }
@@ -183,10 +185,8 @@ header {
         h1 {
           width: 80%;
           margin: 0;
-          padding-left: 5rem;
+          padding-left: 1rem;
           text-align: left;
-          font-size: 1.85rem;
-          line-height: 3rem;
           transition: all .5s ease;
         }
       }
@@ -197,8 +197,10 @@ header {
     .hero {
       .uvp {
         h1 {
+          font-size: 1.5rem;
+          line-height: 2.5rem;
           width: 90%;
-          padding-left: 10rem;
+          padding-left: 3rem;
           transition: all .5s ease;
         }
       }
@@ -209,9 +211,9 @@ header {
     .hero {
       .uvp {
         h1 {
-          font-size: 2rem;
-          line-height: 3.25rem;
-          padding-left: 15rem;
+          font-size: 1.75rem;
+          line-height: 2.75rem;
+          padding-left: 12rem;
           transition: all .5s ease;
         }
       }
@@ -256,7 +258,6 @@ header {
     line-height: 2.5rem;
   }
   .case-desc {
-    font-size: 1.1rem;
     line-height: 2rem;
   }
 
@@ -320,7 +321,7 @@ header {
   }
   
   button {
-    font-size: 1rem;
+    font-size: .8rem;
     font-family: @font-body;
     font-weight: 500;
     padding: .75rem 2rem;
@@ -357,7 +358,6 @@ header {
   .blurb {
     width: 80%;
     margin: 0 auto;
-    letter-spacing: -0.1px;
     line-height: 1.5rem;
     font-weight: 300;
   }
@@ -371,15 +371,15 @@ header {
 
   #email {
     color: @gray;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-align: center;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 0 0.5rem 0;
   } 
   .social {
     width: 100%;
     margin-top: 2rem;
-    text-align:center;
+    text-align: center;
     .fab {  
       padding: 0 1.25rem;
       font-size: 2.5rem;
@@ -406,8 +406,12 @@ header {
       transition: all 0.5s ease;
     }
 
+    .blurb {
+      font-size: 1.25rem;
+    }
+
     #email {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       transition: all 0.5s ease;
     }
   }
