@@ -81,10 +81,8 @@ header nav ul li {
   transition: all 0.5s ease;
 }
 header nav ul li:hover {
-  border-color: #7D99E1;
-  border-radius: 25px;
-  color: #567DE1;
-  transition: all 0.5s ease;
+  text-decoration: underline;
+  transition: all 0.5s ease-in-out;
 }
 header nav #nav_inactive {
   color: #97afed;

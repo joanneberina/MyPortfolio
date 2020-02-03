@@ -294,7 +294,7 @@ header .uvp span {
 }
 .connect {
   width: 100%;
-  padding: 5rem 0;
+  padding: 3rem 0;
   color: #EFF0F0;
   background-color: #5275CF;
   font-family: "Soleil", sans-serif;
@@ -307,7 +307,6 @@ header .uvp span {
   font-weight: 300;
 }
 .connect h1 {
-  margin: 3rem 0 0.5rem 0;
   font-family: "Soleil", sans-serif;
   font-size: 2.25rem;
   text-align: center;
@@ -321,12 +320,11 @@ header .uvp span {
 }
 .connect .social {
   width: 100%;
-  margin-top: 2rem;
   text-align: center;
 }
 .connect .social .fab {
   padding: 0 1.25rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #EFF0F0;
 }
 .connect .social .fab:hover {
@@ -340,6 +338,9 @@ header .uvp span {
   -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
   -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
   filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
+}
+.connect .social i {
+  vertical-align: bottom;
 }
 @media (min-width: 500px) {
   .connect h1 {
