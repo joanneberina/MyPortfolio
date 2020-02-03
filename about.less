@@ -14,29 +14,31 @@
   margin: 0rem auto;
   max-width: 1100px;
 
-  .about-title {
-    #aboutme {
-      margin: 2rem;
-      padding-top: 4rem;
-      font-family: @font-heading;
-      font-size: 2.5rem;
-      color: @primary-color;
-    }
-    #joanne-drawing {
-      height: 300px;
-      img {
+  .about-content {
+    padding-top: 4rem;
+    .about-title {
+      #aboutme {
+        margin: 2rem;
+        padding-top: 4rem;
+        font-family: @font-heading;
+        font-size: 2.5rem;
+        color: @primary-color;
+      }
+      #joanne-drawing {
         height: 300px;
-        padding: 0 2rem;
-        margin: 0;
+        img {
+          height: 300px;
+          padding: 0 2rem;
+          margin: 0;
+        }
       }
     }
+    .about-text {
+      margin: 2rem;
+      font-size: 1.25rem;
+      line-height: 2.2rem;
+    }
   }
-  .about-text {
-    margin: 2rem;
-    font-size: 1.25rem;
-    line-height: 2.2rem;
-  }
-
   // Media Query - about page
   @media (min-width: 860px) {
     .about-content {
