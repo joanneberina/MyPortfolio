@@ -51,7 +51,7 @@ header nav {
   transition: all 0.5s ease;
 }
 header nav #avatar {
-  width: 70;
+  width: 70px;
   margin: 1.5rem;
 }
 header nav #avatar img {
@@ -91,13 +91,12 @@ header nav .sticky {
     height: 100px;
     padding: 0;
   }
-  header nav Ul {
+  header nav ul {
     justify-content: flex-end;
     margin-right: 3rem;
   }
-  header nav Ul li {
+  header nav ul li {
     padding-left: 4rem;
-    padding-bottom: 1rem;
     font-size: 1.25rem;
   }
 }
