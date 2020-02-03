@@ -51,7 +51,7 @@ header nav {
   transition: all 0.5s ease;
 }
 header nav #avatar {
-  width: 70;
+  width: 70px;
   margin: 1.5rem;
 }
 header nav #avatar img {
@@ -91,13 +91,12 @@ header nav .sticky {
     height: 100px;
     padding: 0;
   }
-  header nav Ul {
+  header nav ul {
     justify-content: flex-end;
     margin-right: 3rem;
   }
-  header nav Ul li {
+  header nav ul li {
     padding-left: 4rem;
-    padding-bottom: 1rem;
     font-size: 1.25rem;
   }
 }
@@ -153,12 +152,16 @@ header .uvp span {
     margin: 0;
     padding-left: 5rem;
     text-align: left;
+    font-size: 1.9rem;
     line-height: 3rem;
     transition: all 0.5s ease;
   }
 }
 @media (min-width: 1000px) {
   .hero .uvp h1 {
+    width: 90%;
+    font-size: 2.25rem;
+    line-height: 3.5rem;
     padding-left: 15rem;
     transition: all 0.5s ease;
   }
