@@ -105,18 +105,23 @@ main {
         h2 {
             color: #1FB1D1;
             padding-bottom: 1rem;
+            line-height: 2rem;
         }
     }
     // Media query - section 600px
     @media (min-width: 600px) {
       width: 80%;
-  }
-  // Media query - section 900px
-  @media (min-width: 900px) {
+    }
+    // Media query - section 900px
+    @media (min-width: 900px) {
+      width: 75%;
+    }
+    // Media query - section 1000px
+    @media (min-width: 1000px) {
       width: 60%;
-      max-width: 61%;
-  }
-    //Image styling under figure class
+      max-width: 65%;
+    }
+    //General image styling under figure class
     .figure {
       img {
           width: 900px;
@@ -125,16 +130,18 @@ main {
     //Project background
     .three-column {
       padding-top: 1rem;
-      // flex wrap?
+      text-align: center;
 
       // Media query 600px - three column
       @media (min-width: 600px) {
         display: flex;
         justify-content: space-around;
-        .column {
-          padding: 0 4rem;
-          p {
-            padding: 0.5rem 0;
+        .three-column {
+          .column {
+            padding: 0 2rem;
+            p {
+              padding: 0.5rem 0;
+            }
           }
         }
       }

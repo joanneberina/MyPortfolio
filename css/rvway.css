@@ -493,6 +493,7 @@ main .p-container {
 main .p-container .section-title h2 {
   color: #1FB1D1;
   padding-bottom: 1rem;
+  line-height: 2rem;
 }
 @media (min-width: 600px) {
   main .p-container {
@@ -501,8 +502,13 @@ main .p-container .section-title h2 {
 }
 @media (min-width: 900px) {
   main .p-container {
+    width: 75%;
+  }
+}
+@media (min-width: 1000px) {
+  main .p-container {
     width: 60%;
-    max-width: 61%;
+    max-width: 65%;
   }
 }
 main .p-container .figure img {
@@ -510,16 +516,17 @@ main .p-container .figure img {
 }
 main .p-container .three-column {
   padding-top: 1rem;
+  text-align: center;
 }
 @media (min-width: 600px) {
   main .p-container .three-column {
     display: flex;
     justify-content: space-around;
   }
-  main .p-container .three-column .column {
-    padding: 0 4rem;
+  main .p-container .three-column .three-column .column {
+    padding: 0 2rem;
   }
-  main .p-container .three-column .column p {
+  main .p-container .three-column .three-column .column p {
     padding: 0.5rem 0;
   }
 }
