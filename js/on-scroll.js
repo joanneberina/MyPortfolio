@@ -10,6 +10,9 @@ function scrollFunction() {
     document.querySelector("nav").style.backgroundColor = "#5275CF"
     document.querySelectorAll("#nav-ul > li > a").forEach((node) => (node.style.color = "white"))
     if (window.innerWidth > 900) {
+      document.getElementById("avatar").style.marginTop = "1.5rem"
+      document.getElementById("avatar").style.marginBottom = "0"
+
       document.getElementById("nav-ul").style.margin = "0 auto"
       document.getElementById("nav-ul").style.marginRight = "6rem"
     } else if (window.innerWidth > 600) {
