@@ -488,13 +488,52 @@ footer ul li img {
 main .p-container {
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 4rem;
 }
 main .p-container .section-title h2 {
   color: #1FB1D1;
   padding-bottom: 1rem;
 }
-main .p-container .section-content .figure img {
+main .p-container .figure img {
   width: 900px;
+}
+main .p-container .three-column {
+  padding-top: 1rem;
+}
+@media (min-width: 600px) {
+  main .p-container .three-column {
+    display: flex;
+    justify-content: space-around;
+  }
+  main .p-container .three-column .column {
+    padding: 0 4rem;
+  }
+  main .p-container .three-column .column p {
+    padding: 0.5rem 0;
+  }
+}
+main .p-container .card-container {
+  display: flex;
+  justify-content: space-between;
+}
+main .p-container .card-container .card {
+  display: flex;
+  width: 250px;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #EBFCFF;
+}
+main .p-container .card-container .card .card-title {
+  width: 85%;
+  font-weight: 600;
+  border-bottom: 1px solid #D3E8EC;
+}
+main .p-container .card-container .card .card-text {
+  padding-top: 0.5rem;
+}
+main .p-container .card-container .card .card-text p {
+  padding: 0;
 }
 @media (min-width: 600px) {
   main .p-container {
