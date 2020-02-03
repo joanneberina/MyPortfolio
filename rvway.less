@@ -27,7 +27,7 @@
       transition: all 0.5s ease;
     }
   }
-  //Media query 300px
+  //Media query 300px - hero section
   @media (min-width: 300px) {
     #rvway-title {
       h1 {
@@ -45,7 +45,7 @@
       }
     }
   }
-  //Media query 600px
+  //Media query 600px - hero section
   @media (min-width: 600px) {
     padding-bottom: 10rem;
     #rvway-title {
@@ -64,7 +64,7 @@
       }
     }
   }
-  // Media query 900px
+  // Media query 900px - hero section
   @media (min-width: 900px) {
     display: flex;
     flex-direction: row;
@@ -96,72 +96,72 @@
 
 // Main - case study content
 main {
-    //Section styling
-    .p-container {
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 4rem;
-        .section-title {
-            h2 {
-                color: #1FB1D1;
-                padding-bottom: 1rem;
-            }
-        }
-        //Image styling under figure class
-        .figure {
-          img {
-              width: 900px;
-          }
-        }
-        //Project background
-        .three-column {
-          padding-top: 1rem;
-          // flex wrap?
-
-          // Media query 600px - three column
-          @media (min-width: 600px) {
-            display: flex;
-            justify-content: space-around;
-            .column {
-              padding: 0 4rem;
-              p {
-                padding: 0.5rem 0;
-              }
-            }
-          }
-        }
-        //The Big RV picture illustration
-        .card-container {
-          display: flex;
-          justify-content: space-between;
-          .card {
-            display: flex;
-            width: 250px;
-            flex-direction: column;
-            align-items: center;
-            padding: 1rem;
-            background-color: #EBFCFF;
-            .card-title {
-              width: 85%;
-              font-weight: 600;
-              border-bottom: 1px solid #D3E8EC;
-            }
-            .card-text {
-              padding-top: .5rem;
-              p {
-                padding: 0;
-              }
-            }
-          }
-        }
-     
-        // Media query - section 600px
-        @media (min-width: 600px) {
-            width: 80%;
-        }
-        // Media query - section 1000px
-        @media (min-width: 1000px) {
-            width: 65%;
+  //Section styling
+  .p-container {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+    .section-title {
+        h2 {
+            color: #1FB1D1;
+            padding-bottom: 1rem;
         }
     }
+    // Media query - section 600px
+    @media (min-width: 600px) {
+      width: 80%;
+  }
+  // Media query - section 900px
+  @media (min-width: 900px) {
+      width: 60%;
+      max-width: 61%;
+  }
+    //Image styling under figure class
+    .figure {
+      img {
+          width: 900px;
+      }
+    }
+    //Project background
+    .three-column {
+      padding-top: 1rem;
+      // flex wrap?
+
+      // Media query 600px - three column
+      @media (min-width: 600px) {
+        display: flex;
+        justify-content: space-around;
+        .column {
+          padding: 0 4rem;
+          p {
+            padding: 0.5rem 0;
+          }
+        }
+      }
+    }
+    //The Big RV picture illustration
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+      .card {
+        display: flex;
+        width: 250px;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        background-color: #EBFCFF;
+        .card-title {
+          width: 85%;
+          font-weight: 600;
+          border-bottom: 1px solid #D3E8EC;
+        }
+        .card-text {
+          padding-top: .5rem;
+          p {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
 }
