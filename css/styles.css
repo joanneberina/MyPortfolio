@@ -306,7 +306,7 @@ header .uvp span {
 }
 .connect h1 {
   font-family: "Soleil", sans-serif;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 .connect #email {
@@ -342,12 +342,11 @@ header .uvp span {
 }
 @media (min-width: 500px) {
   .connect h1 {
-    font-size: 3rem;
     margin-bottom: 1rem;
     transition: all 0.5s ease;
   }
   .connect .blurb {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
   .connect #email {
     font-size: 1.25rem;
