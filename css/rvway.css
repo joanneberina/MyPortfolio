@@ -398,7 +398,7 @@ footer ul li img {
     transition: all 0.5s ease;
   }
   .rvway #rvway-img img {
-    height: 200px;
+    height: 175px;
     transition: all 0.5s ease;
   }
 }
@@ -450,6 +450,6 @@ main .p-container .section-title h2 {
   color: #1FB1D1;
 }
 main .p-container .section-content .figure img {
-  height: 500px;
+  width: 900px;
 }
 /*# sourceMappingURL=./rvway.css.map */
