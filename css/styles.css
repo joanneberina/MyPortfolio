@@ -216,6 +216,12 @@ header .uvp span {
     width: 500px;
     margin: 0 auto;
   }
+  .case-study .case-text .case-title {
+    padding: 1rem 0;
+  }
+  .case-study .case-text .case-desc {
+    padding-bottom: 2rem;
+  }
   .case-study #rvway-image {
     padding: 0;
   }
@@ -250,6 +256,7 @@ header .uvp span {
   }
   .case-study .case-text .case-title {
     margin-bottom: 1rem;
+    padding: 0;
   }
 }
 .case-study .link {
