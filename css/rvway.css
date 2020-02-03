@@ -81,10 +81,8 @@ header nav ul li {
   transition: all 0.5s ease;
 }
 header nav ul li:hover {
-  border-color: #7D99E1;
-  border-radius: 25px;
-  color: #567DE1;
-  transition: all 0.5s ease;
+  text-decoration: underline;
+  transition: all 0.5s ease-in-out;
 }
 header nav #nav_inactive {
   color: #97afed;
@@ -480,7 +478,7 @@ footer ul li img {
   }
 }
 main .p-container {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 main .p-container .section-title h2 {
@@ -489,5 +487,15 @@ main .p-container .section-title h2 {
 }
 main .p-container .section-content .figure img {
   width: 900px;
+}
+@media (min-width: 600px) {
+  main .p-container {
+    width: 80%;
+  }
+}
+@media (min-width: 1000px) {
+  main .p-container {
+    width: 65%;
+  }
 }
 /*# sourceMappingURL=./rvway.css.map */
