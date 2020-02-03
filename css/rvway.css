@@ -153,12 +153,16 @@ header .uvp span {
     margin: 0;
     padding-left: 5rem;
     text-align: left;
+    font-size: 1.9rem;
     line-height: 3rem;
     transition: all 0.5s ease;
   }
 }
 @media (min-width: 1000px) {
   .hero .uvp h1 {
+    width: 90%;
+    font-size: 2.25rem;
+    line-height: 3.5rem;
     padding-left: 15rem;
     transition: all 0.5s ease;
   }
@@ -364,7 +368,7 @@ footer ul li img {
   }
 }
 .rvway {
-  background-color: #e2faff;
+  background-color: #E2FAFF;
   padding: 5rem 0;
 }
 .rvway #rvway-title {
@@ -437,5 +441,16 @@ footer ul li img {
     height: 400px;
     transition: all 0.5s ease;
   }
+}
+main .p-container {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+main .p-container .section-title h2 {
+  color: #1FB1D1;
+}
+main .p-container .section-content .figure img {
+  height: 500px;
 }
 /*# sourceMappingURL=./rvway.css.map */
