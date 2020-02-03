@@ -138,11 +138,11 @@ header .uvp h1 {
 header .uvp .underline {
   background-image: linear-gradient(130deg, #C3D4FF 0%, #DAE8FC 100%);
   background-repeat: no-repeat;
-  background-size: 100% 0.2em;
+  background-size: 100% 0.5rem;
   background-position: 0 88%;
   transition: background-size 0.25s ease-in;
 }
-header .uvp .underline z .underline:hover {
+header .uvp .underline:hover {
   background-size: 100% 88%;
 }
 @media (min-width: 400px) {
