@@ -44,5 +44,3 @@ function scrollFunction() {
     }
   }
 }
-
-console.log(window.location.pathname)
