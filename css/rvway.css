@@ -9,14 +9,12 @@ body {
   line-height: 2.5rem;
 }
 body a {
-  color: #767A85;
+  color: #97afed;
   transition: all 0.2s ease;
+  font-family: "Soleil", sans-serif;
 }
 body a:link {
   text-decoration: none;
-}
-body a:hover {
-  color: #adc0f0;
 }
 body ul {
   width: 100%;
@@ -76,15 +74,19 @@ header nav ul {
   transition: all 0.5s ease;
 }
 header nav ul li {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
   letter-spacing: 0.5px;
   transition: all 0.5s ease;
 }
-header nav ul li:hover {
-  text-decoration: underline;
-  transition: all 0.5s ease-in-out;
+header nav ul li a:hover {
+  color: #5275CF;
+  transition: all 0.2s ease-in-out;
 }
 header nav #nav_inactive {
+  font-family: "Soleil", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #97afed;
 }
 header nav .sticky {
@@ -130,11 +132,18 @@ header .uvp h1 {
   letter-spacing: -0.5px;
   line-height: 2.1rem;
   padding: 0;
-  color: #9d9fa8;
+  color: #696B76;
   transition: all 0.5s ease;
 }
-header .uvp span {
-  color: #5275CF;
+header .uvp .underline {
+  background-image: linear-gradient(130deg, #C3D4FF 0%, #DAE8FC 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.5rem;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+header .uvp .underline:hover {
+  background-size: 100% 88%;
 }
 @media (min-width: 400px) {
   .hero .uvp {
@@ -209,7 +218,8 @@ header .uvp span {
 .case-study .case-title {
   font-family: "Soleil", sans-serif;
   color: #6685d5;
-  line-height: 2.5rem;
+  line-height: 2rem;
+  padding-top: 2rem;
 }
 .case-study .case-desc {
   line-height: 2rem;
@@ -401,6 +411,12 @@ footer ul li img {
 .wants li {
   background-color: #D4F0F6;
 }
+.highlight {
+  border-left: 5px solid #1FB1D1;
+  padding-left: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
 .rvway {
   background-color: #E2FAFF;
   padding: 5rem 0;
@@ -487,7 +503,7 @@ footer ul li img {
 main .p-container {
   width: 90%;
   margin: 0 auto;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 main .p-container .section-title h2 {
   color: #1FB1D1;
@@ -529,28 +545,45 @@ main .p-container .three-column {
     padding: 0.5rem 0;
   }
 }
-main .p-container .card-container {
-  display: flex;
-  justify-content: space-between;
+main .card-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
 }
-main .p-container .card-container .card {
+main .card-container .card {
   display: flex;
-  width: 250px;
   flex-direction: column;
+  width: 260px;
   align-items: center;
+  justify-content: center;
   padding: 1rem;
+  margin: 1rem 0;
   background-color: #EBFCFF;
 }
-main .p-container .card-container .card .card-title {
+main .card-container .card .card-title {
   width: 85%;
   font-weight: 600;
   border-bottom: 1px solid #D3E8EC;
 }
-main .p-container .card-container .card .card-text {
-  padding-top: 0.5rem;
+main .card-container .card .card-text {
+  width: 80%;
+  padding-top: 1rem;
 }
-main .p-container .card-container .card .card-text p {
+main .card-container .card .card-text p {
   padding: 0;
+}
+@media (min-width: 600px) {
+  main .card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  main .card-container .card {
+    min-height: 180px;
+    margin-right: 1rem;
+  }
 }
 .connect {
   background-color: #333642 !important;
