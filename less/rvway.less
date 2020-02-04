@@ -3,8 +3,10 @@
 
 // Hero section
 .rvway {
-  background-color: #E2FAFF;
+  background-color: #e2faff;
   padding: 5rem 0;
+  height: auto;
+  padding-bottom: 0;
   #rvway-title {
     max-width: 70%;
     margin: 0 auto;
@@ -46,7 +48,6 @@
   }
   //Media query 600px - hero section
   @media (min-width: 600px) {
-    padding-bottom: 10rem;
     #rvway-title {
       h1 {
         margin: 0 auto;
@@ -56,7 +57,7 @@
         transition: all 0.5s ease;
       }
     }
-    #rvway-img {  
+    #rvway-img {
       img {
         height: 320px;
         transition: all 0.5s ease;
@@ -68,8 +69,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    height: auto !important;
-    padding-bottom: 0;
     #rvway-title {
       display: flex;
       align-items: center;
@@ -104,7 +103,7 @@ main {
     .section-title {
       h2 {
         font-size: 1.6rem;
-        color: #1FB1D1;
+        color: #1fb1d1;
         padding-bottom: 1rem;
         line-height: 2rem;
       }
@@ -136,8 +135,8 @@ main {
     //General image styling under figure class
     .figure {
       img {
-          width: 900px;
-          padding-bottom: 2rem;
+        width: 900px;
+        padding-bottom: 2rem;
       }
     }
     //Project background
@@ -189,13 +188,13 @@ main {
 
     .wants {
       li {
-        background-color: #D4F0F6;
+        background-color: #d4f0f6;
       }
     }
     //Highlight
     .highlight {
       width: 80%;
-      border-left: 6px solid #1FB1D1;
+      border-left: 6px solid #1fb1d1;
       padding-left: 2rem;
       margin: 1rem 0rem 2rem 2rem;
       p {
@@ -209,12 +208,13 @@ main {
       .yes-no {
         display: flex;
         width: 100%;
-        .yes,  .no {
+        .yes,
+        .no {
           display: flex;
           flex-direction: column;
           align-items: center;
           padding: 1rem 2rem;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
           margin-right: 2rem;
           h3 {
             font-size: 1.4rem;
@@ -229,7 +229,7 @@ main {
           }
         }
         .yes {
-          background-color: #D4F0F6;
+          background-color: #d4f0f6;
         }
         .no {
           background-color: #f8e9dd;
@@ -250,11 +250,11 @@ main {
       justify-content: center;
       padding: 1rem;
       margin: 1rem 0;
-      background-color: #EBFCFF;
+      background-color: #ebfcff;
       .card-title {
         width: 85%;
         font-weight: 600;
-        border-bottom: 1px solid #D3E8EC;
+        border-bottom: 1px solid #d3e8ec;
       }
       .card-text {
         width: 80%;
@@ -281,7 +281,8 @@ main {
 
 .connect {
   background-color: #333642 !important;
-  p, h1 {
+  p,
+  h1 {
     color: rgba(235, 238, 244, 0.8) !important;
   }
 }
