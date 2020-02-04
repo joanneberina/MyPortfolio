@@ -96,6 +96,7 @@ header {
         font-weight: 600;
         letter-spacing: .5px;
         transition: all .5s ease;
+        padding-left: 3rem;
       }
         li:first-of-type {
           padding-left: 0;
@@ -191,6 +192,11 @@ header {
       letter-spacing: -0.5px;
       line-height: 2.1rem;
       padding: 0;
+      color: lighten(@text-body, 20%);
+      transition: all 0.5s ease;
+    }
+    span {
+      color: @primary-color;
       color: @text-body;
       transition: all .5s ease;
     }
@@ -206,7 +212,7 @@ header {
       }
     }
   }
-}
+
 
 // Media query 400px - hero section
 @media (min-width: 400px) {
