@@ -15,6 +15,8 @@
   max-width: 1100px;
 
   .about-content {
+    display: flex;
+    flex-direction: column-reverse;
     padding-top: 4rem;
     .about-title {
       #aboutme {
@@ -42,6 +44,7 @@
   @media (min-width: 860px) {
     .about-content {
       display: flex;
+      flex-direction: row;
       align-items: stretch;
       .about-title {
         display: flex;
