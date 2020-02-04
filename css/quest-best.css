@@ -1,20 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
 body {
   margin: 0 auto;
   font-family: "Acumin-pro", sans-serif;
-  font-size: 18px;
   color: #696B76;
   border-top: 5px solid #5275CF;
   line-height: 2.5rem;
 }
 body a {
-  color: #767A85;
+  color: #97afed;
   transition: all 0.2s ease;
+  font-family: "Soleil", sans-serif;
 }
 body a:link {
   text-decoration: none;
-}
-body a:hover {
-  color: #adc0f0;
 }
 body ul {
   width: 100%;
@@ -24,6 +27,14 @@ body ul {
 }
 body h1 {
   font-weight: 600;
+}
+body h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+body p {
+  padding-bottom: 2rem;
+  line-height: 1.8rem;
 }
 body .hide {
   visibility: hidden !important;
@@ -38,7 +49,7 @@ main {
   padding-top: 5rem;
 }
 header {
-  background: linear-gradient(to bottom, #ffffff, #f3f4f6);
+  background: linear-gradient(to bottom, #ffffff, #f4f8ff);
 }
 header nav {
   display: flex;
@@ -47,7 +58,6 @@ header nav {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: rgba(253, 253, 253, 0.5);
   transition: all 0.5s ease;
 }
 header nav #avatar {
@@ -60,83 +70,129 @@ header nav #avatar img {
   transition: all 0.5s ease;
 }
 header nav ul {
-  justify-content: space-around;
+  justify-content: flex-end;
   max-width: 400px;
-  margin: 1.5rem auto;
+  margin: 1.5rem 1.5rem 1.5rem auto;
   padding: 0;
   transition: all 0.5s ease;
 }
 header nav ul li {
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   transition: all 0.5s ease;
+  padding-left: 3rem;
 }
-header nav ul li:hover {
-  border-color: #7D99E1;
-  border-radius: 25px;
-  color: #567DE1;
-  transition: all 0.5s ease;
+header nav ul li:first-of-type {
+  padding-left: 0;
 }
-header nav #nav_inactive {
+header nav ul a:hover {
+  color: #5275CF;
+  transition: all 0.2s ease-in-out;
+}
+header #nav_inactive {
+  font-family: "Soleil", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #97afed;
 }
-header nav .sticky {
+header .sticky {
   position: fixed;
 }
 @media (min-width: 600px) {
-  header nav #avatar {
+  header #avatar {
     width: 100%;
     margin: 1.5rem 5rem;
   }
-  header nav #avatar img {
+  header #avatar img {
     height: 100px;
     padding: 0;
   }
-  header nav ul {
-    justify-content: flex-end;
+  header ul {
     margin-right: 3rem;
-  }
-  header nav ul li {
-    padding-left: 4rem;
-    font-size: 1.25rem;
   }
 }
 @media (min-width: 900px) {
-  header nav ul {
+  header ul {
     margin-right: 6rem;
   }
 }
-header .hero {
+.shrink {
+  background-color: rgba(240, 243, 248, 0.9);
+}
+.shrink #avatar {
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.shrink #avatar img {
+  height: 40px;
+}
+.shrink ul {
+  margin: 0 1.5rem 0 auto;
+}
+.shrink ul li {
+  color: #767a85;
+}
+@media (min-width: 600px) {
+  .shrink #avatar {
+    margin-left: 5rem;
+  }
+  .shrink ul {
+    margin: 0 3rem 0 auto;
+  }
+}
+@media (min-width: 900px) {
+  .shrink ul {
+    margin: 0 6rem 0 auto;
+  }
+}
+.hero {
   width: 100%;
   height: 350px;
   padding-top: 7rem;
   transition: all 0.5s ease;
 }
-header .uvp {
+.uvp {
   margin: 0 auto;
   padding: 5rem 2rem;
   text-align: center;
   transition: all 0.5s ease;
 }
-header .uvp h1 {
+.uvp h1 {
   font-family: "Soleil", sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   letter-spacing: -0.5px;
-  line-height: 2rem;
+  line-height: 2.1rem;
   padding: 0;
   color: #9d9fa8;
   transition: all 0.5s ease;
 }
-header .uvp span {
+.uvp span {
   color: #5275CF;
+  color: #696B76;
+  transition: all 0.5s ease;
 }
-@media (min-width: 500px) {
+.uvp .underline {
+  background-image: linear-gradient(130deg, #C3D4FF 0%, #DAE8FC 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.5rem;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+.uvp .underline:hover {
+  background-size: 100% 88%;
+}
+@media (min-width: 400px) {
   .hero .uvp {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 400px;
   }
   .hero .uvp h1 {
-    font-size: 1.75rem;
-    line-height: 2.5rem;
+    font-size: 1.3rem;
+    line-height: 2.25rem;
     transition: all 0.5s ease;
   }
 }
@@ -150,19 +206,25 @@ header .uvp span {
   .hero .uvp h1 {
     width: 80%;
     margin: 0;
-    padding-left: 5rem;
+    padding-left: 1rem;
     text-align: left;
-    font-size: 1.9rem;
-    line-height: 3rem;
     transition: all 0.5s ease;
   }
 }
 @media (min-width: 1000px) {
   .hero .uvp h1 {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
     width: 90%;
-    font-size: 2.25rem;
-    line-height: 3.5rem;
-    padding-left: 15rem;
+    padding-left: 3rem;
+    transition: all 0.5s ease;
+  }
+}
+@media (min-width: 1400px) {
+  .hero .uvp h1 {
+    font-size: 1.75rem;
+    line-height: 2.75rem;
+    padding-left: 12rem;
     transition: all 0.5s ease;
   }
 }
@@ -196,21 +258,22 @@ header .uvp span {
 .case-study .case-title {
   font-family: "Soleil", sans-serif;
   color: #6685d5;
-  font-size: 1.5rem;
-  font-weight: 600;
   line-height: 2rem;
-}
-.case-study .case-title span {
-  font-weight: 600;
+  padding-top: 2rem;
 }
 .case-study .case-desc {
-  font-size: 1.1rem;
   line-height: 2rem;
 }
 @media (min-width: 600px) {
   .case-study .case-text {
     width: 500px;
     margin: 0 auto;
+  }
+  .case-study .case-text .case-title {
+    padding: 1rem 0;
+  }
+  .case-study .case-text .case-desc {
+    padding-bottom: 2rem;
   }
   .case-study #rvway-image {
     padding: 0;
@@ -246,6 +309,7 @@ header .uvp span {
   }
   .case-study .case-text .case-title {
     margin-bottom: 1rem;
+    padding: 0;
   }
 }
 .case-study .link {
@@ -256,11 +320,11 @@ header .uvp span {
   font-weight: 500;
 }
 .case-study button {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-family: "Acumin-pro", sans-serif;
   font-weight: 500;
   padding: 0.75rem 2rem;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-color: #7D99E1;
   border-radius: 25px;
   color: #567DE1;
@@ -278,70 +342,71 @@ header .uvp span {
 }
 .connect {
   width: 100%;
-  padding: 5rem 0;
-  color: #EFF0F0;
-  background-color: #475A8D;
+  padding: 3rem 0;
+  color: #EBEEF4;
+  background-color: #5275CF;
   font-family: "Soleil", sans-serif;
-  border-top: solid 2px #ffffff;
   text-align: center;
 }
 .connect .blurb {
   width: 80%;
   margin: 0 auto;
-  letter-spacing: -0.1px;
   line-height: 1.5rem;
   font-weight: 300;
 }
 .connect h1 {
-  margin: 3rem 0 0.5rem 0;
   font-family: "Soleil", sans-serif;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   text-align: center;
 }
 .connect #email {
-  color: #EFF0F0;
-  font-size: 1.25rem;
+  color: #EBEEF4;
+  font-size: 1rem;
   text-align: center;
-  font-weight: 300;
-  margin: 0 0 0.5rem 0;
+  font-weight: 400;
+  margin: 0;
 }
 .connect .social {
   width: 100%;
-  margin-top: 2rem;
   text-align: center;
 }
 .connect .social .fab {
   padding: 0 1.25rem;
-  font-size: 2.5rem;
-  color: #EFF0F0;
+  font-size: 2rem;
+  color: #EBEEF4;
 }
 .connect .social .fab:hover {
-  color: #5881F0;
+  color: #FFFF F;
   transition: 0.5s;
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
-  -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
-  -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
-  -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
-  -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
-  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.8));
+  -webkit-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
+  -moz-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
+  -ms-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
+  -o-filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow(0 1px 10px rgba(0, 0, 0, 0.9));
+}
+.connect .social i {
+  vertical-align: bottom;
 }
 @media (min-width: 500px) {
   .connect h1 {
-    font-size: 3rem;
     margin-bottom: 1rem;
     transition: all 0.5s ease;
   }
+  .connect .blurb {
+    font-size: 1.2rem;
+  }
   .connect #email {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     transition: all 0.5s ease;
   }
 }
 footer {
   display: flex;
   justify-content: space-around;
-  background-color: #E9ECF0;
+  background-color: #F4F8FF;
   padding: 0 2rem;
 }
 footer ul {
