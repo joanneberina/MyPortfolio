@@ -308,8 +308,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5rem 0;
-  .heading{
+  margin: 5rem auto;
+  .heading {
     padding-top: 2rem;
     border-top: 1px solid @text-body;
   }
@@ -339,10 +339,11 @@ main {
       }
     }
     //Media query 600px
-    @media (min-width: 600px) {
-      .othercases {
-        flex-direction: row;
-      }
+  }
+  @media (min-width: 700px) {
+    .othercases {
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
 }
