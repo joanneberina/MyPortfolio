@@ -69,6 +69,7 @@ header {
   nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     position: fixed;
     top: 0;
@@ -88,7 +89,7 @@ header {
     ul {
       justify-content: flex-end;
       max-width: 400px;
-      margin: 1.5rem 1.5rem 1.5rem auto;
+      margin: 1.5rem 3rem;
       padding: 0;
       transition: all 0.5s ease;
       li {
@@ -122,19 +123,19 @@ header {
     @media (min-width: 600px) {
       #avatar {
         width: 100%;
-        margin: 1.5rem 5rem;
+        margin: 1.5rem 5rem !important;
         img {
           height: 100px;
           padding: 0;
         }
       }
       ul {
-        margin-right: 3rem;
+        margin-right: 3rem !important;
       }
     }
     @media (min-width: 900px) {
       ul {
-        margin-right: 6rem;
+        margin-right: 6rem !important;
       }
     }
   }
@@ -152,14 +153,14 @@ header {
       }
     }
     ul {
-      margin: 0 1.5rem 0 auto;
+      margin: 0 3rem 0 auto;
       li {
         color: #767a85;
       }
     }
     @media (min-width: 600px) {
       #avatar {
-        margin-left: 5rem;
+        margin-left: 5rem !important;
       }
       ul {
         margin: 0 3rem 0 auto;
