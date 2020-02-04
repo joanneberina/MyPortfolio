@@ -510,7 +510,7 @@ main .p-container .section-content h4 {
 }
 main .p-container .figure img {
   width: 900px;
-  padding: 2rem 0;
+  padding-bottom: 2rem;
 }
 main .p-container .three-column {
   padding-top: 1rem;
