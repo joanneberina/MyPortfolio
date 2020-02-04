@@ -5,9 +5,9 @@ nav {
   a {
     color: #333642;
   }
-      a:hover {
-        color: #868996 !important;
-      }
+  a:hover {
+    color: #868996 !important;
+  }
 }
 
 .overflow-x {
@@ -195,6 +195,11 @@ main {
           padding: 0 1rem;
           margin: 4px;
           border-radius: 1.2rem;
+          transition: all 0.5s ease;
+          @media (min-width: 200px) and (max-width: 500px) {
+            font-size: 0.8rem;
+            line-height: 1.5rem;
+          }
         }
       }
     }
