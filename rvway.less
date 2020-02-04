@@ -1,6 +1,5 @@
 @import "variables2.less";
 @import "styles.less";
-@import "rvway2.less";
 
 // Hero section
 .rvway {
@@ -102,15 +101,27 @@ main {
     margin: 0 auto;
     padding-bottom: 2rem;
     .section-title {
-        h2 {
-            color: #1FB1D1;
-            padding-bottom: 1rem;
-            line-height: 2rem;
-        }
+      h2 {
+        font-size: 1.6rem;
+        color: #1FB1D1;
+        padding-bottom: 1rem;
+        line-height: 2rem;
+      }
+    }
+    .section-content {
+      h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
     }
     // Media query - section 600px
     @media (min-width: 600px) {
       width: 80%;
+      .section-title {
+        h2 {
+          font-size: 1.8rem;
+        }
+      }
     }
     // Media query - section 900px
     @media (min-width: 900px) {
@@ -125,6 +136,7 @@ main {
     .figure {
       img {
           width: 900px;
+          padding: 2rem 0;
       }
     }
     //Project background
@@ -143,6 +155,83 @@ main {
               padding: 0.5rem 0;
             }
           }
+        }
+      }
+    }
+    //Painpoints and wants
+    .painpoints,
+    .wants {
+      padding-bottom: 2rem;
+      h3 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: center;
+      }
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 160px;
+        li {
+          flex-shrink: 0;
+          font-size: 1rem;
+          padding: 0 1rem;
+          margin: 4px;
+          border-radius: 1.2rem;
+        }
+      }
+    }
+    .painpoints {
+      li {
+        background-color: #f8e9dd;
+      }
+    }
+
+    .wants {
+      li {
+        background-color: #D4F0F6;
+      }
+    }
+    //Highlight
+    .highlight {
+      width: 80%;
+      border-left: 6px solid #1FB1D1;
+      padding-left: 2rem;
+      margin: 1rem 0rem 2rem 2rem;
+      p {
+        font-family: @font-heading;
+        font-size: 1.5rem;
+        font-weight: 500;
+        font-style: italic;
+        color: #868996;
+        line-height: 2.25rem;
+      }
+      .yes-no {
+        display: flex;
+        width: 100%;
+        .yes,  .no {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 1rem 2rem;
+          border-radius: .5rem;
+          margin-right: 2rem;
+          h3 {
+            font-size: 1.4rem;
+          }
+          p {
+            color: @text-body;
+            font-size: 1.5rem;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 0;
+            padding-top: 1rem;
+          }
+        }
+        .yes {
+          background-color: #D4F0F6;
+        }
+        .no {
+          background-color: #f8e9dd;
         }
       }
     }
