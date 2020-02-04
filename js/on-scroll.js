@@ -5,7 +5,7 @@ window.onscroll = function() {
 window.addEventListener("resize", scrollFunction())
 
 function scrollFunction() {
- if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+ if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
   document.querySelector("nav").setAttribute("class", "shrink")
  } else {
   document.querySelector("nav").removeAttribute("class", "shrink")
