@@ -485,6 +485,10 @@ main .p-container .section-title h2 {
   padding-bottom: 1rem;
   line-height: 2rem;
 }
+main .p-container .section-content h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
 @media (min-width: 600px) {
   main .p-container {
     width: 80%;
@@ -506,6 +510,7 @@ main .p-container .section-title h2 {
 }
 main .p-container .figure img {
   width: 900px;
+  padding: 2rem 0;
 }
 main .p-container .three-column {
   padding-top: 1rem;
