@@ -391,32 +391,6 @@ footer ul li img {
     font-size: 0.9rem;
   }
 }
-.painpoints ul,
-.wants ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 160px;
-}
-.painpoints ul li,
-.wants ul li {
-  flex-shrink: 0;
-  font-size: 0.9rem;
-  padding: 0 1rem;
-  margin: 4px;
-  border-radius: 1.2rem;
-}
-.painpoints li {
-  background-color: #f8e9dd;
-}
-.wants li {
-  background-color: #D4F0F6;
-}
-.highlight {
-  border-left: 5px solid #1FB1D1;
-  padding-left: 2rem;
-  margin-left: 1rem;
-  margin-bottom: 2rem;
-}
 .rvway {
   background-color: #E2FAFF;
   padding: 5rem 0;
@@ -506,6 +480,7 @@ main .p-container {
   padding-bottom: 2rem;
 }
 main .p-container .section-title h2 {
+  font-size: 1.6rem;
   color: #1FB1D1;
   padding-bottom: 1rem;
   line-height: 2rem;
@@ -513,6 +488,9 @@ main .p-container .section-title h2 {
 @media (min-width: 600px) {
   main .p-container {
     width: 80%;
+  }
+  main .p-container .section-title h2 {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 900px) {
@@ -544,6 +522,82 @@ main .p-container .three-column {
   main .p-container .three-column .three-column .column p {
     padding: 0.5rem 0;
   }
+}
+main .p-container .painpoints,
+main .p-container .wants {
+  padding-bottom: 2rem;
+}
+main .p-container .painpoints h3,
+main .p-container .wants h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+main .p-container .painpoints ul,
+main .p-container .wants ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 160px;
+}
+main .p-container .painpoints ul li,
+main .p-container .wants ul li {
+  flex-shrink: 0;
+  font-size: 1rem;
+  padding: 0 1rem;
+  margin: 4px;
+  border-radius: 1.2rem;
+}
+main .p-container .painpoints li {
+  background-color: #f8e9dd;
+}
+main .p-container .wants li {
+  background-color: #D4F0F6;
+}
+main .p-container .highlight {
+  width: 80%;
+  border-left: 6px solid #1FB1D1;
+  padding-left: 2rem;
+  margin: 1rem 0rem 2rem 2rem;
+}
+main .p-container .highlight p {
+  font-family: "Soleil", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  color: #868996;
+  line-height: 2.25rem;
+}
+main .p-container .highlight .yes-no {
+  display: flex;
+  width: 100%;
+}
+main .p-container .highlight .yes-no .yes,
+main .p-container .highlight .yes-no .no {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+}
+main .p-container .highlight .yes-no .yes h3,
+main .p-container .highlight .yes-no .no h3 {
+  font-size: 1.4rem;
+}
+main .p-container .highlight .yes-no .yes p,
+main .p-container .highlight .yes-no .no p {
+  color: #696B76;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 0;
+  padding-top: 1rem;
+}
+main .p-container .highlight .yes-no .yes {
+  background-color: #D4F0F6;
+}
+main .p-container .highlight .yes-no .no {
+  background-color: #f8e9dd;
 }
 main .card-container {
   width: 80%;
