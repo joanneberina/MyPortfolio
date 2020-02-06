@@ -1,0 +1,23 @@
+{
+  "name": "MyPortfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "for file in less/*.less; do lessc --source-map $file css/`basename $file less`css ; done"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanneberina/MyPortfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joanneberina/MyPortfolio/issues"
+  },
+  "homepage": "https://github.com/joanneberina/MyPortfolio#readme",
+  "dependencies": {
+    "less": "^3.10.3"
+  }
+}

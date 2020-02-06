@@ -1,0 +1,2 @@
+[context.branch-deploy]
+  command = "npm run build; rm -rf node_modules less package.json package-lock.json README.md .gitignore"
