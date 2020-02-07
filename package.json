@@ -1,10 +1,13 @@
 {
-  "name": "MyPortfolio",
+  "name": "myportfolio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "for file in less/*.less; do lessc --source-map $file css/`basename $file less`css ; done"
+    "build": "for file in less/*.less; do lessc --source-map $file css/`basename $file less`css ; done",
+    "less-watch-compiler": "less-watch-compiler less css",
+    "live-server": "live-server --port=4000",
+    "start": "npm-run-all --parallel less-watch-compiler live-server"
   },
   "repository": {
     "type": "git",
@@ -18,6 +21,11 @@
   },
   "homepage": "https://github.com/joanneberina/MyPortfolio#readme",
   "dependencies": {
-    "less": "^3.10.3"
+    "less": "^3.10.3",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "less-watch-compiler": "^1.14.6",
+    "live-server": "^1.2.1"
   }
 }
