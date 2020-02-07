@@ -2,24 +2,13 @@
   "name": "myportfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "build": "for file in less/*.less; do lessc --source-map $file css/`basename $file less`css ; done",
     "less-watch-compiler": "less-watch-compiler less css",
     "live-server": "live-server --port=4000",
     "start": "npm-run-all --parallel less-watch-compiler live-server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joanneberina/MyPortfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joanneberina/MyPortfolio/issues"
-  },
-  "homepage": "https://github.com/joanneberina/MyPortfolio#readme",
   "dependencies": {
     "less": "^3.10.3",
     "npm-run-all": "^4.1.5"
