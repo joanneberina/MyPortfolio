@@ -1,2 +1,2 @@
 [build]
-  command = "npm i; npm run build; rm -rf node_modules less package.json package-lock.json README.md .gitignore"
+  command = "npm i; npm run build; rm -rf node_modules package.json package-lock.json README.md .gitignore"
