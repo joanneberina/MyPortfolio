@@ -1,11 +1,6 @@
 @import "variables2.less";
 @import "styles.less";
 
-::-webkit-scrollbar {
-  width: 0px;
-  background: transparent; /* make scrollbar transparent */
-}
-
 nav {
   a {
     color: #868996;
@@ -115,6 +110,13 @@ nav {
     }
   }
 }
+//Media Query 400px {
+  @media (max-width: 400px) {
+    ::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; /* make scrollbar transparent */
+    }
+  }
 
 // Main - case study content
 main {
@@ -160,6 +162,9 @@ main {
       margin-bottom: 2rem;
       img {
         width: 900px;
+      }
+      #addvehicle-img, #menu-img {
+        width: 600px !important;
       }
     }
     //Project background
