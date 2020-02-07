@@ -1,6 +1,11 @@
 @import "variables2.less";
 @import "styles.less";
 
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 nav {
   a {
     color: #868996;
@@ -152,7 +157,7 @@ main {
     }
     //General image styling under figure class
     .figure {
-      padding-bottom: 2rem;
+      margin-bottom: 2rem;
       img {
         width: 900px;
       }
@@ -277,8 +282,8 @@ main {
       width: 320px;
       align-items: center;
       justify-content: center;
+      margin-bottom: 1rem;
       padding: .5rem;
-      margin: 1rem 0;
       background-color: #ebfcff;
       .card-title {
         width: 85%;
