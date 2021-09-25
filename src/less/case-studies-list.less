@@ -1,0 +1,145 @@
+// Home page case study
+#main {
+  width: 100%;
+  padding: 5rem;
+}
+
+.case-study {
+  border: 1px solid red;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 3rem 3rem 5rem 3rem;
+  transition: all 0.5s ease;
+  .link {
+    padding: 0;
+  }
+
+  // Case study images
+  #cotp-image {
+    display: flex;
+    justify-content: center;
+    img {
+      height: 300px;
+      transition: all 1s ease;
+    }
+  }
+  #rvway-image {
+    display: flex;
+    justify-content: center;
+    img {
+      height: 200px;
+      transition: all 1s ease;
+    }
+  }
+  .case-title {
+    font-family: @font-heading;
+    color: lighten(@primary-color, 5%);
+    line-height: 2rem;
+    margin-bottom: 1.2rem;
+    padding-top: 2rem;
+  }
+  .case-desc {
+    line-height: 1.8rem;
+    padding-bottom: 0;
+  }
+
+  // Media query 600px for homepage case study
+  @media (min-width: 600px) {
+    transition: all 0.5s ease;
+    .case-text {
+      width: 500px;
+      margin: 0 auto;
+      .case-title {
+        margin: 0;
+        padding-bottom: 1rem;
+      }
+      .case-desc {
+        padding-bottom: 0;
+      }
+    }
+    #rvway-image {
+      padding: 0;
+      align-items: center;
+      img {
+        height: 250px;
+        margin-right: 1rem;
+      }
+    }
+  }
+  // Media query 900px for homepage case study
+  @media (min-width: 900px) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 10rem;
+
+    #qb-image {
+      padding: 0;
+      img {
+        height: 300px;
+        padding-left: 2rem;
+        transition: all 0.5s ease;
+      }
+    }
+    #rvway-image {
+      padding: 0;
+      img {
+        height: 250px;
+        padding-right: 1rem;
+        transition: all 0.5s ease;
+      }
+    }
+    .case-text {
+      margin: 0;
+      .case-title {
+        margin-bottom: 1rem;
+        padding: 0;
+      }
+    }
+  }
+
+  //Media query 1200px for case study section
+  @media (min-width: 1200px) {
+    padding: 3rem 0rem 5rem 0rem;
+    transition: all 0.5s ease;
+  }
+
+  // Read case button
+  .link {
+    padding: 1rem 0;
+    a:link {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+  }
+
+  button {
+    font-size: 0.8rem;
+    font-family: @font-body;
+    font-weight: 500;
+    padding: 0.75rem 2rem;
+    margin-top: 1.2rem;
+    background-color: #ffffff;
+    border-color: @border-color;
+    border-radius: 5px;
+    color: @link-color;
+    transition: all 0.5s ease;
+  }
+
+  button:hover {
+    background-color: @link-color;
+    color: white;
+  }
+}
+
+.reverse {
+  padding-top: 5rem;
+}
+
+@media (min-width: 900px) {
+  .reverse {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+// End of Home page case study

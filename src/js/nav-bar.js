@@ -2,13 +2,13 @@ class Navbar extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /*html*/ `
     <nav>
-      <a href="index.html" id="home">
+      <a href="/" id="home">
         Joanne Berina
       </a>
       <ul id="nav-ul">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="assets/joanneberina_resume.pdf" target="_blank">Resume</a></li>
+          <li><a href="/">Work</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/assets/joanneberina_resume.pdf" target="_blank">Resume</a></li>
       </ul>
     </nav>
     `
@@ -20,15 +20,4 @@ class Navbar extends HTMLElement {
   }
 }
 
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.querySelector('nav-bar').setAttribute('class', 'shrink')
-  } else {
-    document.querySelector('nav-bar').removeAttribute('class', 'shrink')
-  }
-}
-window.onscroll = scrollFunction
-
 customElements.define('nav-bar', Navbar)
-
-window.addEventListener('resize', scrollFunction())

@@ -6,15 +6,15 @@
   "scripts": {
     "build": "for file in src/less/styles.less; do lessc --source-map $file src/css/`basename $file less`css ; done",
     "less-watch-compiler": "less-watch-compiler --source-map src/less/ src/css styles.less",
-    "live-server": "pushd src/; live-server --port=4000; popd",
+    "live-server": "browser-sync --extensions=html --watch --server --port=4000 'src'",
     "start": "npm-run-all --parallel less-watch-compiler live-server"
   },
   "dependencies": {
+    "browser-sync": "^2.27.5",
     "less": "^3.10.3",
     "npm-run-all": "^4.1.5"
   },
   "devDependencies": {
-    "less-watch-compiler": "^1.14.6",
-    "live-server": "^1.2.1"
+    "less-watch-compiler": "^1.14.6"
   }
 }
