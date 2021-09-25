@@ -1,0 +1,117 @@
+nav {
+  #home,
+  a {
+    font-family: 'Work Sans', sans-serif;
+    font-size: normal;
+    font-size: 1rem;
+    font-weight: 600;
+    color: @link-color;
+    transition: all 0.2s ease;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+  #home {
+    border: 1px solid @link-color;
+    text-transform: uppercase;
+    padding: 0 1rem 0 1rem;
+    margin: 1rem;
+  }
+
+  ul {
+    justify-content: flex-end;
+    max-width: 400px;
+    margin: 1.5rem 3rem 0 6rem;
+    padding: 0;
+    transition: all 0.5s ease;
+    li {
+      letter-spacing: 0.5px;
+      transition: all 0.5s ease;
+      margin: 0 auto;
+      padding-left: 1rem;
+    }
+
+    a:hover {
+      color: rgba(39, 52, 78, 0.5);
+      transition: all 0.2s ease-in-out;
+    }
+    #active {
+      color: rgba(39, 52, 78, 0.5);
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  @media (min-width: 200px) and (max-width: 500px) {
+    ul {
+      margin: 0 3rem 0 auto;
+    }
+  }
+  @media (min-width: 600px) {
+    #avatar {
+      width: 100%;
+      margin: 1.5rem 5rem;
+      img {
+        height: 100px;
+        padding: 0;
+      }
+    }
+    ul {
+      margin-right: 3rem;
+    }
+  }
+  @media (min-width: 900px) {
+    ul {
+      margin-right: 6rem;
+    }
+  }
+}
+
+.shrink {
+  background-color: rgba(240, 243, 248, 1);
+  #avatar {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    img {
+      height: 40px;
+    }
+  }
+  ul {
+    margin: 0 3rem 0 auto;
+    padding-left: 1rem !important;
+
+    li {
+      color: #767a85;
+    }
+  }
+  @media (min-width: 600px) {
+    background-color: rgba(240, 243, 248, 0.9);
+    #avatar {
+      margin-left: 5rem !important;
+    }
+    ul {
+      margin: 0 3rem 0 auto;
+    }
+  }
+  @media (min-width: 900px) {
+    ul {
+      margin: 0 6rem 0 auto;
+    }
+  }
+}
+
+.nav_current {
+  a {
+    font-family: @font-heading;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(39, 52, 78, 0.5);
+  }
+  border-bottom: 3px solid rgba(39, 52, 78, 0.5);
+}

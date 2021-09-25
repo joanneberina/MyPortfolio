@@ -3,7 +3,6 @@
 <head>
     <link rel="shortcut icon" href="images/joanne-favicon.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/1e3f8182fc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" href="https://use.typekit.net/zvp4xvv.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <meta charset="UTF-8">
@@ -13,24 +12,18 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div id="avatar">
-                <img id="avatar-img" src="images/avatar.png" alt="An ink drawing of Joanne Berina">
-            </div>
-            <ul id="nav-ul">
-                <li id="nav_inactive">Home</li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="images/joanneberina_resume.pdf" target="_blank">Resume</a></li>
-            </ul>
-        </nav>
+        <nav-bar></nav-bar>
         <div class="hero">
             <div class="uvp">
-                <h1>Hello. <span class="underline"> I'm Joanne Berina,</span> a UX Designer.</h1>
-                <h1>I thoughtfully think through the problem by understanding the user base to connect the gap between design and the users.<h1>
+                <div id="avatar">
+                    <img id="avatar-img" src="images/avatar.png" alt="An ink drawing of Joanne Berina">
+                    <h1>Hi, I'm Joanne Berina</h1>
+                </div>
+                <h1>A UX/UI Designer passionate about advocating for the users and crafting digital experiences that are engaging, clean and easy to use.<h1>
             </div>
         </div>
     </header>
-    <main>
+    <main id="main">
         <section class="case-study">
             <div id="rvway-image">
                 <img src="images/desktop.png" alt="RV Way Desktop web app">
@@ -49,7 +42,7 @@
             <div class="case-text">
                 <h2 class="case-title">Mobile App Design</h2>
                 <p class="case-desc">Quest for the Best is a social challenge platform that encourages members of a community to seek out the best available experiences in their area. The underlying objective is to get community members to go outside and seek new experiences through “Quests”.</p>
-                <a href=""><button>READ CASE STUDY</button></a>
+                <a href="quest-best.html"><button>READ CASE STUDY</button></a>
             </div>
         </section>
     </main>
@@ -70,6 +63,6 @@
             <li>Hosted on <img src="images/logomark.svg" alt="Netlify icon"></li>
         </ul>
     </footer>    
-    <script src="js/on-scroll.js"></script>
+    <script src="js/nav-bar.js"></script>
 </body>
 </html>     
