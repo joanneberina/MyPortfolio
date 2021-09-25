@@ -2,33 +2,49 @@
 #main {
   width: 100%;
   padding: 5rem;
-}
-
-.case-study {
-  border: 1px solid red;
-  margin: 0 auto;
-  max-width: 900px;
-  padding: 3rem 3rem 5rem 3rem;
-  transition: all 0.5s ease;
-  .link {
+  font-family: 'Public Sans', sans-serif;
+  display: grid;
+  justify-content: center;
+  > a {
+    border: 1px solid red;
+    transition: all 0.5s ease;
+    max-width: 1100px;
+    max-height: 500px;
     padding: 0;
   }
-
+}
+.reverse {
+  @media (min-width: 900px) {
+    grid-template-areas: 'b a' !important;
+  }
+}
+.case-study {
   // Case study images
-  #cotp-image {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 'a b';
+  grid-template-columns: 45% 55%;
+  .case-study-image {
+    grid-area: a;
+    padding: 0;
+    height: 100%;
     display: flex;
+    align-items: flex-end;
     justify-content: center;
+    overflow: hidden;
     img {
-      height: 300px;
+      height: 95%;
       transition: all 1s ease;
     }
   }
-  #rvway-image {
-    display: flex;
-    justify-content: center;
-    img {
-      height: 200px;
-      transition: all 1s ease;
+
+  .case-text {
+    padding: 4rem;
+    align-self: center;
+    h2,
+    p {
+      color: #27344e;
     }
   }
   .case-title {
@@ -43,67 +59,6 @@
     padding-bottom: 0;
   }
 
-  // Media query 600px for homepage case study
-  @media (min-width: 600px) {
-    transition: all 0.5s ease;
-    .case-text {
-      width: 500px;
-      margin: 0 auto;
-      .case-title {
-        margin: 0;
-        padding-bottom: 1rem;
-      }
-      .case-desc {
-        padding-bottom: 0;
-      }
-    }
-    #rvway-image {
-      padding: 0;
-      align-items: center;
-      img {
-        height: 250px;
-        margin-right: 1rem;
-      }
-    }
-  }
-  // Media query 900px for homepage case study
-  @media (min-width: 900px) {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-bottom: 10rem;
-
-    #qb-image {
-      padding: 0;
-      img {
-        height: 300px;
-        padding-left: 2rem;
-        transition: all 0.5s ease;
-      }
-    }
-    #rvway-image {
-      padding: 0;
-      img {
-        height: 250px;
-        padding-right: 1rem;
-        transition: all 0.5s ease;
-      }
-    }
-    .case-text {
-      margin: 0;
-      .case-title {
-        margin-bottom: 1rem;
-        padding: 0;
-      }
-    }
-  }
-
-  //Media query 1200px for case study section
-  @media (min-width: 1200px) {
-    padding: 3rem 0rem 5rem 0rem;
-    transition: all 0.5s ease;
-  }
-
   // Read case button
   .link {
     padding: 1rem 0;
@@ -112,34 +67,6 @@
       font-weight: 500;
     }
   }
-
-  button {
-    font-size: 0.8rem;
-    font-family: @font-body;
-    font-weight: 500;
-    padding: 0.75rem 2rem;
-    margin-top: 1.2rem;
-    background-color: #ffffff;
-    border-color: @border-color;
-    border-radius: 5px;
-    color: @link-color;
-    transition: all 0.5s ease;
-  }
-
-  button:hover {
-    background-color: @link-color;
-    color: white;
-  }
 }
 
-.reverse {
-  padding-top: 5rem;
-}
-
-@media (min-width: 900px) {
-  .reverse {
-    flex-direction: row-reverse;
-    align-items: center;
-  }
-}
 // End of Home page case study

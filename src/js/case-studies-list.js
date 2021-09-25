@@ -3,7 +3,7 @@ const caseStudies = [
     name: 'documentor',
     title: 'DocuMentor - simplifying an EVV solution',
     description: 'Redesigning the app to remove obstacles that prevents user adaption.',
-    link: '',
+    link: 'documentor',
     image: 'documentor.png',
     background: 'linear-gradient(259.13deg, #88D9FF 6.13%, #DFF5FF 99.63%)'
   },
@@ -12,8 +12,8 @@ const caseStudies = [
     title: 'Clash of the Pencils',
     description:
       'Set out to inspire kiddos to tap into their natural creativity armed with a pencil, paper, and their brilliant minds.',
-    link: '',
-    image: '',
+    link: 'clash-of-the-pencils',
+    image: 'cotp.png',
     background: 'linear-gradient(180.74deg, rgba(255, 163, 109, 0.8) -1.61%, rgba(249, 231, 212, 0.432) 101.05%)'
   },
   {
@@ -35,7 +35,7 @@ class CaseStudiesList extends HTMLElement {
           (caseStudy, index) => /*html*/ `
           <a href="${caseStudy.link}">
           <section class="case-study ${index % 2 == 0 && 'reverse'}" style="background:${caseStudy.background};">
-              <div id="${caseStudy.name}-image">
+              <div id="${caseStudy.name}-image" class="case-study-image">
                 <img src="images/${caseStudy.image}" alt="${caseStudy.name}" />
               </div>
               <div class="case-text">
