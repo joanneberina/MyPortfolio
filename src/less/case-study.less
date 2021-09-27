@@ -1,15 +1,3 @@
-@import "variables2.less";
-@import "styles.less";
-
-nav {
-  a {
-    color: #868996;
-  }
-  a:hover {
-    color: #1fb1d1 !important;
-  }
-}
-
 .overflow-x {
   overflow-x: scroll;
 }
@@ -19,25 +7,25 @@ nav {
 }
 
 // Hero section
-.rvway {
-  background-color: #e2faff;
+.case-study {
+  background: linear-gradient(238.06deg, rgba(199, 252, 255, 0.75) 39.54%, #a9c6ff 97.64%);
   padding: 5rem 0;
   height: auto;
   padding-bottom: 0;
-  #rvway-title {
+  #case-study-title {
     max-width: 70%;
     margin: 0 auto;
     padding-top: 4rem;
     h1 {
       font-family: @font-heading;
-      font-size: 1.5rem;
+      font-size: 2rem;
       line-height: 2rem;
       font-weight: 700;
       text-align: center;
       transition: all 0.5s ease;
     }
   }
-  #rvway-img {
+  #case-study-img {
     display: flex;
     justify-content: center;
     img {
@@ -48,7 +36,7 @@ nav {
   //Media query 300px - hero section
   @media (min-width: 300px) {
     height: auto;
-    #rvway-title {
+    #case-study-title {
       h1 {
         width: 95%;
         font-size: 1.6rem;
@@ -57,7 +45,7 @@ nav {
         transition: all 0.5s ease;
       }
     }
-    #rvway-img {
+    #case-study-img {
       img {
         height: 240px;
         transition: all 0.5s ease;
@@ -66,7 +54,7 @@ nav {
   }
   //Media query 600px - hero section
   @media (min-width: 600px) {
-    #rvway-title {
+    #case-study-title {
       h1 {
         margin: 0 auto;
         font-size: 2rem;
@@ -75,7 +63,7 @@ nav {
         transition: all 0.5s ease;
       }
     }
-    #rvway-img {
+    #case-study-img {
       img {
         height: 320px;
         transition: all 0.5s ease;
@@ -87,20 +75,20 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    #rvway-title {
+    #case-study-title {
       display: flex;
       align-items: center;
       max-width: 30%;
       margin: 5rem 0;
       h1 {
-        font-size: 2.25rem;
-        line-height: 3.25rem;
+        font-size: 2rem;
+        line-height: 2.25rem;
         text-align: left;
         margin: 0 2rem;
         transition: all 0.5s ease;
       }
     }
-    #rvway-img {
+    #case-study-img {
       margin-top: 5rem;
       height: 400px;
       img {
@@ -124,7 +112,7 @@ main {
   .p-container {
     width: 90%;
     margin: 0 auto;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     .section-title {
       h2 {
         font-size: 1.6rem;
@@ -163,7 +151,8 @@ main {
       img {
         width: 900px;
       }
-      #addvehicle-img, #menu-img {
+      #addvehicle-img,
+      #menu-img {
         width: 600px !important;
       }
     }
@@ -288,7 +277,7 @@ main {
       align-items: center;
       justify-content: center;
       margin-bottom: 1rem;
-      padding: .5rem;
+      padding: 0.5rem;
       background-color: #ebfcff;
       .card-title {
         width: 85%;
@@ -369,13 +358,5 @@ main {
         margin-right: 5rem;
       }
     }
-  }
-}
-
-.connect {
-  background-color: #333642 !important;
-  p,
-  h1 {
-    color: rgba(235, 238, 244, 0.8) !important;
   }
 }

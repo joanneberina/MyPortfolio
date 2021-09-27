@@ -1,3 +1,4 @@
 .DS_Store
-css/
+src/css/
 node_modules/
+output/

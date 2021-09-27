@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="images/joanne-favicon.jpg" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/1e3f8182fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/zvp4xvv.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Joanne Berina</title>
+  </head>
+  <body>
+    <header>
+      <nav-bar></nav-bar>
+      <div class="case-study hero">
+        <div id="case-study-title">
+          <h1>How might we help RV drivers safely get to their destination?</h1>
+        </div>
+        <div id="case-study-img">
+          <img src="images/rvway-browser.png" alt="RV Way Map page" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Project background -->
+      <section class="p-container">
+        <div class="section-title">
+          <h2>Project background</h2>
+        </div>
+        <div class="three-column">
+          <div class="column">
+            <img src="images/clock.svg" alt="" />
+            <p>8 Weeks</p>
+          </div>
+          <div class="column">
+            <img src="images/users.svg" alt="" />
+            <p>2 UX designers<br />5 Full-stack web developers<br />3 Data scientists</p>
+          </div>
+          <div class="column">
+            <img src="images/project-diagram.svg" alt="" />
+            <p>Build-on project</p>
+          </div>
+        </div>
+      </section>
+      <!-- The Big RV Picture -->
+      <section class="p-container">
+        <div class="section-title">
+          <h2>The Big RV Picture</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            Motorhomes, RVs, campervans are all-purpose vehicles that take you where you want to go and give you a place
+            to stay along the way. Recreational vehicles or RVs for short, represent adventure, the open road, and
+            independence. In the U.S. they are getting more and more popular as these vehicles start to come with more
+            modern conveniences.
+          </p>
+          <p>
+            When I started working on the project, I knew very little about the RV industry since there are basically no
+            RVs where I grew up. My first impression was that this was a very niche market. Researching about the trends
+            and statistics that I’ve gathered from the RV Industry Association (rvia.org) was eye-opening.
+          </p>
+        </div>
+      </section>
+      <!-- Illustration -->
+      <div class="card-container">
+        <div class="card">
+          <div class="card-title">
+            <p>People travelling in an RV in the U.S.</p>
+          </div>
+          <div class="card-text">
+            <p>25 million people a year</p>
+            <p>10 million full-time RVers</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <p>Typical RV Traveler</p>
+          </div>
+          <div class="card-text">
+            <p>Married and 48 yrs. old</p>
+            <p>Annual income of $68,000</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">
+            <p>Trends in RV ownership from 2015-2018</p>
+          </div>
+          <div class="card-text">
+            <p>2.32% increase in ages 35-44</p>
+            <p>3.07% increase in ages 25-34</p>
+          </div>
+        </div>
+      </div>
+      <!-- The RV Driver: their needs and painpoints -->
+      <section class="p-container">
+        <div class="section-title">
+          <h2>The RV Driver: their needs and painpoints</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            After getting a clearer understanding of the demographic we learned more about their needs and pain points
+            to help us solve the problem: How might we help RV drivers safely get from point A to point B? And
+            understanding why this problem exists is the first step so we asked this question:
+          </p>
+          <!-- Text highlight -->
+          <div class="highlight">
+            <p>How are the needs of a person driving an RV different from someone who drives a regular vehicle?</p>
+          </div>
+          <p>
+            We went through all the reasearch and organized data into user’s painpoints and wants. We learned that
+            people driving an RV think about things that wouldn’t normally be a concern for a person driving a regular
+            vehicle. These are the top responses on what problems users have encountered while driving an RV and what
+            features our users would like in a navigation app.
+          </p>
+        </div>
+        <!-- Illustration -->
+        <div class="figure">
+          <div class="painpoints">
+            <h3>PAINPOINTS</h3>
+            <ul>
+              <li>Low clearances</li>
+              <li>Bumpy roads</li>
+              <li>Dangerous intersections</li>
+              <li>Gas stations that do/don't have diesel</li>
+              <li>Steep grades</li>
+              <li>Lack of on/off ramp warnings</li>
+              <li>Narrow city streets</li>
+              <li>Not enough information about stops that accomodates RVs</li>
+            </ul>
+          </div>
+          <div class="wants">
+            <h3>WANTS</h3>
+            <ul>
+              <li>Points of interest</li>
+              <li>Parking lots</li>
+              <li>Offline usage</li>
+              <li>Gas stations that accomodate RVs</li>
+              <li>Live traffic update</li>
+              <li>Saving routes</li>
+              <li>Campground information</li>
+              <li>Avoiding tolls</li>
+              <li>Clean showers/restroom locator</li>
+              <li>Gas prices</li>
+              <li>Crowd-sourced information</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- The first solution is not the best solution -->
+      <section class="p-container">
+        <div class="section-title">
+          <h2>The first solution is not the best solution</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            Based on the user’s painpoints and wants, we designed our initial solution which was a native mobile app
+            that had all the bells and whistles - it was like Google maps. It had an option to search for a point of
+            interest as a destination, add stops along the route, it featured geo-location and autocomplete. And
+            naturally, it was going to have a turn-by-turn voice navigation.
+          </p>
+          <!-- Illustration -->
+          <div class="figure">
+            <div class="figure-img overflow-x">
+              <img src="images/rvway-wireframe.png" alt="Mobile screens of low-fidelity wireframes" />
+            </div>
+          </div>
+          <p>
+            But this was not the right solution because we later found out that we didn’t have the resources to get the
+            right API which would provide the data for the points of interest. While all the initial features were
+            certainly “nice to haves”, it didn’t really directly impact the problem of safely routing the RV traveler
+            from point A to point B.
+          </p>
+        </div>
+      </section>
+      <!-- Addressing painpoints -->
+      <section class="p-container">
+        <div class="section-title">
+          <h2>Addressing painpoints</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            In a perfect world, providing all of these features and addressing all of the user’s painpoints would be
+            ideal. But we had to take into account the complexity of the implementation, timeframe, and available
+            resources and all the while, setting a reasonable goal for our product releases. We went back to our
+            research data and found some useful insights that gave us a clearer direction.
+          </p>
+          <!-- Text highlight -->
+          <div class="highlight">
+            <p>
+              Painpoint #1:<br />
+              “The fastest route is not always the best route.”
+            </p>
+          </div>
+          <p>
+            Directions that are provided by other web mapping services is usually the fastest route which is oftentimes,
+            not RV-friendly. The most common painpoint for people travelling in an RV is that they are afraid of getting
+            into an accident. Safety is the number one concern for people traveling in RVs.
+          </p>
+          <div class="highlight">
+            <p>
+              Painpoint #2:<br />
+              “My biggest fear while driving in an RV is getting into an accident.”
+            </p>
+          </div>
+          <p>
+            Another roadblock was the implementation of a turn by turn voice navigation was not technologically feasible
+            given the our time frame. To top it all off, we were not going to build a native mobile app but instead, a
+            desktop web app that is mainly used for planning. It was like we went from envisioning to build something
+            like Google maps to building something like map quest.
+          </p>
+          <p>
+            So we shifted our focus back to the core functionality of the app which is navigating the user away from low
+            bridges with their RV’s specifications. We thought of ways on how we can improve the existing experience and
+            really address the user’s painpoint which is safety.
+          </p>
+        </div>
+      </section>
+      <!-- Turning to qualitative research and validation -->
+      <section class="p-container">
+        <div class="section-title">
+          <h2>Turning to qualitative research and validation</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            We also wanted to validate if there was still a use-case for a navigation app that is mainly used for
+            planning. We had doubts if users will even use a navigation app if it doesn’t have a guided voice prompt, so
+            in our succeeding surveys and interviews we included the question:
+          </p>
+          <!-- Text highlight -->
+          <div class="highlight">
+            <p>
+              “When using a navigation app, is turn by turn voice navigation a necessity to your routing experience?”
+            </p>
+            <div class="yes-no">
+              <div class="yes">
+                <h3>YES</h3>
+                <p>60%</p>
+              </div>
+              <div class="no">
+                <h3>NO</h3>
+                <p>40%</p>
+              </div>
+            </div>
+          </div>
+          <p>
+            60% answered YES and 40% answered NO - there really wasn’t a huge gap. But when we looked at qualitative
+            data, a common response was that proper planning is key to a safe and successful RV trip. A seasoned RV
+            driver will take the time to plan before a big trip. They would decide on what roads and highways to take,
+            where to get gas, stop for the night and so on. Tips like using a checklist document for all essential
+            supplies is also one of the planning tools being utilized in the RV communities on Facebook. Therefore we
+            assumed that there was a use case for it.
+          </p>
+        </div>
+      </section>
+      <!-- Redesigning with the users in mind -->
+      <section class="p-container">
+        <div class="section-title">
+          <h2>Redesigning with the users in mind</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            The existing app is intended to generate a route that is safe for RVs after users input their vehicle’s
+            specification but the pure unique value which is the navigation was broken. The user interface was also not
+            intuitive. It wasn’t clear what the user is supposed to do first when they get to the map page. Navigating
+            the app can be confusing and overall, the existing solution was just not usable.
+          </p>
+          <div class="figure overflow-hidden">
+            <img src="images/case-study-before.png" alt="" />
+          </div>
+          <p>
+            We made the user interface more intuitive and easy to use by designing a clean and simple look since our
+            average demographic is older, who might not be tech-savvy. We also used a more conversational language and
+            avoided jargon and labels that might be confusing. And to save on production time, the redesigned sidebar
+            requires none to minimal refactoring when converted to mobile.
+          </p>
+          <div class="figure overflow-hidden">
+            <img src="images/map-blank.png" alt="" />
+          </div>
+          <div class="figure overflow-x">
+            <img src="images/before-after.png" alt="" />
+          </div>
+          <p>
+            Having users set up and save their vehicle profile is a crucial part of generating a route that is custom to
+            their RVs. On the add a vehicle form, we fixed how the labels and fields are laid out in a much clearer
+            format.
+          </p>
+          <div class="figure overflow-hidden">
+            <img src="images/map-addvehicle.png" alt="" />
+          </div>
+          <p>
+            The directions page has several sections that shows similar information that you would see on Google maps
+            but one important section is the part that shows where the low bridges are and letting the user know that
+            their RV is being routed away from low clearances, dirt roads or steep grades.
+          </p>
+          <div class="figure overflow-hidden">
+            <img src="images/map-directions.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Iterations based on usability testing -->
+      <section class="p-container">
+        <div class="section-title">
+          <h2>Iterations based on usability testing</h2>
+        </div>
+        <div class="section-content">
+          <p>After conducting usability testing, we did some iteration based on our users feedback.</p>
+          <h4>The hamburger menu</h4>
+          <p>
+            This was really a surprising discovery for us and one that we didn’t really expect. It was a typical case of
+            “you are not your user.” For the internet savvy generation, this might be a typical element of interaction
+            but for our demographic, it was an unfamiliar symbol. The first symbol that we used was not the usual
+            bread-meat-bread hamburger menu. We found that our users didn’t really know what the symbol meant. It also
+            kind of looked like a logo so they didn’t know to click on it that‘s why we went back to the typical equal
+            horizontal lines.
+          </p>
+          <div class="figure overflow-x">
+            <img id="menu-img" src="images/menu-iteration.png" alt="" />
+          </div>
+          <h4>Vehicle interaction</h4>
+          <p>
+            Instead of showing just a list of the name of the vehicles that the user would need to click for them to see
+            the details, we designed an interaction where all the details can be shown and hidden by
+            expanding/collapsing each of vehicle without taking them to another page.
+          </p>
+          <div class="figure overflow-x">
+            <img id="addvehicle-img" src="images/addvehicle-iteration.png" alt="" />
+          </div>
+          <h4>Directions page</h4>
+          <p>
+            To help users remember what vehicle that they are routing with, we added some sort of breadcrumb so they can
+            see the vehicle they are using for that route.
+          </p>
+          <div class="figure overflow-x">
+            <img src="images/directions-iteration.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Learnings and takeaways -->
+      <section class="p-container">
+        <div class="section-title">
+          <h2>Learnings and takeaways</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            When in doubt about how much the user will understand something or care about a certain feature, get their
+            feedback and validate ideas. We would initialy rely on our assumptions but without validation from users, we
+            might end up with a product that users are not gonna love or worse, not use at all. Users will always have a
+            different perspective of what is useful and what is not.
+          </p>
+          <!-- Text highlight -->
+          <div class="highlight">
+            <p>“Waiting too long to get that feedback is wasteful”</p>
+          </div>
+          <p>
+            But also getting feedback from teammates, especially the developers is just as important. I think that if we
+            involved our developers more with the ideation process or if we got feedback early on before we did a ton of
+            work, we would have made informed design decisions because we would know if the solution we were designing
+            can even be implemented or if the resources that are required are available.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Links to other case studies -->
+    <div class="readmore">
+      <div class="heading">
+        <h2>Read about my other case studies</h2>
+      </div>
+      <section class="othercases"></section>
+    </div>
+    <footer-connect></footer-connect>
+    <script src="js/footer-connect.js"></script>
+    <script src="js/nav-bar.js"></script>
+  </body>
+</html>
