@@ -7,14 +7,10 @@
   justify-content: center;
   > a {
     transition: all 0.5s ease;
-    max-width: 1100px;
-    max-height: 500px;
+    max-width: 1000px;
+    max-height: 450px;
     padding: 0;
-  }
-}
-.reverse {
-  @media (min-width: 900px) {
-    grid-template-areas: 'b a' !important;
+    margin-bottom: 2rem;
   }
 }
 .case-study-item {
@@ -23,23 +19,22 @@
   width: 100%;
   display: grid;
   grid-template-areas: 'a b';
-  grid-template-columns: 45% 55%;
+  grid-template-columns: 52% 48%;
+  overflow: hidden;
   .case-study-image {
     grid-area: a;
     padding: 0;
     height: 100%;
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
     overflow: hidden;
     img {
-      height: 95%;
+      width: 100%;
       transition: all 1s ease;
     }
   }
 
   .case-text {
-    padding: 4rem;
+    padding: 3rem;
     align-self: center;
     h2,
     p {
@@ -51,7 +46,6 @@
     color: lighten(@primary-color, 5%);
     line-height: 2rem;
     margin-bottom: 1.2rem;
-    padding-top: 2rem;
   }
   .case-desc {
     line-height: 1.8rem;
@@ -68,4 +62,19 @@
   }
 }
 
+.reverse {
+  grid-template-areas: 'b a';
+  img {
+    height: 100%;
+    width: unset !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .case-study-item {
+    grid-template-areas: 'b' 'a';
+    grid-template-columns: unset !important;
+    grid-template-rows: 50% 50%;
+  }
+}
 // End of Home page case study
