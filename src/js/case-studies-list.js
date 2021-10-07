@@ -13,7 +13,7 @@ const caseStudies = [
     title: 'Clash of the Pencils',
     description:
       'Set out to inspire kiddos to tap into their natural creativity armed with a pencil, paper, and their brilliant minds.',
-    link: 'clash-of-the-pencils',
+    link: 'cotp',
     image: 'cotp-thumbnail.png',
     background: 'linear-gradient(180.74deg, rgba(255, 163, 109, 0.8) -1.61%, rgba(249, 231, 212, 0.432) 101.05%)',
     hidden: false

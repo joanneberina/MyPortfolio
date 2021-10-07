@@ -1,9 +1,16 @@
-.overflow-x {
-  overflow-x: scroll;
+@media (max-width: 600px) {
+  .overflow-x {
+    overflow-x: scroll;
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
+  }
 }
 
-.overflow-hidden {
-  overflow: hidden;
+.with-bullets {
+  list-style: circle;
+  padding: 0 2rem 2rem;
 }
 
 // Hero section
@@ -148,9 +155,13 @@ main {
     //General image styling under figure class
     .figure {
       margin-bottom: 2rem;
-      background: #eef5f9;
+      //background: #eef5f9;
+      .figure-img {
+        display: flex;
+        justify-content: center;
+      }
       img {
-        width: 900px;
+        width: 100%;
       }
       #addvehicle-img,
       #menu-img {
