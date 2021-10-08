@@ -11,8 +11,8 @@ const caseStudies = [
   },
   {
     name: 'documentor',
-    title: 'DocuMentor - simplifying an EVV solution',
-    description: 'Redesigning the app to remove obstacles that prevents user adaption.',
+    title: 'Web app + Mobile app EVV solution',
+    description: 'Redesigning DocuMentor’s apps to remove obstacles that prevents user adoption.',
     link: 'documentor',
     image: 'documentor-thumbnail-home.png',
     background: 'linear-gradient(259.13deg, #88D9FF 6.13%, #DFF5FF 99.63%)',
