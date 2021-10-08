@@ -28,6 +28,7 @@
     display: flex;
     overflow: hidden;
     img {
+      object-fit: scale-down;
       width: 100%;
       transition: all 1s ease;
     }
@@ -44,11 +45,13 @@
   .case-title {
     font-family: @font-heading;
     color: lighten(@primary-color, 5%);
+    font-size: 1.75rem;
     line-height: 2rem;
     margin-bottom: 1.2rem;
   }
   .case-desc {
     line-height: 1.8rem;
+    font-size: 1.125rem;
     padding-bottom: 0;
   }
 
@@ -64,10 +67,6 @@
 
 .reverse {
   grid-template-areas: 'b a';
-  img {
-    height: 100%;
-    width: unset !important;
-  }
 }
 
 @media (max-width: 500px) {
