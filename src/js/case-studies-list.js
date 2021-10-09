@@ -38,16 +38,18 @@ class CaseStudiesList extends HTMLElement {
           .map(
             (caseStudy, index) => /*html*/ `
           <a href="${caseStudy.link}" ${caseStudy.hidden ? 'hidden' : ''}>
-          <section class="case-study-item ${index % 2 == 0 && 'reverse'}" style="background:${caseStudy.background};">
-              <div id="${caseStudy.name}-image" class="case-study-image">
-                <img src="images/${caseStudy.image}" alt="${caseStudy.name}"/>
-              </div>
-              <div class="case-text">
-                <h2 class="case-title">${caseStudy.title}</h2>
-                <p class="case-desc">${caseStudy.description}</p>
-                
-              </div>
-            </section>
+          <div class="case-study-item-container" style="background:${caseStudy.background};">
+            <section class="case-study-item ${index % 2 == 0 ? 'reverse' : ''}" >
+                <div id="${caseStudy.name}-image" class="case-study-image">
+                  <img src="images/${caseStudy.image}" alt="${caseStudy.name}"/>
+                </div>
+                <div class="case-text">
+                  <h2 class="case-title">${caseStudy.title}</h2>
+                  <p class="case-desc">${caseStudy.description}</p>
+                  
+                </div>
+              </section>
+            </div>
             </a>
           `
           )

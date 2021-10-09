@@ -1,26 +1,36 @@
 // Home page case study
 #main {
   width: 100%;
-  padding: 5rem;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 5rem 0;
   font-family: 'Public Sans';
   display: grid;
   justify-content: center;
   > a {
     transition: all 0.5s ease;
-    max-width: 1120px;
+    width: 100vw;
     height: 500px;
     padding: 0;
     margin-bottom: 2rem;
   }
 }
+.case-study-item-container {
+  margin: 0 auto;
+  max-width: 1120px;
+  height: 500px;
+}
 .case-study-item {
   // Case study images
   height: 100%;
   width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
   display: grid;
   grid-template-areas: 'a b';
   grid-template-columns: 52% 48%;
   overflow: hidden;
+  transition: all 2s ease;
   .case-study-image {
     grid-area: a;
     padding: 0;
@@ -35,7 +45,7 @@
   }
 
   .case-text {
-    padding: 7rem;
+    padding: 7rem 0 7rem 7rem;
     align-self: center;
     h2,
     p {
@@ -67,13 +77,21 @@
 
 .reverse {
   grid-template-areas: 'b a';
+  .case-text {
+    padding: 7rem 7rem 7rem 0;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
   .case-study-item {
     grid-template-areas: 'b' 'a';
     grid-template-columns: unset !important;
     grid-template-rows: 50% 50%;
+    transition: all 2s ease;
+    .case-text {
+      padding: 7rem 2rem !important;
+      text-align: center;
+    }
   }
 }
 // End of Home page case study

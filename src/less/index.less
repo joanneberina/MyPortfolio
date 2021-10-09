@@ -57,13 +57,13 @@
 .hero {
   width: 100%;
   height: auto;
-  padding-top: 5rem;
+  padding: 5rem 1rem 0 1rem;
+
   transition: all 0.5s ease;
   .uvp {
     margin: 0 auto;
     max-width: 490px;
     padding: 4rem 0 0 0;
-    text-align: center;
     transition: all 0.5s ease;
     #avatar {
       display: flex;
@@ -93,7 +93,6 @@
       font-size: 1.375rem;
       font-family: @font-body;
       font-weight: 400;
-      text-align: center;
       padding: 0;
       margin: 1rem 0;
       color: @text-body;
@@ -112,52 +111,3 @@
     }
   }
 }
-
-// Media query 400px - hero section
-@media (min-width: 400px) {
-  .hero {
-    .uvp {
-      margin: 0 auto;
-      h1 {
-        line-height: 2.1rem;
-        transition: all 0.5s ease;
-      }
-    }
-  }
-}
-// Media query 700px - hero section
-@media (min-width: 700px) {
-  .hero {
-    .uvp {
-      width: 100%;
-      margin: 0 auto;
-      h1 {
-        text-align: left;
-        transition: all 0.5s ease;
-      }
-    }
-  }
-}
-// Media query 1000px - hero section
-@media (min-width: 1000px) {
-  .hero {
-    .uvp {
-      h1 {
-        line-height: 2.5rem;
-        transition: all 0.5s ease;
-      }
-    }
-  }
-}
-// Media query 1400px - hero section
-@media (min-width: 1400px) {
-  .hero {
-    .uvp {
-      h1 {
-        line-height: 2.75rem;
-        transition: all 0.5s ease;
-      }
-    }
-  }
-}
-// End of header all pages
