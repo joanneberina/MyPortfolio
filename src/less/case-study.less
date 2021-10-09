@@ -36,72 +36,8 @@
     display: flex;
     justify-content: center;
     img {
-      height: 150px;
+      width: 80%;
       transition: all 0.5s ease;
-    }
-  }
-  //Media query 300px - hero section
-  @media (min-width: 300px) {
-    height: auto;
-    #case-study-title {
-      h1 {
-        width: 95%;
-        font-size: 1.6rem;
-        line-height: 2.2rem;
-        padding-bottom: 2rem;
-        transition: all 0.5s ease;
-      }
-    }
-    #case-study-img {
-      img {
-        height: 240px;
-        transition: all 0.5s ease;
-      }
-    }
-  }
-  //Media query 600px - hero section
-  @media (min-width: 600px) {
-    #case-study-title {
-      h1 {
-        margin: 0 auto;
-        font-size: 2rem;
-        line-height: 2.75rem;
-        text-align: center;
-        transition: all 0.5s ease;
-      }
-    }
-    #case-study-img {
-      img {
-        height: 320px;
-        transition: all 0.5s ease;
-      }
-    }
-  }
-  // Media query 900px - hero section
-  @media (min-width: 900px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    #case-study-title {
-      display: flex;
-      align-items: center;
-      max-width: 30%;
-      margin: 5rem 0;
-      h1 {
-        font-size: 2rem;
-        line-height: 2.25rem;
-        text-align: left;
-        margin: 0 2rem;
-        transition: all 0.5s ease;
-      }
-    }
-    #case-study-img {
-      margin-top: 5rem;
-      height: 400px;
-      img {
-        height: 400px;
-        transition: all 0.5s ease;
-      }
     }
   }
 }
@@ -117,8 +53,8 @@
 main {
   //Section styling
   .p-container {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    //margin: 0 auto;
     padding: 2rem 0;
     .section-title {
       h2 {
@@ -134,24 +70,7 @@ main {
         font-weight: 600;
       }
     }
-    // Media query - section 600px
-    @media (min-width: 600px) {
-      width: 80%;
-      .section-title {
-        h2 {
-          font-size: 1.8rem;
-        }
-      }
-    }
-    // Media query - section 900px
-    @media (min-width: 900px) {
-      width: 75%;
-    }
-    // Media query - section 1000px
-    @media (min-width: 1000px) {
-      width: 60%;
-      max-width: 65%;
-    }
+
     //General image styling under figure class
     .figure {
       margin-bottom: 2rem;
@@ -182,7 +101,7 @@ main {
         }
       }
 
-      // Media query 600px - three column
+      //Media query 600px - three column
       @media (min-width: 600px) {
         display: flex;
         justify-content: space-around;
@@ -197,6 +116,10 @@ main {
       }
     }
     //Painpoints and wants
+    .painpoints-wants {
+      width: 100vw;
+      background: #eef5f9;
+    }
     .painpoints,
     .wants {
       padding-bottom: 2rem;
@@ -208,7 +131,7 @@ main {
       ul {
         display: flex;
         flex-wrap: wrap;
-        flex: 1 1 160px;
+        justify-content: space-between;
         li {
           flex-shrink: 1;
           font-size: 1rem;
@@ -323,6 +246,12 @@ main {
         min-height: 180px;
         margin-right: 1rem;
       }
+    }
+  }
+  @media (max-width: 900px) {
+    padding: 0 1.5rem !important;
+    .painpoints-wants {
+      margin: -1.5rem;
     }
   }
 }
