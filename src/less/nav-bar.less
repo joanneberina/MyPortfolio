@@ -25,7 +25,7 @@ nav {
     border: 1px solid @link-color;
     text-transform: uppercase;
     padding: 0 1rem 0 1rem;
-    margin: 1rem;
+    margin: 1rem 0 1rem 0;
   }
 
   ul {
@@ -49,16 +49,42 @@ nav {
       a {
         line-height: 1.75;
         padding-left: 1.25rem;
+        :hover {
+          color: rgba(39, 52, 78, 0.5);
+          transition: all 0.2s ease-in-out;
+        }
       }
     }
 
-    a:hover {
-      color: rgba(39, 52, 78, 0.5);
-      transition: all 0.2s ease-in-out;
-    }
     #active {
       color: rgba(39, 52, 78, 0.5);
       transition: all 0.2s ease-in-out;
+    }
+  }
+  #menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+
+  @media (max-width: 700px) {
+    ul {
+      display: none;
+    }
+    #menu {
+      display: unset;
+      cursor: pointer;
+    }
+    .mobile-menu {
+      position: fixed;
+      top: 50px;
+      right: 0;
+      background-color: white;
+      width: 150px;
+    }
+    .opened {
+      display: unset !important;
     }
   }
 }

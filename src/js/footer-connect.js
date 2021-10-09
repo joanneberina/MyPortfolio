@@ -6,7 +6,9 @@ class FooterConnect extends HTMLElement {
       <h1>Let's Connect!</h1>
       <p id="email">joanne.berina@hotmail.com</p>
       <div class='social'>
-        <a href="https://www.linkedin.com/in/joanne-berina/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.linkedin.com/in/joanne-berina/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </div>
     </footer>
     `
