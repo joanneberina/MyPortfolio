@@ -50,7 +50,6 @@ class Navbar extends HTMLElement {
     `
 
     document.querySelectorAll('#nav-ul a, .mobile-menu a').forEach(item => {
-      console.log(item)
       if (item.pathname === window.location.pathname) {
         item.parentElement.classList.add('nav_current')
       }
