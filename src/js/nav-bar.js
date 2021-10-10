@@ -4,15 +4,13 @@ class Navbar extends HTMLElement {
   }
 
   closeMenu = e => {
-    console.log(e.target.id)
     const mobileMenu = document.querySelector('.mobile-menu')
     if (e.target.id != 'menu') {
       mobileMenu.classList.remove('opened')
     }
   }
 
-  openMenu = e => {
-    console.log('Well Done!')
+  openMenu = () => {
     const mobileMenu = document.querySelector('.mobile-menu')
     if (!mobileMenu.classList.contains('opened')) {
       mobileMenu.classList.add('opened')
@@ -50,13 +48,15 @@ class Navbar extends HTMLElement {
         </div>
       </nav>
     `
-    document.querySelectorAll('#nav-ul>a,#mobile-menu>a').forEach(item => {
+
+    document.querySelectorAll('#nav-ul a, .mobile-menu a').forEach(item => {
+      console.log(item)
       if (item.pathname === window.location.pathname) {
         item.parentElement.classList.add('nav_current')
       }
     })
 
-    document.querySelector('#menu').addEventListener('click', e => this.openMenu(e))
+    document.querySelector('#menu').addEventListener('click', this.openMenu)
     window.addEventListener('resize', this.scrollFunction)
     document.body.addEventListener('click', this.closeMenu)
     window.onscroll = this.scrollFunction

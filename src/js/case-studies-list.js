@@ -6,7 +6,7 @@ const caseStudies = [
       'Set out to inspire kiddos to tap into their natural creativity armed with a pencil, paper, and their brilliant minds.',
     link: 'cotp',
     image: 'cotp-thumbnail.png',
-    background: 'linear-gradient(180.74deg, rgba(255, 163, 109, 0.8) -1.61%, rgba(249, 231, 212, 0.432) 101.05%)',
+    background: ['180.74deg', 'rgba(255, 163, 109, 0.8) -1.61%', 'rgba(249, 231, 212, 0.432) 101.05%'],
     hidden: true
   },
   {
@@ -15,7 +15,7 @@ const caseStudies = [
     description: 'Redesigning DocuMentor’s apps to remove obstacles that prevents user adoption.',
     link: 'documentor',
     image: 'documentor-thumbnail-home.png',
-    background: 'linear-gradient(259.13deg, #88D9FF 6.13%, #DFF5FF 99.63%)',
+    background: ['259.13deg', '#88D9FF 6.13%', '#DFF5FF 99.63%'],
     hidden: false
   },
   {
@@ -25,12 +25,26 @@ const caseStudies = [
       'This web mapping service allows users to input their vehicle’s specific height and weight to generate a safe route that will avoid low bridges and overpasses.',
     link: 'rvway',
     image: 'rvway-desktop.png',
-    background: 'linear-gradient(238.06deg, rgba(199, 252, 255, 0.75) 39.54%, #A9C6FF 97.64%)',
+    background: ['238.06deg', 'rgba(199, 252, 255, 0.75) 39.54%', '#A9C6FF 97.64%'],
     hidden: false
   }
 ]
 
 class CaseStudiesList extends HTMLElement {
+  constructor() {
+    super()
+  }
+
+  onHoverItem = (e, color) => {
+    const [caseStudy] = caseStudies.filter(caseStudy => caseStudy.name == e.target.id)
+    const background = [`-${caseStudy.background[0]}`, ...caseStudy.background.slice(1)]
+    if (e.type == 'mouseenter') {
+      e.target.style.background = `linear-gradient(${background.join()})`
+    } else if (e.type == 'mouseleave') {
+      e.target.style.background = `linear-gradient(${caseStudy.background.join()})`
+    }
+  }
+
   connectedCallback() {
     this.innerHTML = /*html*/ `
       <main id="main">
@@ -38,7 +52,9 @@ class CaseStudiesList extends HTMLElement {
           .map(
             (caseStudy, index) => /*html*/ `
           <a href="${caseStudy.link}" ${caseStudy.hidden ? 'hidden' : ''}>
-          <div class="case-study-item-container" style="background:${caseStudy.background};">
+          <div id="${
+            caseStudy.name
+          }" class="case-study-item-container" style="background:linear-gradient(${caseStudy.background.join()});">
             <section class="case-study-item ${index % 2 == 0 ? 'reverse' : ''}" >
                 <div id="${caseStudy.name}-image" class="case-study-image">
                   <img src="images/${caseStudy.image}" alt="${caseStudy.name}"/>
@@ -56,10 +72,11 @@ class CaseStudiesList extends HTMLElement {
           .join('')}
       </main>
     `
-    document.querySelectorAll('#nav-ul>li>a').forEach(item => {
-      if (item.pathname === window.location.pathname) {
-        item.parentElement.classList.add('nav_current')
-      }
+    const items = document.querySelectorAll('.case-study-item-container')
+    items.forEach(item => {
+      const color = item.style.background
+      item.addEventListener('mouseenter', e => this.onHoverItem(e, color))
+      item.addEventListener('mouseleave', e => this.onHoverItem(e, color))
     })
   }
 }

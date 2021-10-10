@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "build": "for file in src/less/styles.less; do lessc --source-map $file src/css/`basename $file less`css ; done",
-    "less-watch-compiler": "less-watch-compiler --source-map src/less/ src/css styles.less",
+    "build": "for file in src/less/styles.less; do lessc $file src/css/`basename $file less`css ; done",
+    "less-watch-compiler": "less-watch-compiler src/less/ src/css styles.less",
     "live-server": "browser-sync --extensions=html --no-notify --watch --server --port=4000 'src'",
     "start": "npm-run-all --parallel less-watch-compiler live-server"
   },
