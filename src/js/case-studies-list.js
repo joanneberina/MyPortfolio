@@ -75,30 +75,24 @@ class CaseStudiesList extends HTMLElement {
     `
     } else {
       this.innerHTML = /*html*/ `
-      <main id="mini-main">
+      <div class="card-container">
         ${caseStudies
           .map(
             (caseStudy, index) => /*html*/ `
-          <a href="${caseStudy.link}" ${caseStudy.hidden ? 'hidden' : ''}>
-          <div id="${
-            caseStudy.name
-          }" class="mini-case-study-item-container" style="background:linear-gradient(${caseStudy.background.join()});">
-            <section class="mini-case-study-item" >
-              <div class="mini-case-text">
-                <h2 class="mini-case-title">${caseStudy.title}</h2>
-                <p class="mini-case-desc">${caseStudy.description}</p>
-              </div>
-            </section>
-          </div>
+          <a id="${caseStudy.name}" class='card' href="${caseStudy.link}" style="min-height: 300px; display:${
+              caseStudy.hidden ? 'none' : 'default'
+            };">
+                <div class="card-title" style="min-height: 35%;"><p>${caseStudy.title}</p></div>
+                <div class="card-text"><p>${caseStudy.description}</p></div>
           </a>
           `
           )
           .join('')}
-      </main>
+      </div>
     `
     }
 
-    const items = document.querySelectorAll('.mini-case-study-item-container,.case-study-item-container')
+    const items = document.querySelectorAll('.case-study-item-container')
     items.forEach(item => {
       item.addEventListener('mouseenter', e => this.onHoverItem(e))
       item.addEventListener('mouseleave', e => this.onHoverItem(e))
