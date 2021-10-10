@@ -78,9 +78,9 @@ class CaseStudiesList extends HTMLElement {
       <div class="card-container">
         ${caseStudies
           .map(
-            (caseStudy, index) => /*html*/ `
+            caseStudy => /*html*/ `
           <a id="${caseStudy.name}" class='card' href="${caseStudy.link}" style="min-height: 300px; display:${
-              caseStudy.hidden ? 'none' : 'default'
+              caseStudy.hidden || window.location.pathname == '/' + caseStudy.link ? 'none' : 'default'
             };">
                 <div class="card-title" style="min-height: 35%;"><p>${caseStudy.title}</p></div>
                 <div class="card-text"><p>${caseStudy.description}</p></div>
