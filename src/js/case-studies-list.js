@@ -35,7 +35,7 @@ class CaseStudiesList extends HTMLElement {
     super()
   }
 
-  onHoverItem = (e, color) => {
+  onHoverItem = e => {
     const [caseStudy] = caseStudies.filter(caseStudy => caseStudy.name == e.target.id)
     const background = [`-${caseStudy.background[0]}`, ...caseStudy.background.slice(1)]
     if (e.type == 'mouseenter') {
@@ -46,7 +46,8 @@ class CaseStudiesList extends HTMLElement {
   }
 
   connectedCallback() {
-    this.innerHTML = /*html*/ `
+    if (this.getAttribute('mini') == undefined) {
+      this.innerHTML = /*html*/ `
       <main id="main">
         ${caseStudies
           .map(
@@ -72,12 +73,37 @@ class CaseStudiesList extends HTMLElement {
           .join('')}
       </main>
     `
-    const items = document.querySelectorAll('.case-study-item-container')
+    } else {
+      this.innerHTML = /*html*/ `
+      <main id="mini-main">
+        ${caseStudies
+          .map(
+            (caseStudy, index) => /*html*/ `
+          <a href="${caseStudy.link}" ${caseStudy.hidden ? 'hidden' : ''}>
+          <div id="${
+            caseStudy.name
+          }" class="mini-case-study-item-container" style="background:linear-gradient(${caseStudy.background.join()});">
+            <section class="mini-case-study-item" >
+              <div class="mini-case-text">
+                <h2 class="mini-case-title">${caseStudy.title}</h2>
+                <p class="mini-case-desc">${caseStudy.description}</p>
+              </div>
+            </section>
+          </div>
+          </a>
+          `
+          )
+          .join('')}
+      </main>
+    `
+    }
+
+    const items = document.querySelectorAll('.mini-case-study-item-container,.case-study-item-container')
     items.forEach(item => {
-      const color = item.style.background
-      item.addEventListener('mouseenter', e => this.onHoverItem(e, color))
-      item.addEventListener('mouseleave', e => this.onHoverItem(e, color))
+      item.addEventListener('mouseenter', e => this.onHoverItem(e))
+      item.addEventListener('mouseleave', e => this.onHoverItem(e))
     })
+    console.log(this.mini)
   }
 }
 
