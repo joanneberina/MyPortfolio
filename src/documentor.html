@@ -5,6 +5,7 @@
     <script src="https://kit.fontawesome.com/1e3f8182fc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://use.typekit.net/zvp4xvv.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/basicLightbox.min.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -340,62 +341,85 @@
           </div>
           <h3 class="uppercase">Caregiver mid-fidelity wireframes</h3>
           <p>Simplify the dashboard and create a clear visual hierarchy</p>
-          <div class="figure overflow-hidden">
-            <img src="images/" alt="" />
+          <div class="figure">
+            <img src="images/documentor-design-caregiver-dash.png" alt="" />
           </div>
-          <p></p>
-          <div class="figure overflow-hidden">
-            <img src="images/" alt="" />
+          <p>Refactor clock-in and clock-out modals</p>
+          <div class="figure">
+            <img src="images/documentor-caregiver-modals.png" alt="" />
+          </div>
+          <p>Remove nested modals to simplify note form</p>
+          <div class="figure">
+            <img src="images/documentor-design-noteform.png" alt="" />
+          </div>
+          <h3 class="uppercase">Caregiver Mobile-App Solution</h3>
+          <p>Wireframes</p>
+          <div class="figure overflow-x">
+            <img src="images/documentor-mobile-app-wireframe.png" alt="" />
+          </div>
+          <p>High-Fidelity</p>
+          <div class="figure overflow-x">
+            <img src="images/documentor-hifi.png" alt="" style="max-height: unset" />
+          </div>
+          <h3 class="uppercase">Provider/Admin High-Fidelity Designs</h3>
+          <p>Dashboard and sidebar pages</p>
+          <div class="figure overflow-x">
+            <img src="images/documentor-admin-dashboard.png" alt="" />
+          </div>
+          <p>Forms</p>
+          <div class="figure overflow-x">
+            <img src="images/documentor-forms.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Iterations based on usability testing -->
+      <section class="p-container max-width-900">
+        <div class="section-title">
+          <h2>Iterations based on usability testing</h2>
+        </div>
+        <div class="section-content">
+          <p>After conducting usability testing, we did some iteration based on our users feedback.</p>
+          <h4>The hamburger menu</h4>
+          <p>
+            This was a surprising discovery for us and one that we didn’t really expect. It was a typical case of “you
+            are not your user.” For the internet savvy generation, this might be a typical element of interaction but
+            for our demographic, it was an unfamiliar symbol. The first symbol that we used was not the usual
+            bread-meat-bread hamburger menu. We found that our users didn’t really know what the symbol meant. It also
+            kind of looked like a logo so they didn’t know to click on it that‘s why we went back to the typical equal
+            horizontal lines.
+          </p>
+          <div class="figure overflow-x">
+            <div class="figure-img">
+              <img id="menu-img" src="" alt="" />
+            </div>
+          </div>
+          <h4>Vehicle interaction</h4>
+          <p>
+            Instead of showing just a list of the name of the vehicles that the user would need to click for them to see
+            the details, we designed an interaction where all the details can be shown and hidden by
+            expanding/collapsing each vehicle without going to another page.
+          </p>
+          <div class="figure overflow-x">
+            <div class="figure-img">
+              <img id="addvehicle-img" src="" alt="" />
+            </div>
+          </div>
+          <h4>Directions page</h4>
+          <p>
+            To help users remember what vehicle that they are routing with, we added some sort of breadcrumb so they can
+            see the vehicle they are using for that route. It was also important to show the obstacles that are being
+            avoided like low clearances and dirt roads so that the user is aware of the value they get when they use the
+            app.
+          </p>
+          <div class="figure overflow-x">
+            <div class="figure-img">
+              <img src="" alt="" />
+            </div>
           </div>
         </div>
       </section>
       <div hidden>
-        <!-- Iterations based on usability testing -->
-        <section class="p-container max-width-900">
-          <div class="section-title">
-            <h2>Iterations based on usability testing</h2>
-          </div>
-          <div class="section-content">
-            <p>After conducting usability testing, we did some iteration based on our users feedback.</p>
-            <h4>The hamburger menu</h4>
-            <p>
-              This was a surprising discovery for us and one that we didn’t really expect. It was a typical case of “you
-              are not your user.” For the internet savvy generation, this might be a typical element of interaction but
-              for our demographic, it was an unfamiliar symbol. The first symbol that we used was not the usual
-              bread-meat-bread hamburger menu. We found that our users didn’t really know what the symbol meant. It also
-              kind of looked like a logo so they didn’t know to click on it that‘s why we went back to the typical equal
-              horizontal lines.
-            </p>
-            <div class="figure overflow-x">
-              <div class="figure-img">
-                <img id="menu-img" src="images/" alt="" />
-              </div>
-            </div>
-            <h4>Vehicle interaction</h4>
-            <p>
-              Instead of showing just a list of the name of the vehicles that the user would need to click for them to
-              see the details, we designed an interaction where all the details can be shown and hidden by
-              expanding/collapsing each vehicle without going to another page.
-            </p>
-            <div class="figure overflow-x">
-              <div class="figure-img">
-                <img id="addvehicle-img" src="images/" alt="" />
-              </div>
-            </div>
-            <h4>Directions page</h4>
-            <p>
-              To help users remember what vehicle that they are routing with, we added some sort of breadcrumb so they
-              can see the vehicle they are using for that route. It was also important to show the obstacles that are
-              being avoided like low clearances and dirt roads so that the user is aware of the value they get when they
-              use the app.
-            </p>
-            <div class="figure overflow-x">
-              <div class="figure-img">
-                <img src="images/" alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
         <!-- Learnings and takeaways -->
         <section class="p-container max-width-900">
           <div class="section-title">
@@ -446,8 +470,10 @@
       <case-studies-list mini class="othercases"></case-studies-list>
     </div>
     <footer-connect></footer-connect>
+    <script src="assets/basicLightbox.min.js"></script>
     <script src="js/nav-bar.js"></script>
     <script src="js/footer-connect.js"></script>
     <script src="js/case-studies-list.js"></script>
+    <script src="js/lightbox.js"></script>
   </body>
 </html>
