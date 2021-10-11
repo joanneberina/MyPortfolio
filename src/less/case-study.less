@@ -5,7 +5,10 @@
   height: 74px; /* fixed header height*/
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
+  .figure-img {
+    justify-content: start !important;
+  }
   .overflow-x {
     overflow-x: scroll;
   }
@@ -13,6 +16,11 @@
   .overflow-hidden {
     overflow: hidden;
   }
+}
+
+.max-width-560 {
+  max-width: 560px;
+  margin: 0 auto;
 }
 
 .with-bullets {
@@ -40,6 +48,7 @@
         align-items: center;
         margin-right: 1rem;
         background: linear-gradient(259.13deg, #e2f6ff 3.24%, #79d5ff 99.63%);
+        border: solid 1px lightblue;
       }
     }
   }
@@ -60,6 +69,15 @@
   padding: 0 !important;
   img {
     padding-top: 2rem;
+  }
+}
+
+#problems-goals {
+  h2 {
+    font-size: 1.875rem;
+    span {
+      font-size: 2.5rem !important;
+    }
   }
 }
 
@@ -132,7 +150,8 @@
         justify-content: center;
       }
       img {
-        width: 100%;
+        max-width: 900px;
+        max-height: 600px;
       }
       #addvehicle-img,
       #menu-img {
@@ -266,7 +285,7 @@
     }
   }
   .full-width-background {
-    width: 100vw;
+    width: 99vw;
     padding-bottom: 0;
     background-color: #eefaff;
   }

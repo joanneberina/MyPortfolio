@@ -9,10 +9,13 @@
   justify-content: center;
   > a {
     transition: all 0.5s ease;
-    width: 100vw;
+    width: 1120px;
     height: 500px;
     padding: 0;
     margin-bottom: 2rem;
+    @media (max-width: 1120px) {
+      width: 99vw;
+    }
   }
 }
 .case-study-item-container {
