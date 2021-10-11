@@ -17,8 +17,9 @@
         <div id="case-study-title">
           <h1>Web app + Mobile app EVV solution</h1>
         </div>
-        <div id="case-study-img">
-          <img src="images/rvway-preview-heading.png" alt="RV Way Map page" />
+        <div id="case-study-img" class="stack">
+          <img src="images/documentor-webapp-heading.png" alt="Documentor Webapp" />
+          <img src="images/documentor-screens-heading.png" alt="Documentor Mobile" />
         </div>
       </div>
     </header>
@@ -43,55 +44,82 @@
           </div>
         </div>
       </section>
-      <!-- The Big RV Picture -->
+      <!-- Overview -->
       <section class="p-container max-width-900">
         <div class="section-title">
-          <h2>The Big RV Picture</h2>
+          <h2>Overview</h2>
         </div>
         <div class="section-content">
           <p>
-            Motorhomes, RVs, campervans are all-purpose vehicles that take you where you want to go and give you a place
-            to stay along the way. Recreational vehicles or RVs for short, represent adventure, the open road, and
-            independence. In the U.S. they are getting more and more popular as these vehicles start to come with more
-            modern conveniences.
+            DocuMentor is an electronic visit verification (EVV) solution used to verify visit activity for home health,
+            home care and hospice.
           </p>
           <p>
-            When I started working on the project, I knew very little about the RV industry since RVs are not common
-            where I grew up. My first impression was that this was a very niche market. The trends and statistics that
-            I’ve gathered from the RV Industry Association (rvia.org) were eye-opening.
+            Electronic Visit Verification is a system for tracking work performed, hours, notes, accurate location
+            information and much more about the patient-caregiver interaction, including information about the service
+            provider. EVV applies to care and health services rendered in the home. The purpose of EVV is to ensure that
+            services are delivered to people needing those services and that providers only bill for services rendered.
           </p>
         </div>
       </section>
-      <!-- Illustration -->
-      <div class="card-container">
-        <div class="card">
-          <div class="card-title">
-            <p>People travelling in an RV in the U.S.</p>
+      <!-- Target Users -->
+      <section class="p-container max-width-900">
+        <div class="section-title">
+          <h2>Target Users</h2>
+        </div>
+        <div class="section-content two-columns">
+          <div>
+            <h3 class="uppercase">Caregivers</h3>
+            <p>
+              Individuals who provide care and services to clients and carry out overall needs and plan of care.
+              Caregivers can be family members or professional caregivers. Some services are also provided by Therapy
+              Professionals, Behavioral Consultants, Music Therapists, Speech Therapists etc.
+            </p>
           </div>
-          <div class="card-text">
-            <p>25 million people a year</p>
-            <p>10 million full-time RVers</p>
+          <div>
+            <h3 class="uppercase">Provider Admins and Supervisors</h3>
+            <p>
+              They can be owners of an agency or the provider's employees who manages caregivers, assigns clients and/or
+              set schedules for the caregivers. They make sure that hours used per client are within budget. They also
+              review notes for each service and approves them for billing.
+            </p>
           </div>
         </div>
-        <div class="card">
-          <div class="card-title">
-            <p>Typical RV Traveler</p>
-          </div>
-          <div class="card-text">
-            <p>Married and 48 yrs. old</p>
-            <p>Annual income of $68,000</p>
-          </div>
+      </section>
+      <!-- Problems and Goals -->
+      <section class="p-container full-width-background">
+        <div class="section-content max-width-900">
+          <h2><span>🤔</span> Problem</h2>
+          <p>
+            Caregivers are not using the web app to clock their hours and record notes on the day of their workday but
+            instead they are recording their hours and notes at a later date on paper which can be inaccurate and is
+            sometimes submitted after the deadline. This makes it harder for providers and supervisors to track the
+            caregivers hours which in turn causes delays on billing and reimbursement.
+          </p>
+          <h2>🎯 Goal</h2>
+          <p>
+            The goal is to improve the flow and user experience by redesigning the user interface using Ant Design
+            system to fix usability issues and make it more visually appealing to encourage user adaption, increase
+            customer retention and sign-ups.
+          </p>
         </div>
-        <div class="card">
-          <div class="card-title">
-            <p>Trends in RV ownership from 2015-2018</p>
-          </div>
-          <div class="card-text">
-            <p>2.32% increase in ages 35-44</p>
-            <p>3.07% increase in ages 25-34</p>
-          </div>
+      </section>
+      <!-- Process -->
+      <section class="p-container max-width-900">
+        <div class="section-title">
+          <h2>Process</h2>
         </div>
-      </div>
+        <div class="section-content">
+          <ul class="with-special-numbers">
+            <li><span>1</span> User experience audit</li>
+            <li><span>2</span> User Research plan and Goals</li>
+            <li><span>3</span> Research data analysis</li>
+            <li><span>4</span> User and Process Flows</li>
+            <li><span>5</span> Feature Mapping</li>
+            <li><span>6</span> Design Iterations</li>
+          </ul>
+        </div>
+      </section>
       <!-- User Experience Audit-->
       <section class="p-container max-width-900">
         <div class="section-title">
@@ -99,232 +127,213 @@
         </div>
         <div class="section-content">
           <p>
-            The existing app is intended to generate a route that is safe for RVs after users input their vehicle’s
-            specification but the core functionality which is the navigation was broken. The user interface was also not
-            intuitive. It wasn’t clear what the user was supposed to do first when they get to the map page. Navigating
-            the app can be confusing and overall, the existing solution was just not usable.
+            To be able to understand and relate to our customers and the team, it is essential to learn all about what
+            EVV is and the industry that it serves. There were a lot of unfamiliar jargon and terminologies so talking
+            to stakeholders, meeting with the developers and account managers was key to learning about how the app
+            works and the current challenges that our customers were facing.
           </p>
           <!-- Illustration -->
           <div class="figure">
             <div class="figure-img overflow-x">
-              <img src="images/rvway-before-redesign.png" alt="How Might We..." />
+              <img src="images/documentor-uxaudit-1.png" alt="DocuMentor Audit 1" />
             </div>
           </div>
           <p>
-            It became clear that we would have to totally redesign the user interface. Overhauling a product’s entire UI
-            in 8 weeks or less is no small feat. Knowing that improvement is a never-ending process and to keep
-            ourselves on track, we focused on the following goals:
-          </p>
-
-          <ul class="with-bullets">
-            <li>Provide the most efficient and safe route for users who drive their RV's around</li>
-            <li>Give users the most accurate intel based on their details and preferences</li>
-            <li>Continuously improve the routing function through additional data sources and crowd-sourced data</li>
-            <li>Provide users with a simple and beautiful app design to yield a better RV traveling experience</li>
-          </ul>
-          <p>
-            My partner and I wanted to engage our entire team in our process early on. This not only helped build
-            camaraderie, but it also helped our developers and data scientists understand what we, as UX designers, were
-            contributing to the team. They were so excited when we asked them to join us for a brainstorming workshop!
-          </p>
-          <p>
-            During this workshop, we worked as a team to create initial survey questions, and asked how might we achieve
-            our goals?
+            Both the CEO and the development team suggested that a UI redesign is much needed. When I was evaluating the
+            current state of the app, it was apparent that the dashboard for both the caregiver and admin didn't have a
+            clear information hierarchy. For example, there were several clickable icons but did not have the affordance
+            that it is a link. It also did not have a text label that goes with it and that can be frustrating for first
+            time users.
           </p>
           <!-- Illustration -->
           <div class="figure">
             <div class="figure-img overflow-x">
-              <img src="images/rvway-hmw.png" alt="Mobile screens of low-fidelity wireframes" />
+              <img src="images/documentor-uxaudit-2.png" alt="DocuMentor Audit 2" />
             </div>
           </div>
+          <p>
+            As the nature of EVV apps goes, this app also has quite a lot of form handling. And if you know about forms,
+            they're not really fun to look at. The format looks a bit overwhelming and again, there's a lack of
+            information hierarchy so it falls short of giving the user some guidance on where to start.
+          </p>
+          <p>
+            Most of the app's input forms are also in a modal dialogue. Although modal dialogs are very effective in
+            attracting a user's attention to focus on the task at hand, it has more disadvantages in the way that it is
+            utilized in the app. One downside is that the window goes away whenever the outside of the dialogue box is
+            clicked and that can be disruptive because the user would have to open the modal again to finish the task. A
+            link for viewing notes is also in a modal as well as many other interactions.
+          </p>
         </div>
       </section>
-      <!-- Customer Interviews: learning about their painpoints and needs -->
+      <!-- User Research Plan and Goals -->
       <section class="p-container">
         <div class="section-title max-width-900">
-          <h2>Customer Interviews: learning about their painpoints and needs</h2>
+          <h2>User Research Plan and Goals</h2>
         </div>
         <div class="section-content max-width-900">
           <p>
-            Talking to our target users was very insightful, we learned a wealth of invaluable information. To
-            understand what problems we need to to address, one of the main question we asked was:
+            It was clear that there were usability issues but they will remain as assumptions without verifying it from
+            our users. Customer interviews are the most effective way to get direct feedback and validate our
+            assumptions based from the UX audit. I was also looking forward to unique insights and discoveries that I
+            may come across during this process.
           </p>
-          <!-- Text highlight -->
-          <div class="highlight max-width-900">
-            <p>How are the needs of a person driving an RV different from someone who drives a regular vehicle?</p>
-          </div>
           <p>
-            We learned that people driving an RV think about things that wouldn’t normally be a concern for a person
-            driving a regular vehicle. We went through all the responses and organized it into painpoints and wants.
+            But before diving into user interviews, it is essential to have a UX research plan which will help set
+            expectations and document the essentials needed to communicate to stakeholders and customers. I outlined the
+            general user interview goals and specific user interview goals for each target user.
           </p>
         </div>
         <!-- Illustration -->
-        <div class="figure painpoints-wants">
-          <div class="painpoints max-width-900">
-            <h3>PAINPOINTS</h3>
-            <ul>
-              <li>Low clearances</li>
-              <li>Bumpy roads</li>
-              <li>Dangerous intersections</li>
-              <li>Gas stations that do/don't have diesel</li>
-              <li>Steep grades</li>
-              <li>Lack of on/off ramp warnings</li>
-              <li>Narrow city streets</li>
-              <li>Not enough information about stops that accomodates RVs</li>
+        <div class="figure">
+          <div class="max-width-900">
+            <h3>General User Research Goals:</h3>
+            <ul class="with-bullets">
+              <li>Understand how Caregivers and Admins are using the product.</li>
+              <li>Discover what the potential benefits of the product/experience to the users.</li>
+              <li>Learn about the clear or potential pain points.</li>
+              <li>Evaluate what features need improvement.</li>
             </ul>
           </div>
-          <div class="wants max-width-900">
-            <h3>WANTS</h3>
-            <ul>
-              <li>Points of interest</li>
-              <li>Parking lots</li>
-              <li>Offline usage</li>
-              <li>Gas stations that accomodate RVs</li>
-              <li>Live traffic update</li>
-              <li>Saving routes</li>
-              <li>Campground information</li>
-              <li>Avoiding tolls</li>
-              <li>Clean showers/restroom locator</li>
-              <li>Gas prices</li>
-              <li>Crowd-sourced information</li>
+          <div class="max-width-900">
+            <h3>User Interview Goals</h3>
+            <h4>For Providers/Admin:</h4>
+            <ul class="with-bullets">
+              <li>Learn how providers and admin utilize the dashboard. Find out what is useful and what is not.</li>
+              <li>
+                Find out about how admins use the app to help in report generation for billing and reimbursement and
+                specifically any challenges they may have in monitoring caregivers.
+              </li>
+              <li>Learn about the scheduling process.</li>
+            </ul>
+            <h4>For Caregivers:</h4>
+            <ul class="with-bullets">
+              <li>Learn about how and where they access and use the app.</li>
+              <li>Find out about any challenges in recording their hours, how and when they clock-in and clock-out.</li>
+              <li>Learn about how they utilize the notes section and what their level of engagement is.</li>
+            </ul>
+            <h4>For the Business Development Team:</h4>
+            <ul class="with-bullets">
+              <li>Understand how each customer operates and what makes a customer sign-up for the product.</li>
+              <li>Gather feedback on how customers find value in the product.</li>
+              <li>Learn about customer onboarding process and their challenges when onboarding a customer.</li>
             </ul>
           </div>
         </div>
       </section>
-      <!-- The first solution is not always the best solution -->
+      <!-- Research Data Analysis -->
       <section class="p-container max-width-900">
         <div class="section-title">
-          <h2>The first solution is not always the best solution</h2>
+          <h2>Research Data Analysis</h2>
         </div>
         <div class="section-content">
           <p>
-            Based on the user’s painpoints and wants, we designed an initial solution which was a native mobile app that
-            had all the bells and whistles - basically the same features as Google maps but for RVs. It had an option to
-            search for a point of interest as a destination, add stops along the route, it has geo-location and
-            autocomplete. And of course a turn-by-turn voice navigation feature.
+            After doing remote interviews with 5 caregivers, 5 admins and 2 of our Business Development Managers, I put
+            together my research data by writing down transcripts from the recorded interviews. And then organize it by
+            doing affinity mapping. I organized the responses based on painpoints vs. needs and separated them according
+            to user types. I then proceeded to further sort them by what feature or functionality the problem is about.
+            By classifying information in this way, it was easier to identify problems and common issues. It was also
+            easier to present to stakeholders because it is more digestible.
           </p>
           <!-- Illustration -->
           <div class="figure">
             <div class="figure-img overflow-x">
-              <img src="images/rvway-wireframe.png" alt="Mobile screens of low-fidelity wireframes" />
+              <img src="images/documentor-affinity-mapping-1.png" alt="Affinity Mapping 1" />
             </div>
           </div>
           <p>
-            But this solution had a lot of challenges because we later found out that we didn’t have the resources to
-            get the right API which would provide the data for the points of interest. While all the initial features
-            that we wanted were certainly “nice to haves”, it didn’t really directly impact the problem of safely
-            routing the RV traveler from point A to point B.
+            Notes and Hours, Reports and Forms, Budget Monitoring, Usability, Scheduling and Notifications are the areas
+            where problems needed solving.
           </p>
-        </div>
-      </section>
-      <!-- Prioritizing which painpoint to address -->
-      <section class="p-container max-width-900">
-        <div class="section-title">
-          <h2>Prioritizing which painpoint to address</h2>
-        </div>
-        <div class="section-content">
-          <p>
-            In a perfect world, providing all of these features and addressing all of the user’s painpoints would be
-            ideal. But we had to take into account the complexity of the implementation, timeframe, and available
-            resources and all the while, setting a reasonable goal for our product releases. We went back to our
-            research data and found some useful insights that gave us a clearer direction.
-          </p>
-          <!-- Text highlight -->
-          <div class="highlight">
-            <p>
-              Painpoint #1:<br />
-              “The fastest route is not always the best route.”
-            </p>
-          </div>
-          <p>
-            Directions that are provided by other web mapping services is usually the fastest route which is oftentimes,
-            not RV-friendly. The most common painpoint for people travelling in an RV is that they are afraid of getting
-            into an accident. Safety is the number one concern for people traveling in RVs.
-          </p>
-          <div class="highlight">
-            <p>
-              Painpoint #2:<br />
-              “My biggest fear while driving in an RV is getting into an accident.”
-            </p>
-          </div>
-          <p>
-            Another roadblock was the implementation of a turn by turn voice navigation was not technologically feasible
-            given the our time frame. To top it all off, we were not going to build a native mobile app but instead, a
-            desktop web app that is mainly used for planning. It was like we went from envisioning to build something
-            like Google maps to building something like map quest.
-          </p>
-          <p>
-            So we shifted our focus back to the core functionality of the app which is navigating the user away from low
-            bridges with their RV’s specifications. We thought of ways on how we can improve the existing experience and
-            really address the user’s painpoint which is safety.
-          </p>
-          <p>
-            We also wanted to validate if users will use this navigation app for planning their routes ahead. We had
-            doubts if users will even use a navigation app if it doesn’t have a guided voice prompt, so in our
-            succeeding surveys and interviews we included the question:
-          </p>
-          <p>
-            We also wanted to validate if there was still a use-case for a navigation app that is mainly used for
-            planning. We had doubts if users will even use a navigation app if it doesn’t have a guided voice prompt, so
-            in our succeeding surveys and interviews we included the question:
-          </p>
-          <!-- Text highlight -->
-          <div class="highlight">
-            <p>
-              “When using a navigation app, is turn by turn voice navigation a necessity to your routing experience?”
-            </p>
-            <div class="yes-no">
-              <div class="yes">
-                <h3>YES</h3>
-                <p>60%</p>
-              </div>
-              <div class="no">
-                <h3>NO</h3>
-                <p>40%</p>
-              </div>
+          <!-- Illustration -->
+          <div class="figure">
+            <div class="figure-img overflow-x">
+              <img src="images/documentor-affinity-mapping-2.png" alt="Affinity Mapping 2" />
             </div>
           </div>
-          <p>
-            There really wasn’t a huge gap between the people who said YES and NO. But when we looked at the qualitative
-            data, a common response was that proper planning is key to a safe and successful RV trip. A seasoned RV
-            driver will take the time to plan before a big trip. They would decide on what roads and highways to take,
-            where to get gas, stop for the night and so on. Tips like using a checklist document for all essential
-            supplies is also one of the planning tools being utilized in the RV communities on Facebook. Therefore we
-            assumed that there was a use case for it.
-          </p>
         </div>
       </section>
-      <!-- Design Iteration -->
+      <!-- User and Process Flows  -->
       <section class="p-container max-width-900">
         <div class="section-title">
-          <h2>Design Iteration</h2>
+          <h2>User and Process Flows</h2>
         </div>
         <div class="section-content">
           <p>
-            We made the user interface more intuitive and easy to use by designing a clean and simple look since our
-            average demographic is older, who might not be tech-savvy. We also used a more conversational language and
-            avoided jargon and labels that might be confusing. And to save on production time, the redesigned sidebar
-            requires none to minimal refactoring when converted to mobile.
+            Establishing user and/or process flows is an essential step in the design process to help us understand how
+            a user journey pans out and to determine the app's information architecture. There was no existing
+            documentation for it so I collaborated with the stakeholders so we can come up with the caregiver and
+            admin’s user flows. Mapping out the hours and notes submission process helped us identify the different
+            stages that a session goes through and how it correlates to the caregiver's hours and notes submission.
           </p>
-          <div class="figure overflow-hidden">
-            <img src="images/rvway-map-blank.png" alt="" />
-            <img src="images/rvway-before-after.png" alt="" />
+          <!-- Illustration -->
+          <div class="figure">
+            <div class="figure-img overflow-x">
+              <img src="images/documentor-hours-notes-1.png" alt="Hour Notes" />
+            </div>
           </div>
-          <p>
-            Having users set up and save their vehicle profile is a crucial part of generating a route that is custom to
-            their RVs. On the add a vehicle form, we fixed how the labels and fields are laid out in a much clearer
-            format.
-          </p>
-          <div class="figure overflow-hidden">
-            <img src="images/rvway-map-addvehicle.png" alt="" />
+          <!-- Illustration -->
+          <div class="figure">
+            <div class="figure-img overflow-x">
+              <img src="images/documentor-caregiver-user-flow-v1.png" alt="Caregivers User Flow" />
+            </div>
           </div>
+          <!-- Illustration -->
+          <div class="figure">
+            <div class="figure-img overflow-x">
+              <img src="images/documentor-admin-user-flow-v1.png" alt="Admin User Flow" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Feature Mapping - a collaborative activity  -->
+      <section class="p-container max-width-900">
+        <div class="section-title">
+          <h2>Feature Mapping - a collaborative activity</h2>
+        </div>
+        <div class="section-content">
           <p>
-            The directions page has several sections that shows similar information that you would see on Google maps
-            but one important section is the part that shows where the low bridges are and letting the user know that
-            their RV is being routed away from low clearances, dirt roads or steep grades.
+            After presenting my analysis of the research data, I collaborated with our software development team to do a
+            Feature Mapping. The goal of this collaboration was to get their feedback on what makes sense to prioritize
+            according to the availability and limitation of time, tech stack and resources. It is going to be a long and
+            iterative process given the number of problems that we wanted to solve. It was practical to tackle first
+            what is already built and functioning so we decided to focus on fixing usability issues and redesigning the
+            UI for the first feature release.
           </p>
+          <!-- Illustration -->
+          <div class="figure">
+            <div class="figure-img overflow-x">
+              <img src="images/documentor-feature-release-plan-1.png" alt="Feature Release Plan" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Design Solutions -->
+      <section class="p-container max-width-900">
+        <div class="section-title">
+          <h2>Design Solutions</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            Without hours and notes input from the caregivers, the system will not be able to generate any data or
+            report and will basically render the app useless. The main goal of the first iteration is how to improve the
+            hours and note entry for caregivers and dashboard utilization for providers/admin.
+          </p>
+          <div class="max-width-900">
+            <h3>Goals:</h3>
+            <ul class="with-bullets">
+              <li>Solve problems based on the feature release priority list</li>
+              <li>Refactor and assimilate existing functional user flows</li>
+              <li>Use Ant Design System components to accelerate development</li>
+            </ul>
+          </div>
+          <h3 class="uppercase">Caregiver mid-fidelity wireframes</h3>
+          <p>Simplify the dashboard and create a clear visual hierarchy</p>
           <div class="figure overflow-hidden">
-            <img src="images/rvway-map-directions.png" alt="" />
+            <img src="images/" alt="" />
+          </div>
+          <p></p>
+          <div class="figure overflow-hidden">
+            <img src="images/" alt="" />
           </div>
         </div>
       </section>
@@ -346,7 +355,7 @@
           </p>
           <div class="figure overflow-x">
             <div class="figure-img">
-              <img id="menu-img" src="images/rvway-menu-iteration.png" alt="" />
+              <img id="menu-img" src="images/" alt="" />
             </div>
           </div>
           <h4>Vehicle interaction</h4>
@@ -357,7 +366,7 @@
           </p>
           <div class="figure overflow-x">
             <div class="figure-img">
-              <img id="addvehicle-img" src="images/rvway-addvehicle-iteration.png" alt="" />
+              <img id="addvehicle-img" src="images/" alt="" />
             </div>
           </div>
           <h4>Directions page</h4>
@@ -369,7 +378,7 @@
           </p>
           <div class="figure overflow-x">
             <div class="figure-img">
-              <img src="images/rvway-directions-iteration.png" alt="" />
+              <img src="images/" alt="" />
             </div>
           </div>
         </div>
@@ -420,10 +429,11 @@
       <div class="heading">
         <h2>Read about my other case studies</h2>
       </div>
-      <section class="othercases"></section>
+      <case-studies-list mini class="othercases"></case-studies-list>
     </div>
     <footer-connect></footer-connect>
-    <script src="js/footer-connect.js"></script>
     <script src="js/nav-bar.js"></script>
+    <script src="js/footer-connect.js"></script>
+    <script src="js/case-studies-list.js"></script>
   </body>
 </html>
