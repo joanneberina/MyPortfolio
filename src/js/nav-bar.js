@@ -43,7 +43,7 @@ class Navbar extends HTMLElement {
           <ul class="mobile-menu">
             <li><a href="/">Work</a></li>
             <li><a href="/about">About</a></li>
-            <li><a href="/assets/joanneberina_resume.pdf" target="_blank">Resume</a></li>
+            <li><a href="/assets/JBerina-resume.pdf" target="_blank">Resume</a></li>
         </ul>
         </div>
       </nav>
