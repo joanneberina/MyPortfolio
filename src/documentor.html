@@ -95,7 +95,7 @@
             Caregivers are not using the web app to clock their hours and record notes on the day of their workday but
             instead they are recording their hours and notes at a later date on paper which can be inaccurate and is
             sometimes submitted after the deadline. This makes it harder for providers and supervisors to track the
-            caregivers hours which in turn causes delays on billing and reimbursement.
+            caregiver’s hours which can cause delays on billing and reimbursement.
           </p>
           <h2><span>🎯</span> Goal</h2>
           <p>
@@ -141,10 +141,10 @@
           </div>
           <div class="section-content">
             <p>
-              To be able to understand and relate to our customers and the team, it is essential to learn all about what
-              EVV is and the industry that it serves. There were a lot of unfamiliar jargon and terminologies so talking
-              to stakeholders, meeting with the developers and account managers was key to learning about how the app
-              works and the current challenges that our customers were facing.
+              Both the CEO and the development team suggested that a UI redesign is needed. When I was evaluating the
+              current state of the app, it was apparent that the dashboard for both the caregiver and admin didn't have
+              a clear visual hierarchy. For example, there were icons that did not have the affordance that it is
+              clickable. It also did not have a text label which makes it unclear what it is for.
             </p>
             <!-- Illustration -->
             <div class="figure">
@@ -153,11 +153,16 @@
               </div>
             </div>
             <p>
-              Both the CEO and the development team suggested that a UI redesign is much needed. When I was evaluating
-              the current state of the app, it was apparent that the dashboard for both the caregiver and admin didn't
-              have a clear information hierarchy. For example, there were several clickable icons but did not have the
-              affordance that it is a link. It also did not have a text label that goes with it and that can be
-              frustrating for first time users.
+              This app also has quite a lot of form handling. And if you know about forms, they're not really fun to
+              look at. The format can be a bit overwhelming and again, there a lack of clear visual hierarchy so it
+              falls short of giving the user some guidance on where to start.
+            </p>
+            <p>
+              Most of the app's input forms are also in a modal dialogue. Although modal dialogs are very effective in
+              attracting a user's attention to focus on the task at hand, one downside is that the window goes away
+              whenever the outside of the dialogue box is clicked and can be disruptive because the user would have to
+              open the modal again to finish the task. A link for viewing and filling out notes which is a major
+              caregiver task and contains a lot of input fields is also in a modal which is not ideal.
             </p>
             <!-- Illustration -->
             <div class="figure">
@@ -165,18 +170,6 @@
                 <img src="images/documentor-uxaudit-2.png" alt="DocuMentor Audit 2" />
               </div>
             </div>
-            <p>
-              As the nature of EVV apps goes, this app also has quite a lot of form handling. And if you know about
-              forms, they're not really fun to look at. The format looks a bit overwhelming and again, there's a lack of
-              information hierarchy so it falls short of giving the user some guidance on where to start.
-            </p>
-            <p>
-              Most of the app's input forms are also in a modal dialogue. Although modal dialogs are very effective in
-              attracting a user's attention to focus on the task at hand, it has more disadvantages in the way that it
-              is utilized in the app. One downside is that the window goes away whenever the outside of the dialogue box
-              is clicked and that can be disruptive because the user would have to open the modal again to finish the
-              task. A link for viewing notes is also in a modal as well as many other interactions.
-            </p>
           </div>
         </section>
         <!-- User Research Plan and Goals -->
@@ -186,28 +179,14 @@
           </div>
           <div class="section-content max-width-900">
             <p>
-              It was clear that there were usability issues but they will remain as assumptions without verifying it
-              from our users. Customer interviews are the most effective way to get direct feedback and validate our
-              assumptions based from the UX audit. I was also looking forward to unique insights and discoveries that I
-              may come across during this process.
-            </p>
-            <p>
-              But before diving into user interviews, it is essential to have a UX research plan which will help set
-              expectations and document the essentials needed to communicate to stakeholders and customers. I outlined
-              the general user interview goals and specific user interview goals for each target user.
+              I chose to do a qualitative research method by interviewing our customers who are already using our
+              product. I wanted to gain insight on the nuances of how they use the product, understand their motivation
+              and most of all understand why caregivers are not using the app more regularly. I outlined the general
+              user interview goals and specific user interview goals for each target user.
             </p>
           </div>
           <!-- Illustration -->
           <div class="figure">
-            <div class="max-width-900">
-              <h3>General User Research Goals:</h3>
-              <ul class="with-bullets">
-                <li>Understand how Caregivers and Admins are using the product.</li>
-                <li>Discover what the potential benefits of the product/experience to the users.</li>
-                <li>Learn about the clear or potential pain points.</li>
-                <li>Evaluate what features need improvement.</li>
-              </ul>
-            </div>
             <div class="max-width-900">
               <h3>User Interview Goals</h3>
               <h4>For Providers/Admin:</h4>
@@ -275,11 +254,8 @@
           </div>
           <div class="section-content">
             <p>
-              Establishing user and/or process flows is an essential step in the design process to help us understand
-              how a user journey pans out and to determine the app's information architecture. There was no existing
-              documentation for it so I collaborated with the stakeholders so we can come up with the caregiver and
-              admin’s user flows. Mapping out the hours and notes submission process helped us identify the different
-              stages that a session goes through and how it correlates to the caregiver's hours and notes submission.
+              Mapping out the hours and notes submission process helped us identify the different stages that a session
+              go through and how it correlates to the caregiver's hours and notes submission.
             </p>
             <!-- Illustration -->
             <div class="figure">
@@ -308,12 +284,10 @@
           </div>
           <div class="section-content">
             <p>
-              After presenting my analysis of the research data, I collaborated with our software development team to do
-              a Feature Mapping. The goal of this collaboration was to get their feedback on what makes sense to
-              prioritize according to the availability and limitation of time, tech stack and resources. It is going to
-              be a long and iterative process given the number of problems that we wanted to solve. It was practical to
-              tackle first what is already built and functioning so we decided to focus on fixing usability issues and
-              redesigning the UI for the first feature release.
+              The goal of this activity with our development team was to get their feedback on what makes sense to
+              prioritize according to the availability and limitation of time, tech stack and resources. It was
+              practical to tackle first what was already built and functioning so we decided to focus on fixing
+              usability issues and redesigning the UI for the first feature release.
             </p>
             <!-- Illustration -->
             <div class="figure">
@@ -350,11 +324,15 @@
               <li>The user does not know where to click to add notes</li>
             </ul>
             <h4>Solution:</h4>
-            <p>Simplify the dashboard and create a clear visual hierarchy</p>
+            <p>
+              Make the clock-in and clock out more visible and having the add note functiontioanality attached to the
+              current or past schedule. The other parts of the dashboard is also more accessible on a sidebar menu.
+            </p>
             <div class="figure overflow-x">
               <img src="images/documentor-design-caregiver-dash.png" alt="" />
             </div>
-            <p>Refactor clock-in and clock-out modals</p>
+            <h4>Solution:</h4>
+            <p>Refactoring clock-in and clock-out modals to fix information hierarchy.</p>
             <div class="figure overflow-x">
               <img src="images/documentor-caregiver-modals.png" alt="" />
             </div>
@@ -364,7 +342,7 @@
               <li>The nested modals is not a good experience</li>
             </ul>
             <h4>Solution:</h4>
-            <p>Simplify Notes user flow by removing nested modals</p>
+            <p>Removing nested modals and opening notes in a new page.</p>
             <div class="figure overflow-x">
               <img src="images/documentor-design-noteform.png" alt="" />
             </div>
@@ -395,6 +373,20 @@
           </div>
         </section>
       </div>
+      <!-- Secured VC Funding -->
+      <section class="p-container max-width-900">
+        <div class="section-title">
+          <h2>Impact: Secured VC Funding</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            The design changes confirmed the viability of the product which ultimately helped the company to secure VC
+            funding to take the product to its next phase. During usability testing, feedback from the customers were
+            very positive regarding the improvements and were excited and looking forward to using the new app. By
+            solving the usability problem, we also fed two birds with one scone.
+          </p>
+        </div>
+      </section>
       <!-- Learnings and takeaways -->
       <section class="p-container max-width-900">
         <div class="section-title">
@@ -415,34 +407,29 @@
             to help them solve their problems.
           </p>
           <!-- Text highlight -->
-          <div class="highlight" hidden>
-            <p>Collaboration and sharing your designs early and often makes for a faster iteration process</p>
-          </div>
-          <p></p>
-          <!-- Text highlight -->
           <div class="highlight">
-            <p>Document your work</p>
+            <p>Document your work. Document everything!</p>
           </div>
           <p>
-            Creating a document as a single source of truth and organizing it into different stages of the design cycle
-            is important for the continuation of the iteration process. You are not the only designer who's going to
-            work on the product forever so if another designer takes over and they have a hard time looking for research
-            data, understanding your design files, or picking up where you left off, There is also great value in doing
-            a version control of everything that you work on. Make sure that you don't overwrite changes so you or other
-            people can see the progress and who knows, your explorations may have some value for another problem.
+            Create a document as a single source of truth to ensure a seamless continuation of the product cycle so that
+            if another designer takes over they won’t have a hard time looking for things. There is also great value in
+            doing a version control of everything that you work on. Make sure that you don't overwrite changes in your
+            design files so you or other people can see the progress and who knows, your explorations may have some
+            value for another problem. I admit that I could have done a better job capturing everything especially ideas
+            from brainstorming sessions. Documenting the discovery process should not be left behind.
           </p>
           <!-- Text highlight -->
           <div class="highlight">
-            <p>Don't wait for the product to be done before doing user testing</p>
+            <p>Cross-functional collaboration is really helpful.</p>
           </div>
           <p>
-            The design changes ultimately helped the company to secure VC funding to take the product to its next phase.
-            During the start of our usability testing using prototypes, the development of the product was moved to the
-            VC company's in-house dev team and my involvement in the project was left incomplete. I was not able to
-            finish user testing cause I was waiting for the development to get to a stage where I can do user testing
-            using the real product. But I realized that I didn't have to wait for it. I could have used a prototype
-            which I can make to look and behave as close as possible to the real thing. That is one thing that I would
-            do in my future projects.
+            Since I was the only UX Designer in the team, I relied on our developers for brainstorming and was able to
+            bounce ideas off of them. Designers are not the only ones with great ideas, developers also have good ideas.
+            Consulting with them early on is especially helpful to know how complex a feature or functionality will be.
+            And by doing that, you can easily make adjustments before going full high-fidelity. Our business development
+            team is a trove of valuable information. Because they give product demos, onboard our customers, and also
+            find customers, they receive first-hand information from our customers about their struggles, needs and
+            wants. I really learned a lot from them and had gotten valuable insights.
           </p>
         </div>
       </section>
