@@ -12,7 +12,7 @@ const caseStudies = [
   {
     name: 'documentor',
     title: 'Web app + Mobile app EVV solution',
-    description: 'Redesigning DocuMentor’s apps to remove obstacles that prevents user adoption.',
+    description: 'Redesigning DocuMentor’s webapp to increase user adoption.',
     link: 'documentor',
     image: 'documentor-thumbnail-home.png',
     background: ['259.13deg', '#88D9FF 6.13%', '#DFF5FF 99.63%'],
@@ -21,8 +21,7 @@ const caseStudies = [
   {
     name: 'rvway',
     title: 'How might we help RV drivers safely get to their destination?',
-    description:
-      'This web mapping service allows users to input their vehicle’s specific height and weight to generate a safe route that will avoid low bridges and overpasses.',
+    description: 'Generating a safe route for RVs to avoid low bridges and overpasses',
     link: 'rvway',
     image: 'rvway-desktop.png',
     background: ['238.06deg', 'rgba(199, 252, 255, 0.75) 39.54%', '#A9C6FF 97.64%'],
