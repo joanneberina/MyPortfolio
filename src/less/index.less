@@ -143,9 +143,8 @@
         display: block;
       }
       p,
-      a,
       h3 {
-        padding: 0 1rem;
+        padding: 0 1rem 1rem;
         font-family: 'Work Sans';
       }
       h3 {
@@ -171,6 +170,14 @@
       }
       p {
         font-size: 1rem;
+      }
+      a {
+        color: @link-color;
+        font-weight: 900;
+        &:hover {
+          border-bottom: 3px solid rgba(39, 52, 78, 0.5);
+          color: rgba(39, 52, 78, 0.5);
+        }
       }
     }
   }
