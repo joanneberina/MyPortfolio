@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="images/avatar.png" type="image/x-icon" />
+    <script src="https://kit.fontawesome.com/1e3f8182fc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/zvp4xvv.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="assets/basicLightbox.min.css" />
+    <script src="assets/basicLightbox.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DocuMentor - Joanne Berina</title>
+  </head>
+  <body>
+    <header>
+      <nav-bar></nav-bar>
+      <div class="case-study">
+        <div id="case-study-title">
+          <h1>Web app + Mobile app EVV solution</h1>
+        </div>
+        <div id="case-study-img" class="stack">
+          <img src="images/documentor-webapp-heading.png" alt="Documentor Webapp" />
+          <img src="images/documentor-screens-heading.png" alt="Documentor Mobile" />
+        </div>
+      </div>
+    </header>
+    <main class="case-study-main">
+      <!-- Project background -->
+      <section class="p-container max-width-900">
+        <div class="section-title">
+          <h2>Project background</h2>
+        </div>
+        <div class="three-column">
+          <div class="column">
+            <img src="images/clock.svg" alt="" />
+            <p>6 Months</p>
+          </div>
+          <div class="column">
+            <img src="images/users.svg" alt="" />
+            <p>1 UX designers<br />4 Full-stack web developers</p>
+          </div>
+          <div class="column">
+            <img src="images/project-diagram.svg" alt="" />
+            <p>Build-on project</p>
+          </div>
+        </div>
+      </section>
+      <!-- Overview -->
+      <section class="p-container max-width-900">
+        <div class="section-title">
+          <h2>Overview</h2>
+        </div>
+        <div class="section-content">
+          <p>
+            DocuMentor is an electronic visit verification (EVV) solution used to verify visit activity for home health,
+            home care and hospice.
+          </p>
+          <p>
+            Electronic Visit Verification is a system for tracking work performed, hours, notes, accurate location
+            information and much more about the patient-caregiver interaction, including information about the service
+            provider. EVV applies to care and health services rendered in the home. The purpose of EVV is to ensure that
+            services are delivered to people needing those services and that providers only bill for services rendered.
+          </p>
+        </div>
+      </section>
+      <!-- Target Users -->
+      <section class="p-container max-width-900">
+        <div class="section-content two-columns">
+          <div>
+            <div class="section-title">
+              <h2>Users</h2>
+            </div>
+            <h3 class="uppercase">Caregivers</h3>
+            <p>
+              Individuals who provide care and services to clients and carry out overall needs and plan of care.
+              Caregivers can be family members or professional caregivers. Some services are also provided by Therapy
+              Professionals, Behavioral Consultants, Music Therapists, Speech Therapists etc.
+            </p>
+          </div>
+          <div>
+            <div class="section-title">
+              <h2>Customers</h2>
+            </div>
+            <h3 class="uppercase">Provider Admins and Supervisors</h3>
+            <p>
+              They can be owners of an agency or the provider's employees who manages caregivers, assigns clients and/or
+              set schedules for the caregivers. They make sure that hours used per client are within budget. They also
+              review notes for each service and approves them for billing.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Problems and Goals -->
+      <section class="p-container full-width-background" id="problems-goals">
+        <div class="section-content max-width-560">
+          <h2><span>🤔</span> Problem</h2>
+          <p>
+            Caregivers are not using the web app to clock their hours and record notes on the day of their workday but
+            instead they are recording their hours and notes at a later date on paper which can be inaccurate and is
+            sometimes submitted after the deadline. This makes it harder for providers and supervisors to track the
+            caregiver’s hours which can cause delays on billing and reimbursement.
+          </p>
+
+          <h2><span>🎯</span> Goal</h2>
+          <p>
+            Increase user adoption, acquisition and customer retention by improving user flow and fixing usability
+            issues on the caregiver dashboard.
+          </p>
+        </div>
+      </section>
+      <!-- Process -->
+      <section class="p-container max-width-900">
+        <div class="section-title">
+          <h2>Process</h2>
+        </div>
+        <div class="section-content">
+          <ul class="with-special-numbers">
+            <li>
+              <a href="#user-experience-audit"><span>1</span> User experience audit</a>
+            </li>
+            <li>
+              <a href="#user-research-plan-and-goals"><span>2</span> User Research plan and Goals</a>
+            </li>
+            <li>
+              <a href="#research-data-analysis"><span>3</span> Research data analysis</a>
+            </li>
+            <li>
+              <a href="#user-and-process-flows"><span>4</span> User and Process Flows</a>
+            </li>
+            <li>
+              <a href="#feature-mapping"><span>5</span> Feature Releases</a>
+            </li>
+            <li>
+              <a href="#design-solutions"><span>6</span> Design Solutions</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <div class="process">
+        <!-- User Experience Audit-->
+        <section class="p-container max-width-900" id="user-experience-audit">
+          <div class="section-title">
+            <h2>User Experience Audit</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              Both the CEO and the development team suggested that a UI redesign is needed. When I was evaluating the
+              current state of the app, it was apparent that the dashboard for both the caregiver and admin didn't have
+              a clear visual hierarchy. For example, there were icons that did not have the affordance that it is
+              clickable. It also did not have a text label which makes it unclear what it is for.
+            </p>
+            <!-- Illustration -->
+            <div class="figure">
+              <div class="figure-img overflow-x">
+                <img src="images/documentor-uxaudit-1.png" alt="DocuMentor Audit 1" />
+              </div>
+            </div>
+            <p>
+              This app also has quite a lot of form handling. And if you know about forms, they're not really fun to
+              look at. The format can be a bit overwhelming and again, there a lack of clear visual hierarchy so it
+              falls short of giving the user some guidance on where to start.
+            </p>
+            <p>
+              Most of the app's input forms are also in a modal dialogue. Although modal dialogs are very effective in
+              attracting a user's attention to focus on the task at hand, one downside is that the window goes away
+              whenever the outside of the dialogue box is clicked and can be disruptive because the user would have to
+              open the modal again to finish the task. A link for viewing and filling out notes which is a major
+              caregiver task and contains a lot of input fields is also in a modal which is not ideal.
+            </p>
+            <!-- Illustration -->
+            <div class="figure">
+              <div class="figure-img overflow-x">
+                <img src="images/documentor-uxaudit-2.png" alt="DocuMentor Audit 2" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- User Research Plan and Goals -->
+        <section class="p-container" id="user-research-plan-and-goals">
+          <div class="section-title max-width-900">
+            <h2>User Research Plan and Goals</h2>
+          </div>
+          <div class="section-content max-width-900">
+            <p>
+              I chose to do a qualitative research method by conducting remote interviews and usability testing with our
+              customers who are already using our product. I wanted to gain insight on the nuances of how they use the
+              product, understand their motivation and most of all understand why caregivers are not using the app more
+              regularly. I outlined the general user interview goals and specific user interview goals for each target
+              user.
+            </p>
+          </div>
+          <!-- Illustration -->
+          <div class="figure">
+            <div class="max-width-900">
+              <h3>User Interview Goals</h3>
+              <h4>For Providers/Admin:</h4>
+              <ul class="with-bullets">
+                <li>Learn how providers and admin utilize the dashboard. Find out what is useful and what is not.</li>
+                <li>
+                  Find out about how admins use the app to help in report generation for billing and reimbursement and
+                  specifically any challenges they may have in monitoring caregivers.
+                </li>
+                <li>Learn about the scheduling process.</li>
+              </ul>
+              <h4>For Caregivers:</h4>
+              <ul class="with-bullets">
+                <li>Learn about how and where they access and use the app.</li>
+                <li>
+                  Find out about any challenges in recording their hours, how and when they clock-in and clock-out.
+                </li>
+                <li>Learn about how they utilize the notes section and what their level of engagement is.</li>
+              </ul>
+              <h4>For the Business Development Team:</h4>
+              <ul class="with-bullets">
+                <li>Understand how each customer operates and what makes a customer sign-up for the product.</li>
+                <li>Gather feedback on how customers find value in the product.</li>
+                <li>Learn about customer onboarding process and their challenges when onboarding a customer.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- Research Data Analysis -->
+        <section class="p-container max-width-900" id="research-data-analysis">
+          <div class="section-title">
+            <h2>Research Data Analysis</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              After doing remote interviews with 5 caregivers, 5 admins and 2 of our Business Development Managers, I
+              put together my research data by documenting transcripts from the recorded interviews and then did an
+              affinity mapping. I organized the responses based on painpoints vs. needs and separated them according to
+              user types. I then proceeded to further sort them by what feature or functionality the problem is about.
+              By classifying information in this way, it was easier to identify problems and common issues. It was also
+              easier to present it to stakeholders as it is more digestible.
+            </p>
+            <!-- Illustration -->
+            <div class="figure">
+              <div class="figure-img overflow-x">
+                <img src="images/documentor-affinity-mapping-1.png" alt="Affinity Mapping 1" />
+              </div>
+            </div>
+            <p>
+              Notes and Hours, Reports and Forms, Budget Monitoring, Usability, Scheduling and Notifications are the
+              areas where problems needed solving.
+            </p>
+            <!-- Illustration -->
+            <div class="figure">
+              <div class="figure-img overflow-x">
+                <img src="images/documentor-affinity-mapping-2.png" alt="Affinity Mapping 2" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- User and Process Flows  -->
+        <section class="p-container max-width-900" id="user-and-process-flows">
+          <div class="section-title">
+            <h2>User and Process Flows</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              Mapping out the hours and notes submission process helped us identify the different stages that a session
+              go through and how it correlates to the caregiver's hours and notes submission.
+            </p>
+            <!-- Illustration -->
+            <div class="figure">
+              <div class="figure-img overflow-x">
+                <img src="images/documentor-hours-notes-1.png" alt="Hour Notes" />
+              </div>
+            </div>
+            <!-- Illustration -->
+            <div class="figure">
+              <div class="figure-img overflow-x">
+                <img src="images/documentor-caregiver-user-flow-v1.png" alt="Caregivers User Flow" />
+              </div>
+            </div>
+            <!-- Illustration -->
+            <div class="figure">
+              <div class="figure-img overflow-x">
+                <img src="images/documentor-admin-user-flow-v1.png" alt="Admin User Flow" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Feature Releases - a collaborative activity  -->
+        <section class="p-container max-width-900" id="feature-mapping">
+          <div class="section-title">
+            <h2>Prioritizing Feature Releases - a collaborative activity</h2>
+          </div>
+          <div class="section-content">
+            <p>
+              The goal of this activity with our development team was to get their feedback on what makes sense to
+              prioritize according to the availability and limitation of time, tech stack and resources. It was
+              practical to tackle first what was already built and functioning so we decided to focus on fixing
+              usability issues and redesigning the UI for the first feature release.
+            </p>
+            <!-- Illustration -->
+            <div class="figure">
+              <div class="figure-img overflow-x">
+                <img src="images/documentor-feature-release-plan-1.png" alt="Feature Release Plan" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Design Solutions -->
+        <section class="p-container max-width-900" id="design-solutions">
+          <div class="section-title">
+            <h2>Design Solutions</h2>
+          </div>
+          <div class="section-content">
+            <div class="max-width-900">
+              <h3>Goals:</h3>
+              <ul class="with-bullets">
+                <li>Design and iterate for the first feature release</li>
+                <li>Refactor and incorporate existing functional user flows</li>
+                <li>Use Ant Design System components to accelerate development</li>
+              </ul>
+            </div>
+            <p>
+              Without hours and notes input from the caregivers, the system will not be able to generate any data or
+              report and will basically render the app useless. The main goal of the first iteration is how to improve
+              the hours and note entry for caregivers and dashboard utilization for providers/admin.
+            </p>
+
+            <h3 class="uppercase">Caregiver mid-fidelity wireframes</h3>
+            <h4>Problem:</h4>
+            <ul class="with-bullets">
+              <li>The Dashboard is not user-friendly</li>
+              <li>The meaning of icons is not clear</li>
+              <li>The user does not know where to click to add notes</li>
+            </ul>
+            <h4>Solution:</h4>
+            <p>
+              Make the clock-in and clock out more visible and having the add note functiontioanality attached to the
+              current or past schedule. The other parts of the dashboard is also more accessible on a sidebar menu.
+            </p>
+            <div class="figure overflow-x">
+              <img src="images/documentor-design-caregiver-dash.png" alt="" />
+            </div>
+            <h4>Solution:</h4>
+            <p>Refactoring clock-in and clock-out modals to fix information hierarchy.</p>
+            <div class="figure overflow-x">
+              <img src="images/documentor-caregiver-modals.png" alt="" />
+            </div>
+            <h4>Problem:</h4>
+            <ul class="with-bullets">
+              <li>It’s hard to fill out notes cause the modal is small especially on a mobile device.</li>
+              <li>The nested modals is not a good experience</li>
+            </ul>
+            <h4>Solution:</h4>
+            <p>Removing nested modals and opening notes in a new page.</p>
+            <div class="figure overflow-x">
+              <img src="images/documentor-design-noteform.png" alt="" />
+            </div>
+            <p>Low-Fidelity Mobile responsive</p>
+            <div class="figure overflow-x">
+              <img src="images/documentor-mobile-app-wireframe.png" alt="" />
+            </div>
+            <h3 class="uppercase">Caregiver Mobile-App Solution</h3>
+            <p>
+              A mobile app for recording hours and notes is the best solution for caregivers so they can clock-in,
+              clock-out and add notes in real-time. These days, almost everyone has a phone but not everyone has a
+              desktop or laptop. Since caregivers are always on the go whether they are inside the client’s home or
+              outside accompanying their clients to doctor’s appointments, they can easily record their notes and hours.
+            </p>
+
+            <p>High-Fidelity</p>
+            <div class="figure overflow-x">
+              <img src="images/documentor-hifi.png" alt="" style="max-height: unset" />
+              <img src="images/documentor-hifi-2.png" alt="" style="max-height: unset" />
+            </div>
+            <h3 class="uppercase">Provider/Admin High-Fidelity Designs</h3>
+            <p>Dashboard and sidebar pages</p>
+            <div class="figure overflow-x">
+              <img src="images/documentor-admin-dashboard.png" alt="" />
+            </div>
+            <p>Forms</p>
+            <div class="figure overflow-x">
+              <img src="images/documentor-forms.png" alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- Secured VC Funding -->
+      <section class="p-container full-width-background" id="problems-goals">
+        <div class="section-content max-width-560">
+          <h2><span>✨</span> Impact: Secured VC Funding</h2>
+          <p>
+            The design changes achieved our goal and cemented the viability of the product which ultimately helped the
+            company to secure VC funding to take the product to its next phase. During usability testing, feedback from
+            the customers were very positive regarding the improvements and were excited and looking forward to using
+            the new app. By solving the usability problem, we also fed two birds with one scone.
+          </p>
+        </div>
+      </section>
+
+      <!-- Learnings and takeaways -->
+      <section class="p-container max-width-900">
+        <div class="section-title">
+          <h2>Learnings and takeaways</h2>
+        </div>
+        <div class="section-content">
+          <div class="highlight learnings-takeaways">
+            <p>There is no better insight than talking to your customers directly</p>
+          </div>
+          <p class="learnings">
+            We sometimes become rooted to what we think our customers are interested in and assume that they will
+            understand our product the way that we designed it. Before joining DocuMentor, features were implemented in
+            isolation without getting customer's feedback and that resulted in poor customer adoption. After conducting
+            interviews, users' feedback revealed that there were a lot of friction points with interactions on the
+            dashboard and forms. And that's the reason why the caregivers are having a hard time using the app or they
+            just don't use it at all. Listening to our customers not only gave me valuable insights but I also learned
+            about how passionate the providers and caregivers are in giving care to their clients which inspired me more
+            to help them solve their problems.
+          </p>
+          <!-- Text highlight -->
+          <div class="highlight learnings-takeaways">
+            <p>Document your work. Document everything!</p>
+          </div>
+          <p class="learnings">
+            Create a document as a single source of truth to ensure a seamless continuation of the product cycle so that
+            if another designer takes over they won’t have a hard time looking for things. There is also great value in
+            doing a version control of everything that you work on. Make sure that you don't overwrite changes in your
+            design files so you or other people can see the progress and who knows, your explorations may have some
+            value for another problem. I admit that I could have done a better job capturing everything especially ideas
+            from brainstorming sessions. Documenting the discovery process should not be left behind.
+          </p>
+          <!-- Text highlight -->
+          <div class="highlight learnings-takeaways">
+            <p>Cross-functional collaboration is really helpful.</p>
+          </div>
+          <p class="learnings">
+            Since I was the only UX Designer in the team, I relied on our developers for brainstorming and was able to
+            bounce ideas off of them. Designers are not the only ones with great ideas, developers also have good ideas.
+            Consulting with them early on is especially helpful to know how complex a feature or functionality will be.
+            And by doing that, you can easily make adjustments before going full high-fidelity. Our business development
+            team is a trove of valuable information. Because they give product demos, onboard our customers, and also
+            find customers, they receive first-hand information from our customers about their struggles, needs and
+            wants. I really learned a lot from them and had gotten valuable insights.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- Links to other case studies -->
+    <div class="readmore">
+      <div class="heading">
+        <h2>Read about my other case studies</h2>
+      </div>
+      <case-studies-list mini class="othercases"></case-studies-list>
+    </div>
+    <footer-connect></footer-connect>
+    <script src="js/nav-bar.js"></script>
+    <script src="js/footer-connect.js"></script>
+    <script src="js/case-studies-list.js"></script>
+    <script src="assets/basicLightbox.min.js"></script>
+    <script src="js/lightbox.js"></script>
+  </body>
+</html>
