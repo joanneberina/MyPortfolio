@@ -18,8 +18,8 @@
   }
 }
 
-.max-width-560 {
-  max-width: 560px;
+.max-width-570 {
+  max-width: 570px;
   margin: 0 auto;
 }
 
@@ -28,8 +28,13 @@
   padding: 0 2rem 2rem;
 }
 
+.process-toc {
+  max-width: 400px;
+  text-align: center;
+}
+
 .with-special-numbers {
-  columns: 2;
+  columns: 1;
   padding: 2rem;
   border-bottom: 1px solid #e0e0e0;
   border-top: 1px solid #e0e0e0;
@@ -72,7 +77,28 @@
   }
 }
 
-#problems-goals {
+#problems {
+  background: #1c2837;
+  color: white;
+  margin-bottom: 0;
+  h2 {
+    font-size: 1.875rem;
+    span {
+      font-size: 2.5rem !important;
+    }
+  }
+  p {
+    font-size: 1.625rem;
+    line-height: 2.25rem;
+    padding-bottom: 1rem;
+  }
+  li {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+}
+#goals {
+  margin-top: 0;
   h2 {
     font-size: 1.875rem;
     span {
@@ -130,7 +156,7 @@
       h2 {
         font-size: 1.875rem;
         color: #27344e;
-        padding-bottom: 1rem;
+        padding-bottom: 0.5rem;
         line-height: 2rem;
       }
     }
@@ -152,6 +178,7 @@
       img {
         max-width: 900px;
         max-height: 600px;
+        cursor: pointer;
       }
       #addvehicle-img,
       #menu-img {

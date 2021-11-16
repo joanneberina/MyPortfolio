@@ -5,7 +5,7 @@ allImages.forEach(
       basicLightbox
         .create(
           `
-				<img src="${img.src}">
+				<img class="lightbox-image" src="${img.src}">
 			`
         )
         .show()
